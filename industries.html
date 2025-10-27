@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Industries | GForce Technology Consulting</title>
+  <link rel="icon" type="image/png" href="img/logo/favicon.png" sizes="32x32">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="resources.css"/>
+  <style>
+    /* ===== HERO SECTION ===== */
+    .hero {
+      position: relative;
+      min-height: 40vh;
+    }
+    
+    .hero-media {
+      position: absolute;
+      inset: 0;  
+      z-index: 0;
+      background-image: var(--hero-img);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 1; 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 8%;
+      color: #fff;
+      background: rgba(0,0,0,.5);
+      
+    }
+
+    .hero-eyebrow {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 600;
+      font-size: clamp(0.8rem, 2vw, 0.95rem);
+      letter-spacing: 0.08em;
+      text-transform:capitalize;
+      color: #fff;
+      opacity: 0.85;
+      margin-bottom: 0.5rem;
+    }
+    
+    .hero-overlay h1 {
+      text-transform: capitalize;
+      font-size: clamp(2rem, 8vw, 3rem);
+      margin: 0 0 0.75rem;
+      font-family: Arial, Helvetica, sans-serif;
+      opacity: .9;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+      line-height: 1.2;
+    }
+
+  .hero-content-split {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-left {
+  flex: 1;
+  max-width: 500px;
+}
+
+.hero-left h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.hero-left .button {
+  display: inline-block;
+  padding: 0.875rem 2rem;
+  background: #C0111F;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 500;
+  display: inline-flex;
+align-items: center;
+opacity: .8;
+  font-size: .9rem;
+  transition: background 0.3s ease;
+}
+
+.hero-left .button:hover {
+  background: #7A0C15;
+}
+
+.hero-left .button .arrow-icon {
+font-size: 20px;
+transition: transform 0.3s ease;
+}
+
+.hero-left .button:hover .arrow-icon {
+transform: rotate(90deg);
+}
+
+.hero-right {
+  flex: 1;
+  max-width: 500px;
+}
+
+.hero-box {
+  padding-left: 2rem;
+  /* text-align: end; */
+
+}
+
+.hero-box .lead {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: white;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+      .hero {
+        min-height: 35vh;
+      }
+
+    
+      .hero-overlay {
+        padding: 5%;
+        padding-bottom: 2rem;
+      }
+
+      .hero-box {
+        padding: 0;
+      }
+    
+      .hero-overlay h1 {
+        font-size: 2rem;
+      }
+      
+      .hero-overlay .lead {
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+      }
+    
+      .hero-eyebrow {
+        font-size: 0.7rem;
+        margin-bottom: 0.35rem;
+      }
+      .hero-overlay .button {
+        padding: 0.5rem 1rem;
+        font-size: .7rem;
+      }
+
+    }
+    
+    
+    /* ===== VERY SMALL MOBILE (max 480px) ===== */
+    @media (max-width: 480px) {
+      .hero {
+        min-height: 30vh;
+      }
+    
+      .hero-overlay {
+        padding: 0 1.25rem;
+        padding-bottom: 1.5rem;
+      }
+    
+      .hero-overlay h1 {
+        font-size: 1.5rem;
+      }
+      
+      .hero-overlay .lead {
+        font-size: .8rem;
+        line-height: 1.1rem;
+      }
+      .hero-overlay .button {
+        padding: 0.4rem .5rem;
+        font-size: .7rem;
+      }
+
+    }
+    
+    /* ===== VERY SMALL MOBILE (max 360px) ===== */
+    @media (max-width: 360px) {
+      .hero-overlay {
+        padding: 0 1rem;
+      }
+    }
+    
+
+    
+.site-header.header--dark {
+background: #0b0f16;
+color: #f4f6fb;
+border-color: rgba(255,255,255,.12);
+}
+
+.industries-wrap .container,
+.res-section .container {
+  width: min(1250px, 100%);
+  margin-inline: auto; 
+  padding-inline: 1rem; 
+  padding: 3rem 0;
+}
+
+
+/* .res-section {
+  padding-block:2rem;
+} */
+.res-grid {
+  display: grid;
+  grid-template-columns:.9fr 1.3fr;
+  gap:3rem;
+}
+
+.res-label-wrap,
+.res-cards { min-width: 0; }
+
+/* .res-label {
+  hyphens: auto;
+} */
+.res-card--text {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  /* border: 1px solid rgba(255,255,255,0.10); */
+  border-radius: 14px;
+  color: white;
+  /* background: rgba(255,255,255,0.03); */
+  /* padding: 2rem; */
+  padding-right: 2rem;
+
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.res-card--text:hover {
+  /* background: rgba(255,255,255,0.06); */
+  border-color: rgba(255,255,255,0.2);
+}
+
+/* Icon styling */
+.res-card--text .icon {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+  filter: invert(1);
+  flex-shrink: 0;
+}
+
+/* Text */
+.res-card--text p {
+  margin: 0;
+  color: white;
+  line-height: 1.7;
+  font-size: 1.2rem;
+  font-family: 'Manrope', sans-serif;
+}
+
+/* Tablet breakpoint */
+@media (max-width: 991px) {
+  .res-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  
+  .res-label-wrap {
+    position: relative;
+  }
+  .industries-wrap .container,
+  .res-section .container {
+    padding-inline: 2rem;
+    width: auto;
+  }
+  
+  .res-label {
+    position: static;
+    font-size: clamp(2rem, 7vw, 2.5rem);
+    margin-bottom: 1rem;
+  }
+  
+  .res-section {
+    padding-block: clamp(24px, 5vw, 48px);
+  }
+}
+
+/* Mobile breakpoint */
+@media (max-width: 767px) {
+  .resources-wrap .container,
+  .res-section .container {
+    padding-inline: 1.3rem;
+    width: auto;
+  }
+  
+  .res-grid {
+    gap: 1.5rem;
+  }
+  
+  .res-label {
+    font-size: 1.75rem;
+  }
+  
+  .res-cards {
+    gap: 1rem;
+  }
+  
+  .res-card-body {
+    padding: 0.875rem;
+  }
+
+  .res-card--text {
+    display: block;
+  }
+  
+  .res-card--text p {
+    font-size: .9rem;
+  }
+  
+  .res-card-title {
+    font-size: 1.1rem;
+  }
+  
+  .res-card-desc {
+    font-size: 0.9rem;
+  }
+  
+  .eyebrow {
+    font-size: 0.7rem;
+  }
+
+}
+
+/* Small mobile breakpoint */
+@media (max-width: 480px) {
+  .res-label {
+    font-size: 1.7rem;
+  }
+  
+  .res-card-title {
+    font-size: 1.3rem;
+  }
+  
+  .res-card-desc {
+    font-size: 0.85rem;
+  }
+  
+}
+
+  </style>
+</head>
+
+<body>
+  <header class="site-header" role="banner">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html" aria-label="Go to home">
+        <img src="img/logo/logo-header.png" alt="GForce Logo" class="logo-light">
+        <img src="img/logo/logo-header-white.png" alt="GForce Logo White" class="logo-dark">
+      </a>
+      <!-- Primary Nav -->
+         <nav class="nav" aria-label="Primary">
+        <ul class="menu-root">
+        
+          <li class="has-panel">
+            <a class="top-link" href="what-we-do.html">What We Do</a>
+            <div class="dropdown-panel">
+              <ul class="simple-list">
+                <li><a href="what-we-do.html#infor">Infor Lawson Upgrade</a></li>
+                <li><a href="what-we-do.html#cloudsuite">CloudSuite Implementation</a></li>
+                <li><a href="what-we-do.html#managed-cloudsuite">Managed Services CloudSuite</a></li>
+                <li><a href="what-we-do.html#managed-lawson">Managed Services <br>Infor Lawson</a></li>
+                <li><a href="what-we-do.html#health">Health Check &amp; Roadmap</a></li>
+                <li><a href="what-we-do.html#PMO">PMO Services</a></li>
+                <li><a href="what-we-do.html#change">Change Management &amp; Training</a></li>
+              </ul>
+            </div>
+          </li>
+  
+          <li class="has-panel">
+            <a class="top-link" href="industries.html">Industries</a>
+            <div class="dropdown-panel">
+              <ul class="simple-list">
+                <li><a href="industries.html#healthcare">Healthcare</a></li>
+                <li><a href="industries.html#public">Public Sector</a></li>
+                <li><a href="industries.html#utilities">Utilities</a></li>
+                <li><a href="industries.html#transportation">Transportation &amp; Logistics</a></li>
+                <li><a href="industries.html#professional">Professional Services</a></li>
+                <li><a href="industries.html#retail">Retail</a></li>
+              </ul>
+            </div>
+          </li>
+  
+          <li><a class="top-link" href="partnership.html">Infor Partnership</a></li>
+  
+          <li class="has-panel">
+            <a class="top-link" href="what-we-know.html">What We Know</a>
+            <div class="dropdown-panel">
+              <ul class="simple-list">
+                <li><a href="what-we-know.html#case-studies">Case Studies</a></li>
+                <li><a href="what-we-know.html#articles">Articles</a></li>
+                <li><a href="what-we-know.html#gforce-resources">GForce Resource</a></li>
+              </ul>
+            </div>
+          </li>
+  
+          <li class="has-panel">
+            <a class="top-link" href="who-we-are.html">Who We Are</a>
+            <div class="dropdown-panel">
+              <ul class="simple-list">
+                <li><a href="who-we-are.html#story">Our Story</a></li>
+                <li><a href="who-we-are.html#leadership">Leadership</a></li>
+                <li><a href="careers.html">Careers</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+  
+      <!-- CTA -->
+      <a href="contact.html" class="button">
+        Contact Us
+      </a>
+
+      <button class="hamburger" id="navToggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="industries" class="industries-wrap">
+
+
+
+    <section class="hero hero-parallax" style="height: 40vh;" id="hero">
+      <div class="hero-media" style="--hero-img: url('img/industries/industries.webp');"></div>
+      <div class="hero-overlay">
+        <div class="container">
+          <div class="hero-content-split">
+            <div class="hero-left">
+              <p class="hero-eyebrow">Sector Expertise</p>
+            <h1>Industries We Know<br><span style="color: #C0111F">
+              Inside Out.</span></h1>
+              <a href="what-we-know.html" class="button">
+                Unlock Your Advantage <span class="material-symbols-outlined arrow-icon">arrow_forward</span>
+              </a>
+            </div>
+            <div class="hero-right">
+              <div class="hero-box">
+                <p class="lead">With GForce, you gain a partner who understands your industry and delivers solutions that accelerate performance, reduce risk, and unlock lasting growth. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+    <!-- Healthcare -->
+    <section id="healthcare" class="res-section" data-theme="dark" data-label="Healthcare" aria-labelledby="healthcare-label">
+      <div class="res-grid container">
+        <div class="res-label-wrap">
+          <h2 id="healthcare-label" class="res-label">Healthcare</h2>
+        </div>
+    
+        <div class="res-cards res-cards--text">
+          <article class="res-card res-card--text">
+            <img src="img/industries/healthcare.avif" alt="Healthcare icon" class="icon">
+            <p>We understand the demands of healthcare—tight margins, complex regulations, and supply chain that is mission-critical. GForce brings decades of experience guiding hospitals and health systems through financial transformation, Infor Lawson to CloudSuite upgrades, and unique challenges of healthcare supply chain. We help ensure resources flow where they matter most: patient care.</p>
+          </article>
+          
+          
+        </div>
+      </div>
+    </section>
+    
+  
+    <!-- Public Sector -->
+    <section id="public" class="res-section" data-theme="dark" data-label="Public Sector" aria-labelledby="public-sector-label">
+      <div class="res-grid container">
+        <div class="res-label-wrap">
+          <h2 id="public" class="res-label">Public Sector</h2>
+        </div>
+    
+        <div class="res-cards res-cards--text">
+          <article class="res-card res-card--text">
+            <img src="img/industries/public-sector.avif" alt="Public Sector icon" class="icon">
+            <p>Infor is a leader in government solutions, and GForce helps cities and counties unlock that strength. From FSM to WFM to Infor CloudSuite, we bring the expertise to modernize finance, workforce, and operations with confidence. Our team ensures every integration works seamlessly so you can deliver services with greater efficiency, transparency, and impact for your community.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Utilities -->
+
+    <section id="utilities" class="res-section" data-theme="dark" data-label="Utilities" aria-labelledby="utilities-label">
+      <div class="res-grid container">
+        <div class="res-label-wrap">
+          <h2 id="utilities" class="res-label">Utilities</h2>
+        </div>
+    
+        <div class="res-cards res-cards--text">
+          <article class="res-card res-card--text">
+            <img src="img/industries/utilities.avif" alt="Utilities icon" class="icon">
+            <p>Utilities operate at the intersection of public service and private accountability. GForce understands the unique demands of delivering essential services while managing tight financial oversight and regulatory requirements. We guide utilities through modernization so they can strengthen reliability, improve transparency, and serve their communities with confidence.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+        <!-- Transportation & Logistics -->
+
+    <section id="transportation" class="res-section" data-theme="dark" data-label="Transportation & Logistics" aria-labelledby="transportation-label">
+      <div class="res-grid container">
+        <div class="res-label-wrap">
+          <h2 id="transportation-label" class="res-label">Transportation &amp; Logistics</h2>
+        </div>
+  
+        <div class="res-cards res-cards--text">
+          <article class="res-card res-card--text">
+            <img src="img/industries/transit.avif" alt="Transportation icon" class="icon">
+            <p>Transit never stops—and neither can the systems behind it. GForce partners with transit authorities to modernize finance and operations while integrating the third-party software that keeps buses, rail, and fleets moving. With our expertise in Infor FSM, WFM, and Infor CloudSuite Public Sector, we help ensure your systems run as reliably as the services your riders depend on.
+
+            </p>
+          </article>
+
+          <article class="res-card res-card--text">
+            <img src="img/industries/logistics.avif" alt="Transportation icon" class="icon">
+            <p>In logistics, every delay costs. GForce has led major transportation companies through end-to-end transformation, taking multiple organizations live on CloudSuite FSM and streamlining operations from finance to supply chain. We know what it takes to keep goods moving, margins strong, and systems built for speed and scale. 
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Professional Services -->
+    <section id="professional" class="res-section" data-theme="dark" data-label="Professional Services" aria-labelledby="professional-label">
+      <div class="res-grid container">
+        <div class="res-label-wrap">
+          <h2 id="professional-label" class="res-label">Professional Services</h2>
+        </div>
+  
+        <div class="res-cards res-cards--text">
+          <article class="res-card res-card--text">
+            <img src="img/industries/professional-services.avif" alt="Professional Services icon" class="icon">
+            <p>    Financial management firms run on precision of complex transactions, customized workflows, and high-value client demands. GForce has guided leading firms through transformation, simplifying processes and strengthening control without slowing the pace of business. We bring clarity to complexity so you can deliver with confidence and scale with ease.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Retail -->
+    <section id="retail" class="res-section" data-theme="dark" data-label="Retail" aria-labelledby="retail-label">
+      <div class="res-grid container">
+        <div class="res-label-wrap">
+          <h2 id="retail-label" class="res-label">Retail</h2>
+        </div>
+  
+        <div class="res-cards res-cards--text">
+          <article class="res-card res-card--text">
+            <img src="img/industries/retail.avif" alt="Retail icon" class="icon">
+            <p>Retail runs on volume, speed, and razor-thin margins. GForce recently guided a major North American retailer through a CloudSuite FSM upgrade, unifying millions of transactions across retail centers, fuel sales, and cross-border operations. We know how to simplify scale, strengthen control, and keep every corner of your business moving as one.
+
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  
+  </main>
+
+  <section class="signup-section dark" style="border-top: none;">
+    <div class="signup-content">
+      <h2>Don't see your industry?<br><span>We have you covered.</span></h2>
+  
+      <a href="contact.html" class="signup-link">
+        Contact Us
+        <span class="material-symbols-outlined arrow-icon">arrow_forward</span>
+      </a>
+    </div>
+  </section>
+  
+  
+
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-top">
+    <!-- Logo -->
+    <a href="index.html" class="footer-logo">
+      <img src="img/logo/logo-footer.png" alt="GForce Logo" height="40">
+    </a>
+
+    <!-- Footer Navigation -->
+    <div class="footer-sections">
+      <!-- What We Do -->
+      <div class="footer-col">
+        <h4 class="footer-heading">What We Do</h4>
+        <ul>
+          <li><a href="what-we-do.html#infor">Upgrade Infor Lawson</a></li>
+          <li><a href="what-we-do.html#cloudsuite">Net New Implementation</a></li>
+          <li><a href="what-we-do.html#managed-services">Managed Services</a></li>
+        </ul>
+      </div>
+
+      <!-- More About Us -->
+      <div class="footer-col">
+        <h4 class="footer-heading">More About Us</h4>
+        <ul>
+          <li><a href="what-we-know.html#case-studies">Success Stories</a></li>
+          <li><a href="partnership.html">Infor Partnership</a></li>
+          <li><a href="who-we-are.html">About Us</a></li>
+          <li><a href="careers.html">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container footer-bottom">
+    <p><i class="fa fa-copyright"></i> 2025 GForce Technology Consulting. All Rights Reserved.</p>
+  </div>
+</footer>
+<script>
+  // Scroll Animation - Float up effect for cards
+document.addEventListener('DOMContentLoaded', () => {
+  const cards = document.querySelectorAll('.res-card--text');
+  
+  if (!cards.length) return;
+
+  // Add initial hidden state
+  cards.forEach(card => {
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(40px)';
+    card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+  });
+
+  // Intersection Observer for scroll-triggered animations
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px 0px -100px 0px', // Trigger slightly before element enters viewport
+    threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Float up animation
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+        
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  // Observe all cards
+  cards.forEach(card => observer.observe(card));
+});
+</script>
+
+  <script src="main.js" defer></script>
+    
+</body>
+</html>

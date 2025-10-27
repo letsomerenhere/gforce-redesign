@@ -1,0 +1,967 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GForce Technology Consulting</title>
+  <link rel="icon" type="image/png" href="img/logo/favicon.png" sizes="32x32">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+<body>
+
+  <header class="site-header" role="banner">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html" aria-label="Go to home">
+        <img src="img/logo/logo-header.png" alt="GForce Logo" class="logo-light">
+        <img src="img/logo/logo-header-white.png" alt="GForce Logo White" class="logo-dark">
+      </a>  
+      
+      <!-- Primary Nav -->
+      <nav class="nav" aria-label="Primary">
+        <ul class="menu-root">
+        
+          <li class="has-panel">
+            <a class="top-link" href="what-we-do.html">What We Do</a>
+            <div class="dropdown-panel">
+              <ul class="simple-list">
+                <li><a href="what-we-do.html#infor">Infor Lawson Upgrade</a></li>
+                <li><a href="what-we-do.html#cloudsuite">CloudSuite Implementation</a></li>
+                <li><a href="what-we-do.html#managed-cloudsuite">Managed Services CloudSuite</a></li>
+                <li><a href="what-we-do.html#managed-lawson">Managed Services <br>Infor Lawson</a></li>
+                <li><a href="what-we-do.html#health">Health Check &amp; Roadmap</a></li>
+                <li><a href="what-we-do.html#PMO">PMO Services</a></li>
+                <li><a href="what-we-do.html#change">Change Management &amp; Training</a></li>
+              </ul>
+            </div>
+          </li>
+  
+          <li class="has-panel">
+            <a class="top-link" href="industries.html">Industries</a>
+            <div class="dropdown-panel">
+              <ul class="simple-list">
+                <li><a href="industries.html#healthcare">Healthcare</a></li>
+                <li><a href="industries.html#public">Public Sector</a></li>
+                <li><a href="industries.html#utilities">Utilities</a></li>
+                <li><a href="industries.html#transportation">Transportation &amp; Logistics</a></li>
+                <li><a href="industries.html#professional">Professional Services</a></li>
+                <li><a href="industries.html#retail">Retail</a></li>
+              </ul>
+            </div>
+          </li>
+  
+          <li><a class="top-link" href="partnership.html">Infor Partnership</a></li>
+  
+          <li class="has-panel">
+            <a class="top-link" href="what-we-know.html">What We Know</a>
+            <div class="dropdown-panel">
+              <ul class="simple-list">
+                <li><a href="what-we-know.html#case-studies">Case Studies</a></li>
+                <li><a href="what-we-know.html#articles">Articles</a></li>
+                <li><a href="what-we-know.html#gforce-resources">GForce Resource</a></li>
+              </ul>
+            </div>
+          </li>
+  
+          <li class="has-panel">
+            <a class="top-link" href="who-we-are.html">Who We Are</a>
+            <div class="dropdown-panel">
+              <ul class="simple-list">
+                <li><a href="who-we-are.html#story">Our Story</a></li>
+                <li><a href="who-we-are.html#leadership">Leadership</a></li>
+                <li><a href="careers.html">Careers</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+  
+      <!-- CTA -->
+      <a href="contact.html" class="button">
+        Contact Us
+      </a>
+
+      <button class="hamburger" id="navToggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+<!-- Hero -->
+<section class="home-hero">
+  <div class="hero-carousel" id="heroCarousel">
+    <div class="slide">
+      <img src="img/home/hero-1.webp" alt="Team collaborating">
+      <div class="home-hero-overlay">
+        <div class="container">
+          <h1>Where <span style="color: #C0111F;">Collaboration</span><br>Becomes Standard.</h1>
+          <p class="lead">Together We Unlock Whats Next.</p>
+          <a href="what-we-do.html" class="button">
+            Learn More
+            <span class="material-symbols-outlined arrow-icon">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="slide">
+      <img src="img/home/hero-2.webp" alt="Data visualization screen">
+      <div class="home-hero-overlay">
+        <div class="container">
+          <h1>Consultants Who’ve
+            <br>Sat in Your Chair.</h1>
+          <p class="lead">Experience that fuels transformation.</p>
+          <a href="what-we-do.html" class="button">
+            Learn More
+            <span class="material-symbols-outlined arrow-icon">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="slide">
+      <img src="img/home/hero-3.webp" alt="Warehouse operations">
+      <div class="home-hero-overlay">
+        <div class="container">
+
+          <h1>This is What Real <br>Consulting Feels Like.</h1>
+          <p class="lead">Clarity. Confidence. Results. </p>
+          <a href="what-we-do.html" class="button">
+            Learn More
+            <span class="material-symbols-outlined arrow-icon">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button type="button" class="hero-btn prev" id="heroPrev" aria-label="Previous">
+    <i class="fa" style="font-size:50px" aria-hidden="true">&#xf104;</i>
+  </button>
+  <button type="button" class="hero-btn next" id="heroNext" aria-label="Next">
+    <i class="fa" style="font-size:50px" aria-hidden="true">&#xf105;</i>
+  </button>
+
+  <div class="hero-dots" id="heroDots" aria-label="Slide navigation"></div>
+</section>
+
+<!-- Wht We Know -->
+<section class="wwk" data-theme="dark" aria-labelledby="wwk-title">
+  <div class="container wwk-split">
+
+    <!-- LEFT: Title, Subtext, Footer -->
+    <div class="wwk-left">
+      <header class="wwk-head">
+        <h2 id="wwk-title">
+          GForce is Where <span style="color: #C0111F;">Transformation</span> Begins.
+        </h2>
+        <p class="wwk-sub">
+          We guide organizations through their most critical financial and operational shifts,
+          blending deep Infor Lawson expertise with proven CloudSuite FSM, HCM and WFM leadership.
+          Our team of seasoned consultants stands beside you, turning complexity into clarity and challenges into opportunities.
+        </p>
+      </header>
+
+      <aside class="wwk-sub">
+        <p>
+          With GForce, you gain a partner and momentum. <br>
+          We unlock system potential, strengthen teams, and lay the foundation for lasting growth.
+        </p>
+      </aside>
+    </div>
+
+    <!-- RIGHT: Hover Cards -->
+    <div class="wwk-right">
+      <div class="hc-grid">
+        <!-- Card 1 -->
+        <article class="hc-card" tabindex="0" aria-labelledby="hc1-title">
+          <figure class="hc-media">
+            <img src="img/home/epr-services.avif" alt="Modern workspace with team collaborating">
+            <figcaption class="hc-credit">Image by Andreas Brücker</figcaption>
+          </figure>
+          <div class="hc-label">
+            <h3 class="hc-heading" id="hc1-title">ERP Services</h3>
+          </div>
+          <div class="hc-overlay" aria-hidden="false">
+            <ul class="hc-list">
+              <li>Infor CloudSuite Implementation <br>in FSM, WFM, and HCM</li>
+              <li>Infor Lawson Upgrades</li>
+              <li>Managed Service Support</li>
+              <li>Optimization Projects</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="hc-card" tabindex="0" aria-labelledby="hc2-title">
+          <figure class="hc-media">
+            <img src="img/home/industries.avif" alt="City logistics scene">
+            <figcaption class="hc-credit">Image by Jason Leung</figcaption>
+          </figure>
+          <div class="hc-label">
+            <h3 class="hc-heading" id="hc2-title">Industries</h3>
+          </div>
+          <div class="hc-overlay" aria-hidden="false">
+            <p class="hc-eyebrow">Deep expertise in:</p>
+            <ul class="hc-list two-col">
+              <li>Healthcare</li>
+              <li>Public Sector</li>
+              <li>Transportation &amp; Logistics</li>
+              <li>Professional Services</li>
+              <li>Utilities</li>
+              <li>Retail</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="hc-card" tabindex="0" aria-labelledby="hc3-title">
+          <figure class="hc-media">
+            <img src="img/home/additional-services.webp" alt="Team planning with sticky notes">
+          </figure>
+          <div class="hc-label">
+            <h3 class="hc-heading" id="hc3-title">Additional Services</h3>
+          </div>
+          <div class="hc-overlay" aria-hidden="false">
+            <ul class="hc-list">
+              <li>Health Check</li>
+              <li>Roadmap Development</li>
+              <li>PMO Services</li>
+              <li>Change Management</li>
+              <li>Training</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="split-slideshow" id="splitShow" aria-label="Success Stories">
+  <div class="container">
+    <header class="split-head">
+      <h2 class="split-title">Success Stories.</h2>
+      <p class="split-sub">Bringing focus, speed, execution and results when it matters most.</p>
+    </header>
+
+    <div class="split-wrap">
+      <!-- Left: Image Slideshow -->
+      <figure class="split-media">
+        <div class="img-viewport">
+          <div class="img-slide active">
+            <img src="img/home/grocers.webp" alt="Associated Grocers of Baton Rouge">
+          </div>
+          <div class="img-slide">
+            <img src="img/home/national-travel.webp" alt="National Travel Center">
+          </div>
+          <div class="img-slide">
+            <img src="img/home/seacube.webp" alt="SeaCube Container">
+          </div>
+        </div>
+      </figure>
+
+      <!-- Right: Text Slideshow -->
+      <div class="split-content">
+        <div class="text-viewport">
+          <!-- Slide 1 -->
+          <article class="text-slide">
+            <h3 class="text-title">National Travel Center Operator</h3>
+            <p class="text-desc">One of the <strong>largest U.S. operators of truck stops and travel centers</strong> partnered with GForce to modernize after more than 30 years on Lawson. By upgrading to Infor CloudSuite FSM, reengineering business processes, cleansing decades of data, and training over 200 users, <strong>GForce delivered</strong> one of the largest <strong>Lawson-to-FSM migrations in the industry.</strong></p>
+            <p class="text-desc">The Result: a <strong>financial close cut from 20 days to 8, real-time reporting, seamless integrations,</strong> and <strong>full SOX compliance</strong> aligned with <strong>IPO readiness.</strong></p></p>
+            <a class="text-cta" href="case-studies/national-travel-center.html">
+              Learn more 
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+          </article>
+
+          <!-- Slide 2 -->
+          <article class="text-slide">
+            <h3 class="text-title">SeaCube</h3>
+            <p class="text-desc"><strong>SeaCube</strong>, one of the world’s largest purchasers and lessors of refrigerated containers, <strong>upgraded from Infor Lawson to CloudSuite FSM</strong> with GForce. The project <strong>modernized</strong> core processes, integrated a data lake, and eliminated reliance on outdated reporting tools. With strong user adoption from day one, SeaCube gained a modern, cloud-based platform that <strong>streamlined operations, improved reporting,</strong> and <strong>reduced</strong> the need for <strong>third-party applications.</strong></p>
+            <a class="text-cta" href="case-studies/seacube.html">
+              Learn more 
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+          </article>
+          <!-- Slide 3 -->
+
+        <article class="text-slide active">
+          <h3 class="text-title">Associated Grocers of Baton Rouge</h3>
+          <p class="text-desc">GForce Technology is pleased to announce its selection as implementation partner for <strong>Associated Grocers of Baton Rouge's (AGBR)</strong> upgrade to <strong>Infor CloudSuite Financials & Supply Chain Management (FSM).</strong></p>
+            <p class="text-desc"> As a long-time Lawson/Infor user, AGBR sought a partner capable of harnessing innovative features while managing their legacy system transition and comprehensive data migration requirements.</p>
+          <a class="text-cta" href="case-studies/agbr.html">
+            Learn more 
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+        </article>
+        </div>
+
+        <!-- Navigation Controls -->
+        <div class="split-controls">
+          <button type="button" class="control-btn prev" id="splitPrev" aria-label="Previous story">
+            <span class="material-symbols-outlined">arrow_back</span>
+          </button>
+          
+          <div class="split-dots" id="splitDots"></div>
+          
+          <button type="button" class="control-btn next" id="splitNext" aria-label="Next story">
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= Our Progress in Numbers ======= -->
+<section class="stats-lite" id="stats" data-theme="light" aria-labelledby="stats-title">
+  <div class="container stats-lite__wrap">
+
+    <header class="split-head">
+      <h2 class="split-title">Our Progress in Numbers.</h2>
+      <p class="split-sub">Commitment to Our Clients.</p>
+    </header>
+
+    <div class="stats-lite__grid">
+      <!-- 50% ring -->
+      <article class="stat-lite stat-lite--ring">
+        <div class="ring" aria-hidden="true">
+          <svg viewBox="0 0 120 120" class="ring__svg">
+            <circle class="ring__track" cx="60" cy="60" r="52"/>
+            <!-- set --val to the percent; no JS -->
+            <circle class="ring__progress" cx="60" cy="60" r="52" style="--val:50"/>
+          </svg>
+          <div class="ring__center">
+            <span class="stat-lite__num">50%</span>
+          </div>
+        </div>
+        <h3 class="stat-lite__title">Consultants are Former Infor Users</h3>
+      </article>
+
+      <!-- 14+ plain KPI -->
+      <article class="stat-lite">
+        <div class="kpi">
+          <span class="stat-lite__num">14+</span>
+        </div>
+        <h3 class="stat-lite__title">Average Years of Infor Experience</h3>
+      </article>
+
+      <!-- 85% ring -->
+      <article class="stat-lite stat-lite--ring">
+        <div class="ring" aria-hidden="true">
+          <svg viewBox="0 0 120 120" class="ring__svg">
+            <circle class="ring__track" cx="60" cy="60" r="52"/>
+            <circle class="ring__progress" cx="60" cy="60" r="52" style="--val:85"/>
+          </svg>
+          <div class="ring__center">
+            <span class="stat-lite__num">85%</span>
+          </div>
+        </div>
+        <h3 class="stat-lite__title">Leadership Roles Held by Women</h3>
+      </article>
+
+      <!-- 22+ plain KPI -->
+      <article class="stat-lite">
+        <div class="kpi">
+          <span class="stat-lite__num">22+</span>
+        </div>
+        <h3 class="stat-lite__title">Average Years in Project Management</h3>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Voices Grid -->
+<section class="voices-grid" aria-labelledby="voicesGridTitle" data-theme="light">
+  <div class="container">
+    <header class="split-head">
+      <h2 class="split-title">Insights That Drive Results.</h2>
+      <p class="split-sub" style="text-transform: uppercase;">Discover the power of experience.</p>
+    </header>
+
+    <div class="q-grid">
+      <!-- Row 1 -->
+      <div class="q-row">
+        <article class="q-card">
+          <blockquote class="q-text"><span class="q-mark">“</span>
+            We’re very agile, and understand the problems businesses face in a different way than software companies because we've spent our careers working with Infor software.
+          </blockquote>
+          <footer class="q-meta">
+            <div class="q-name">David Simpson</div>
+            <div class="q-title">Senior Consultant</div>
+          </footer>
+        </article>
+
+        <article class="q-card">
+          <blockquote class="q-text"><span class="q-mark">“</span>
+            GForce transforms the way people work. We're not just about implementing software. We think deeper and deliver real change.
+          </blockquote>
+          <footer class="q-meta">
+            <div class="q-name">Greg Gotlin</div>
+            <div class="q-title">Managing Partner</div>
+          </footer>
+        </article>
+
+        <article class="q-card">
+          <blockquote class="q-text"><span class="q-mark">“</span>
+            Having someone understand your business and guide you to make better decisions, versus just doing what you think you want, is incredibly valuable.
+          </blockquote>
+          <footer class="q-meta">
+            <div class="q-name">Ashley Charlton</div>
+            <div class="q-title">Managing Director</div>
+          </footer>
+        </article>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="q-row">
+        <article class="q-card">
+          <blockquote class="q-text"><span class="q-mark">“</span>
+            The projects that are the most successful are the ones where executive leadership wants this to happen and makes quick decisions.
+          </blockquote>
+          <footer class="q-meta">
+            <div class="q-name">Mandy Cavaliere</div>
+            <div class="q-title">Senior Partner</div>
+          </footer>
+        </article>
+
+        <article class="q-card">
+          <blockquote class="q-text"><span class="q-mark">“</span>
+            Real people that care about the work we do, the outcome, and ensuring strong collaboration throughout the entire process.
+          </blockquote>
+          <footer class="q-meta">
+            <div class="q-name">Laura Cocat</div>
+            <div class="q-title">Operations Manager</div>
+          </footer>
+        </article>
+
+        <article class="q-card">
+          <blockquote class="q-text"><span class="q-mark">“</span>
+            We offer solutions based on our client’s level of expertise and resources. If they don’t have technical people, we train them on user-friendly tools.
+          </blockquote>
+          <footer class="q-meta">
+            <div class="q-name">Kim Ton</div>
+            <div class="q-title">Senior Consultant</div>
+          </footer>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="signup-section dark">
+  <div class="signup-content">
+    <h2>Transformation Starts Here.<br><span>Don’t Miss the First Step.</span></h2>
+
+    <a href="contact.html" class="signup-link">
+      Contact Us
+      <span class="material-symbols-outlined arrow-icon">arrow_forward</span>
+    </a>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-top">
+    <!-- Logo -->
+    <a href="index.html" class="footer-logo">
+      <img src="img/logo/logo-footer.png" alt="GForce Logo" height="40">
+    </a>
+
+    <!-- Footer Navigation -->
+    <div class="footer-sections">
+      <!-- What We Do -->
+      <div class="footer-col">
+        <h4 class="footer-heading">What We Do</h4>
+        <ul>
+          <li><a href="what-we-do.html#infor">Upgrade Infor Lawson</a></li>
+          <li><a href="what-we-do.html#cloudsuite">Net New Implementation</a></li>
+          <li><a href="what-we-do.html#managed-services">Managed Services</a></li>
+        </ul>
+      </div>
+
+      <!-- More About Us -->
+      <div class="footer-col">
+        <h4 class="footer-heading">More About Us</h4>
+        <ul>
+          <li><a href="what-we-know.html#case-studies">Success Stories</a></li>
+          <li><a href="partnership.html">Infor Partnership</a></li>
+          <li><a href="who-we-are.html">About Us</a></li>
+          <li><a href="careers.html">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container footer-bottom">
+    <p><i class="fa fa-copyright"></i> 2025 GForce Technology Consulting. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script defer>
+  // Scroll Animations for Homepage
+document.addEventListener('DOMContentLoaded', () => {
+  
+  // ===== 1. HOVER CARDS ANIMATION (hc-card) =====
+  const hoverCards = document.querySelectorAll('.hc-card');
+  
+  if (hoverCards.length) {
+    hoverCards.forEach(card => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(40px)';
+      card.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+    });
+
+    const hcObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          // Stagger animation
+          setTimeout(() => {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }, index * 200); // 200ms delay between cards
+          
+          hcObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      root: null,
+      rootMargin: '0px 0px -100px 0px',
+      threshold: 0.1
+    });
+
+    hoverCards.forEach(card => hcObserver.observe(card));
+  }
+
+  // ===== 2. FEATURE CARDS ANIMATION (feat-card) =====
+  const featureCards = document.querySelectorAll('.feat-card');
+  
+  if (featureCards.length) {
+    featureCards.forEach(card => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(40px)';
+      card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    });
+
+    const featObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }, index * 150);
+          
+          featObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      root: null,
+      rootMargin: '0px 0px -80px 0px',
+      threshold: 0.15
+    });
+
+    featureCards.forEach(card => featObserver.observe(card));
+  }
+
+  // ===== 3. WWK SECTION (What We Know left content) =====
+  const wwkLeft = document.querySelector('.wwk-left');
+  
+  if (wwkLeft) {
+    wwkLeft.style.opacity = '0';
+    wwkLeft.style.transform = 'translateX(-40px)';
+    wwkLeft.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+
+    const wwkObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateX(0)';
+          wwkObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.2
+    });
+
+    wwkObserver.observe(wwkLeft);
+  }
+
+
+});
+</script>
+
+    
+  <script>
+// Hero Carousel JavaScript with Slide Transition
+document.addEventListener('DOMContentLoaded', function() {
+  const carousel = document.getElementById('heroCarousel');
+  const slides = carousel.querySelectorAll('.slide');
+  const prevBtn = document.getElementById('heroPrev');
+  const nextBtn = document.getElementById('heroNext');
+  const dotsContainer = document.getElementById('heroDots');
+  
+  let currentSlide = 0;
+  let autoplayInterval;
+  const autoplayDelay = 5000;
+
+  // Create dots
+  slides.forEach((_, index) => {
+    const dot = document.createElement('button');
+    dot.classList.add('dot');
+    dot.setAttribute('aria-label', `Go to slide ${index + 1}`);
+    if (index === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => goToSlide(index));
+    dotsContainer.appendChild(dot);
+  });
+
+  const dots = dotsContainer.querySelectorAll('.dot');
+
+  function updateSlides(direction = 'next') {
+    slides.forEach((slide, index) => {
+      slide.classList.remove('active', 'exit-left');
+      
+      if (index === currentSlide) {
+        slide.classList.add('active');
+      }
+    });
+
+    dots.forEach((dot, index) => {
+      dot.classList.remove('active');
+      if (index === currentSlide) {
+        dot.classList.add('active');
+      }
+    });
+  }
+
+  function nextSlide() {
+    const prevSlideIndex = currentSlide;
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[prevSlideIndex].classList.add('exit-left');
+    updateSlides('next');
+  }
+
+  function prevSlide() {
+    const prevSlideIndex = currentSlide;
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    slides[prevSlideIndex].classList.add('exit-left');
+    updateSlides('prev');
+  }
+
+  function goToSlide(index) {
+    if (index === currentSlide) return;
+    const prevSlideIndex = currentSlide;
+    currentSlide = index;
+    slides[prevSlideIndex].classList.add('exit-left');
+    updateSlides();
+    resetAutoplay();
+  }
+
+  function startAutoplay() {
+    autoplayInterval = setInterval(nextSlide, autoplayDelay);
+  }
+
+  function stopAutoplay() {
+    clearInterval(autoplayInterval);
+  }
+
+  function resetAutoplay() {
+    stopAutoplay();
+    startAutoplay();
+  }
+
+  // Event listeners
+  nextBtn.addEventListener('click', () => {
+    nextSlide();
+    resetAutoplay();
+  });
+
+  prevBtn.addEventListener('click', () => {
+    prevSlide();
+    resetAutoplay();
+  });
+
+  // Pause autoplay on hover
+  carousel.addEventListener('mouseenter', stopAutoplay);
+  carousel.addEventListener('mouseleave', startAutoplay);
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') {
+      prevSlide();
+      resetAutoplay();
+    } else if (e.key === 'ArrowRight') {
+      nextSlide();
+      resetAutoplay();
+    }
+  });
+
+  // // Touch/swipe support
+  // let touchStartX = 0;
+  // let touchEndX = 0;
+
+  // carousel.addEventListener('touchstart', (e) => {
+  //   touchStartX = e.changedTouches[0].screenX;
+  // });
+
+  // carousel.addEventListener('touchend', (e) => {
+  //   touchEndX = e.changedTouches[0].screenX;
+  //   handleSwipe();
+  // });
+
+  // function handleSwipe() {
+  //   if (touchEndX < touchStartX - 50) {
+  //     nextSlide();
+  //     resetAutoplay();
+  //   }
+  //   if (touchEndX > touchStartX + 50) {
+  //     prevSlide();
+  //     resetAutoplay();
+  //   }
+  // }
+
+  slides[0].classList.add('active');
+updateSlides();
+startAutoplay();
+});
+
+</script>
+
+<script>
+  (() => {
+    const acc = document.querySelector('.know-right');
+    if (!acc) return;
+  
+    const items = [...acc.querySelectorAll('.acc-item')];
+  
+    function setOpen(item, open){
+      const btn   = item.querySelector('.acc-trigger');
+      const panel = item.querySelector('.acc-panel');
+      if (!btn || !panel) return;
+  
+      // update aria + hidden
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      panel.hidden = !open;
+  
+      // height animation
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!reduce) {
+        const start = open ? 0 : panel.scrollHeight;
+        const end   = open ? panel.scrollHeight : 0;
+        panel.style.height = start + 'px';
+        // force reflow
+        panel.offsetHeight;
+        panel.style.transition = 'height .22s ease';
+        panel.style.height = end + 'px';
+        panel.addEventListener('transitionend', () => {
+          panel.style.height = '';
+          panel.style.transition = '';
+        }, { once:true });
+      }
+  
+      item.classList.toggle('is-open', open);
+    }
+  
+    // initialize closed
+    items.forEach(it => setOpen(it, false));
+  
+    // toggle on click; keep one open at a time
+    acc.addEventListener('click', (e) => {
+      const btn = e.target.closest('.acc-trigger');
+      if (!btn) return;
+      const item = btn.closest('.acc-item');
+      const isOpen = item.classList.contains('is-open');
+  
+      // close others
+      items.forEach(it => { if (it !== item) setOpen(it, false); });
+      // toggle this one
+      setOpen(item, !isOpen);
+    });
+  
+    // keyboard: enter/space handled by button default; arrow nav between headers
+    acc.addEventListener('keydown', (e) => {
+      const btns = [...acc.querySelectorAll('.acc-trigger')];
+      const i = btns.indexOf(document.activeElement);
+      if (i < 0) return;
+      if (e.key === 'ArrowDown') { e.preventDefault(); btns[(i+1)%btns.length].focus(); }
+      if (e.key === 'ArrowUp')   { e.preventDefault(); btns[(i-1+btns.length)%btns.length].focus(); }
+    });
+  })();
+  </script>
+  
+  
+
+<script>
+// Split Slideshow JavaScript
+document.addEventListener('DOMContentLoaded', function() {
+  const imgSlides = document.querySelectorAll('.img-slide');
+  const textSlides = document.querySelectorAll('.text-slide');
+  const prevBtn = document.getElementById('splitPrev');
+  const nextBtn = document.getElementById('splitNext');
+  const dotsContainer = document.getElementById('splitDots');
+  
+  let currentSlide = 0;
+  let autoplayInterval;
+  const autoplayDelay = 8000; // 6 seconds
+
+  // Create dots
+  textSlides.forEach((_, index) => {
+    const dot = document.createElement('button');
+    dot.classList.add('split-dot');
+    dot.setAttribute('aria-label', `Go to story ${index + 1}`);
+    if (index === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => goToSlide(index));
+    dotsContainer.appendChild(dot);
+  });
+
+  const dots = dotsContainer.querySelectorAll('.split-dot');
+
+  function updateSlides() {
+    // Update image slides
+    imgSlides.forEach((slide, index) => {
+      slide.classList.remove('active');
+      if (index === currentSlide) {
+        slide.classList.add('active');
+      }
+    });
+
+    // Update text slides
+    textSlides.forEach((slide, index) => {
+      slide.classList.remove('active');
+      if (index === currentSlide) {
+        slide.classList.add('active');
+      }
+    });
+
+    // Update dots
+    dots.forEach((dot, index) => {
+      dot.classList.remove('active');
+      if (index === currentSlide) {
+        dot.classList.add('active');
+      }
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % textSlides.length;
+    updateSlides();
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + textSlides.length) % textSlides.length;
+    updateSlides();
+  }
+
+  function goToSlide(index) {
+    currentSlide = index;
+    updateSlides();
+    resetAutoplay();
+  }
+
+  function startAutoplay() {
+    autoplayInterval = setInterval(nextSlide, autoplayDelay);
+  }
+
+  function stopAutoplay() {
+    clearInterval(autoplayInterval);
+  }
+
+  function resetAutoplay() {
+    stopAutoplay();
+    startAutoplay();
+  }
+
+  // Event listeners
+  nextBtn.addEventListener('click', () => {
+    nextSlide();
+    resetAutoplay();
+  });
+
+  prevBtn.addEventListener('click', () => {
+    prevSlide();
+    resetAutoplay();
+  });
+
+  // Pause autoplay on hover
+  const splitSection = document.getElementById('splitShow');
+  splitSection.addEventListener('mouseenter', stopAutoplay);
+  splitSection.addEventListener('mouseleave', startAutoplay);
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') {
+      prevSlide();
+      resetAutoplay();
+    } else if (e.key === 'ArrowRight') {
+      nextSlide();
+      resetAutoplay();
+    }
+  });
+
+  // Initialize
+  updateSlides();
+  startAutoplay();
+});
+  </script>
+<script>
+  (() => {
+    const statsSection = document.querySelector('.stats-lite');
+    if (!statsSection) return;
+  
+    const statItems = statsSection.querySelectorAll('.stat-lite');
+    const counters = statsSection.querySelectorAll('.stat-lite__num');
+    let triggered = false;
+  
+    // Animate number up to target, keeping % or + symbols
+    const countUp = (el, target, suffix) => {
+      const duration = 1500;
+      const start = performance.now();
+  
+      const update = now => {
+        const progress = Math.min((now - start) / duration, 1);
+        const value = Math.floor(progress * target);
+        el.textContent = value + suffix;
+        if (progress < 1) requestAnimationFrame(update);
+      };
+      requestAnimationFrame(update);
+    };
+  
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !triggered) {
+          triggered = true;
+  
+          // Fade in / slide animation
+          statItems.forEach(item => item.classList.add('animate'));
+  
+          // Delay ring fill a bit
+          setTimeout(() => {
+            statsSection.querySelectorAll('.stat-lite--ring').forEach(r => r.classList.add('animate'));
+          }, 300);
+  
+          // Start count animation
+          counters.forEach(el => {
+            const raw = el.textContent.trim();
+            const suffix = raw.match(/[%+]/g)?.join('') || '';
+            const num = parseFloat(raw);
+            if (!isNaN(num)) countUp(el, num, suffix);
+          });
+        }
+      });
+    }, { threshold: 0.3 });
+  
+    observer.observe(statsSection);
+  })();
+  </script>
+
+  <script src="main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,665 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>What We Do | GForce Technology Consulting</title>
+  <link rel="icon" type="image/png" href="img/logo/favicon.png" sizes="32x32">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="resources.css">
+  <style>
+.what-we-do-wrap .container,
+.res-section .container {
+  width: min(1250px, 100%);
+  margin-inline: auto; 
+  padding-inline: 1rem; 
+  padding: 3rem 0;
+
+}
+
+@media (max-width: 768px) {
+  .what-we-do-wrap .container,
+  .res-section .container {
+    padding-inline: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .what-we-do-wrap .container,
+  .res-section .container {
+    padding-inline: 1rem;
+  }
+}
+.hero {
+      position: relative;
+      min-height: 40vh;
+    }
+    
+    .hero-media {
+      position: absolute;
+      inset: 0;  
+      z-index: 0;
+      background-image: var(--hero-img);
+      background-size: cover;
+      background-position: center 40%;
+      background-repeat: no-repeat;
+    }
+    
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 1; 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 8%;
+      color: #fff;
+      background: rgba(0,0,0,.5);
+      
+    }
+
+    .hero-eyebrow {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 600;
+      font-size: clamp(0.8rem, 2vw, 0.95rem);
+      letter-spacing: 0.08em;
+      text-transform: capitalize;
+      color: #fff;
+      opacity: 0.85;
+      margin-bottom: 0.5rem;
+    }
+    
+    .hero-overlay h1 {
+      text-transform: capitalize;
+      font-size: clamp(2rem, 8vw, 3rem);
+      margin: 0 0 0.75rem;
+      font-family: Arial, Helvetica, sans-serif;
+      opacity: .9;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+      line-height: 1.2;
+    }
+.hero-overlay .button {
+  display: inline-block;
+  padding: 0.875rem 2rem;
+  background: #C0111F;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 500;
+  display: inline-flex;
+align-items: center;
+opacity: .8;
+  font-size: .9rem;
+  transition: background 0.3s ease;
+}
+
+.hero-overlay .button:hover {
+  background: #7A0C15;
+}
+
+.hero-overlay .button .arrow-icon {
+font-size: 20px;
+transition: transform 0.3s ease;
+}
+
+.hero-overlay .button:hover .arrow-icon {
+transform: rotate(90deg);
+}
+
+@media (max-width: 768px) {
+      .hero {
+        min-height: 35vh;
+      }
+
+    
+      .hero-overlay {
+        padding: 5%;
+        padding-bottom: 2rem;
+      }
+
+      .hero-box {
+        padding: 0;
+      }
+    
+      .hero-overlay h1 {
+        font-size: 2rem;
+      }
+      
+      .hero-overlay .lead {
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+      }
+    
+      .hero-eyebrow {
+        font-size: 0.7rem;
+        margin-bottom: 0.35rem;
+      }
+      .hero-overlay .button {
+        padding: 0.5rem 1rem;
+        font-size: .7rem;
+      }
+
+    }
+    
+    
+    /* ===== VERY SMALL MOBILE (max 480px) ===== */
+    @media (max-width: 480px) {
+      .hero {
+        min-height: 30vh;
+      }
+    
+      .hero-overlay {
+        padding: 0 1.25rem;
+        padding-bottom: 1.5rem;
+      }
+    
+      .hero-overlay h1 {
+        font-size: 1.5rem;
+      }
+      
+      .hero-overlay .lead {
+        font-size: .8rem;
+        line-height: 1.1rem;
+      }
+      .hero-overlay .button {
+        padding: 0.4rem .5rem;
+        font-size: .7rem;
+      }
+
+    }
+    
+    /* ===== VERY SMALL MOBILE (max 360px) ===== */
+    @media (max-width: 360px) {
+      .hero-overlay {
+        padding: 0 1rem;
+      }
+    }
+
+    .industries-wrap .container,
+.res-section .container {
+  width: min(1250px, 100%);
+  margin-inline: auto; 
+  padding-inline: 1rem; 
+  padding: 3rem 0;
+}
+
+
+/* .res-section {
+  padding-block:2rem;
+} */
+.res-grid {
+  display: grid;
+  grid-template-columns:.9fr 1.3fr;
+  gap:3rem;
+}
+
+.res-label-wrap,
+.res-cards { min-width: 0; }
+
+/* .res-label {
+  hyphens: auto;
+} */
+.res-card--text {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  /* border: 1px solid rgba(255,255,255,0.10); */
+  border-radius: 14px;
+  color: white;
+  /* background: rgba(255,255,255,0.03); */
+  padding-right: 2rem;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.res-card--text:hover {
+  /* background: rgba(255,255,255,0.06); */
+  border-color: rgba(255,255,255,0.2);
+}
+
+/* Icon styling */
+.res-card--text .icon {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+  /* filter: invert(1); */
+}
+
+/* Text */
+.res-card--text p {
+  margin: 0;
+  color: white;
+  line-height: 1.7;
+  font-size: 1.2rem;
+  font-family: 'Manrope', sans-serif;
+}
+
+/* Tablet breakpoint */
+@media (max-width: 991px) {
+  .res-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  
+  .res-label-wrap {
+    position: relative;
+  }
+  .industries-wrap .container,
+  .res-section .container {
+    padding-inline: 2rem;
+    width: auto;
+  }
+  
+  .res-label {
+    position: static;
+    font-size: clamp(2rem, 7vw, 2.5rem);
+    margin-bottom: 1rem;
+  }
+  
+  .res-section {
+    padding-block: clamp(24px, 5vw, 48px);
+  }
+}
+
+/* Mobile breakpoint */
+@media (max-width: 767px) {
+  .resources-wrap .container,
+  .res-section .container {
+    padding-inline: 1.3rem;
+    width: auto;
+  }
+  
+  .res-grid {
+    gap: 1.5rem;
+  }
+  
+  .res-label {
+    font-size: 1.75rem;
+  }
+  
+  .res-cards {
+    gap: 1rem;
+  }
+  
+  .res-card-body {
+    padding: 0.875rem;
+  }
+  
+  .res-card--text p {
+    font-size: .9rem;
+  }
+  .res-card--text {
+    display: block;
+  }
+  
+  .res-card-title {
+    font-size: 1.1rem;
+  }
+  
+  .res-card-desc {
+    font-size: 0.9rem;
+  }
+  
+  .eyebrow {
+    font-size: 0.7rem;
+  }
+
+}
+
+/* Small mobile breakpoint */
+@media (max-width: 480px) {
+  .res-label {
+    font-size: 1.7rem;
+  }
+  
+  .res-card-title {
+    font-size: 1.3rem;
+  }
+  
+  .res-card-desc {
+    font-size: 0.85rem;
+  }
+  
+}
+
+
+  </style>
+</head>
+
+<body>
+  <header class="site-header" role="banner">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html" aria-label="Go to home">
+        <img src="img/logo/logo-header.png" alt="GForce Logo" class="logo-light">
+        <img src="img/logo/logo-header-white.png" alt="GForce Logo White" class="logo-dark">
+      </a>
+  
+      <!-- Primary Nav -->
+      <nav class="nav" aria-label="Primary">
+        <ul class="menu-root">
+        
+          <li class="has-panel">
+            <a class="top-link" href="what-we-do.html">What We Do</a>
+            <div class="dropdown-panel">
+              <ul class="simple-list">
+                <li><a href="what-we-do.html#infor">Infor Lawson Upgrade</a></li>
+                <li><a href="what-we-do.html#cloudsuite">CloudSuite Implementation</a></li>
+                <li><a href="what-we-do.html#managed-cloudsuite">Managed Services CloudSuite</a></li>
+                <li><a href="what-we-do.html#managed-lawson">Managed Services <br>Infor Lawson</a></li>
+                <li><a href="what-we-do.html#health">Health Check &amp; Roadmap</a></li>
+                <li><a href="what-we-do.html#PMO">PMO Services</a></li>
+                <li><a href="what-we-do.html#change">Change Management &amp; Training</a></li>
+              </ul>
+            </div>
+          </li>
+  
+          <li class="has-panel">
+            <a class="top-link" href="industries.html">Industries</a>
+            <div class="dropdown-panel">
+              <ul class="simple-list">
+                <li><a href="industries.html#healthcare">Healthcare</a></li>
+                <li><a href="industries.html#public">Public Sector</a></li>
+                <li><a href="industries.html#utilities">Utilities</a></li>
+                <li><a href="industries.html#transportation">Transportation &amp; Logistics</a></li>
+                <li><a href="industries.html#professional">Professional Services</a></li>
+                <li><a href="industries.html#retail">Retail</a></li>
+              </ul>
+            </div>
+          </li>
+  
+          <li><a class="top-link" href="partnership.html">Infor Partnership</a></li>
+  
+          <li class="has-panel">
+            <a class="top-link" href="what-we-know.html">What We Know</a>
+            <div class="dropdown-panel">
+              <ul class="simple-list">
+                <li><a href="what-we-know.html#case-studies">Case Studies</a></li>
+                <li><a href="what-we-know.html#articles">Articles</a></li>
+                <li><a href="what-we-know.html#gforce-resources">GForce Resource</a></li>
+              </ul>
+            </div>
+          </li>
+  
+          <li class="has-panel">
+            <a class="top-link" href="who-we-are.html">Who We Are</a>
+            <div class="dropdown-panel">
+              <ul class="simple-list">
+                <li><a href="who-we-are.html#story">Our Story</a></li>
+                <li><a href="who-we-are.html#leadership">Leadership</a></li>
+                <li><a href="careers.html">Careers</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+  
+      <!-- CTA -->
+      <a href="contact.html" class="button">
+        Contact Us
+      </a>
+
+      <button class="hamburger" id="navToggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="what-we-do" class="what-we-do-wrap">
+
+    <section class="hero hero-parallax" style="height: 40vh;" id="hero">
+      <div class="hero-media" style="--hero-img: url('img/what-we-do/what-we-do.webp');"></div>
+      <div class="hero-overlay">
+          <div class="container">
+            <p class="hero-eyebrow">Smart People Solving Hard Problems.</p>
+            <h1>We Get You to Done.</span></h1>
+            <a href="what-we-know.html" class="button">
+              Our Insights<span class="material-symbols-outlined arrow-icon">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+    </section>
+  
+    <!-- Infor Lawson to CloudSuite -->
+    <section id="infor" class="res-section" data-theme="dark" data-label="Infor Lawson to CloudSuite" aria-labelledby="infor-label">
+      <div class="res-grid container">
+        <div class="res-label-wrap">
+          <h2 id="healthcare-label" class="res-label">Infor Lawson to CloudSuite</h2>
+        </div>
+    
+        <div class="res-cards res-cards--text">
+          <article class="res-card res-card--text">
+            <img src="img/what-we-do/infor-lawson.png" alt="Healthcare icon" class="icon">
+            <p>Infor Lawson support sunsets in 2030, and organizations still relying on it face a strategic crossroads: wait and react, or move and modernize. At GForce, we guide clients through this transition with a team who have lived Lawson and championed CloudSuite.
+              <br><br>Through focused business process discovery, we design and build solutions that harness CloudSuite’s full potential—tailored to your operations. We train your people as we go, so the end result is not just a powerful system, but one your functional teams truly own and can use to drive lasting results.</p>          
+            </article>
+          
+        </div>
+      </div>
+    </section>
+    
+  
+    <!-- CloudSuite -->
+    <section id="cloudSuite" class="res-section" data-theme="dark" data-label="cloudsuite" aria-labelledby="cloudsuite-label">
+      <div class="res-grid container">
+        <div class="res-label-wrap">
+          <h2 id="cloudsuite" class="res-label">CloudSuite Implementation</h2>
+        </div>
+    
+        <div class="res-cards res-cards--text">
+          <article class="res-card res-card--text">
+            <img src="img/what-we-do/cloudsuite.png" alt="CloudSuite Implementation icon" class="icon">
+            <p>Moving to Infor CloudSuite from an older ERP opens the door to faster processes, cleaner data, and sharper visibility. With GForce guiding the transition, you gain modern reporting and real-time insights that make decisions quicker and more informed. Daily operations run smoother, teams work with confidence, and the system adapts as the business evolves.
+            <br><br>The result is more than new technology—it’s a platform that drives efficiency, supports growth, and equips your organization to compete at its best from day one.</p>         
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Managed Cloudsuite -->
+    <section id="managed-cloudsuite" class="res-section" data-theme="dark" data-label="managed-cloudsuite" aria-labelledby="managed-cloudsuite-label">
+      <div class="res-grid container">
+        <div class="res-label-wrap">
+          <h2 id="managed-cloudsuite-label" class="res-label">Managed Services – CloudSuite</h2>
+        </div>
+  
+        <div class="res-cards res-cards--text">
+          <article class="res-card res-card--text">
+            <img src="img/what-we-do/managed-services-cloudsuite.png" alt="Managed Services icon" class="icon">
+            <p>With GForce Managed Services, CloudSuite stays optimized, reliable, and aligned with your evolving business. We prevent problems before they disrupt, keep data and processes running flawlessly, and adapt the system to meet new demands.
+        <br><br>And when it’s time for Phase 2 projects, we’re already in place and ready to expand functionality, unlock new capabilities, and keep your momentum moving forward.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+        <!-- Managed Services – Infor Lawson -->
+    <section id="managed-lawson" class="res-section" data-theme="dark" data-label="Managed Services – Infor Lawson" aria-labelledby="managed-lawson-label">
+      <div class="res-grid container">
+        <div class="res-label-wrap">
+          <h2 id="managed-lawson-label" class="res-label">Managed Services – Infor Lawson</h2>
+        </div>
+  
+        <div class="res-cards res-cards--text">
+          <article class="res-card res-card--text">
+            <img src="img/what-we-do/managed-services-infor.png" alt="Infor Lawson icon" class="icon">
+            <p>Improve performance today, prepare for tomorrow. With GForce Managed Services, you get more from your current system while laying the groundwork for a smooth move to CloudSuite. We fine-tune processes, resolve issues before they disrupt, and keep data clean and reliable so when it’s time to migrate, you’re ready.
+            <br><br>We can also help you adopt Landmark edge products that run in your Infor Lawson environment today and carry forward into CloudSuite so you step into the future with proven tools already in place.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Health Check -->
+    <section id="health" class="res-section" data-theme="dark" data-label="Health Check" aria-labelledby="health-label">
+      <div class="res-grid container">
+        <div class="res-label-wrap">
+          <h2 id="health-label" class="res-label">Health Check</h2>
+        </div>
+  
+        <div class="res-cards res-cards--text">
+          <article class="res-card res-card--text">
+            <img src="img/what-we-do/health.png" alt="Health Check icon" class="icon">
+            <p>Whether you’re on Infor Lawson or CloudSuite, a GForce Health Check gives you a clear, actionable view of system performance and readiness. We uncover inefficiencies, risks, and opportunities to replace costly third-party tools with built-in Infor functionality and deploy AI to automate work, surface insights faster, and strengthen decision-making.
+            <br><br>For Infor Lawson customers, it delivers quick wins now and a roadmap to CloudSuite. For CloudSuite users, it ensures you’re maximizing value, driving adoption, and planning for emerging capabilities. The result is a plan to eliminate waste, accelerate innovation, and unlock untapped potential.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  
+    <!-- PMO Services -->
+    <section id="PMO" class="res-section" data-theme="dark" data-label="PMO" aria-labelledby="PMO-label">
+      <div class="res-grid container">
+        <div class="res-label-wrap">
+          <h2 id="retail-label" class="res-label">PMO Services</h2>
+        </div>
+  
+        <div class="res-cards res-cards--text">
+          <article class="res-card res-card--text">
+            <img src="img/what-we-do/pmo.png" alt="PMO icon" class="icon">
+            <p>GForce PMO Services give you the structure, oversight, and momentum to keep complex initiatives on track and delivering value. We align scope, schedule, and resources with your business goals, manage risks before they escalate, and ensure stakeholders stay informed and engaged.
+              <br><br>Our team brings proven governance frameworks, real-world ERP experience, and the flexibility to adapt as priorities shift. The result is a disciplined, transparent approach that turns strategy into measurable outcomes—on time and on budget.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+<!-- Change Management -->
+    <section id="change" class="res-section" data-theme="dark" data-label="change" aria-labelledby="change-label">
+      <div class="res-grid container">
+        <div class="res-label-wrap">
+          <h2 id="retail-label" class="res-label">Change Management</h2>
+        </div>
+  
+        <div class="res-cards res-cards--text">
+          <article class="res-card res-card--text">
+            <img src="img/what-we-do/change.png" alt="Change Management icon" class="icon">
+            <p>GForce Change Management Services ensure your people are ready, confident, and equipped to thrive in new ways of working. We align leadership, engage stakeholders early, and deliver targeted communications and training that build adoption from day one.
+              <br><br>Our approach blends proven methodology with deep ERP implementation experience, so change feels less like disruption and more like opportunity. The result is faster adoption, stronger user confidence, and lasting business results.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <!-- Logo -->
+      <a href="index.html" class="footer-logo">
+        <img src="img/logo/logo-footer.png" alt="GForce Logo" height="40">
+      </a>
+  
+      <!-- Footer Navigation -->
+      <div class="footer-sections">
+        <!-- What We Do -->
+        <div class="footer-col">
+          <h4 class="footer-heading">What We Do</h4>
+          <ul>
+            <li><a href="what-we-do.html#infor">Upgrade Infor Lawson</a></li>
+            <li><a href="what-we-do.html#cloudsuite">Net New Implementation</a></li>
+            <li><a href="what-we-do.html#managed-services">Managed Services</a></li>
+          </ul>
+        </div>
+  
+        <!-- More About Us -->
+        <div class="footer-col">
+          <h4 class="footer-heading">More About Us</h4>
+          <ul>
+            <li><a href="what-we-know.html#case-studies">Success Stories</a></li>
+            <li><a href="partnership.html">Infor Partnership</a></li>
+            <li><a href="who-we-are.html">About Us</a></li>
+            <li><a href="careers.html">Careers</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p><i class="fa fa-copyright"></i> 2025 GForce Technology Consulting. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+<script>
+  // Scroll Animation - Float up effect for cards
+document.addEventListener('DOMContentLoaded', () => {
+  const cards = document.querySelectorAll('.res-card--text');
+  
+  if (!cards.length) return;
+
+  // Add initial hidden state
+  cards.forEach(card => {
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(40px)';
+    card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+  });
+
+  // Intersection Observer for scroll-triggered animations
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px 0px -100px 0px', // Trigger slightly before element enters viewport
+    threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Float up animation
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+        
+        // Optional: Unobserve after animation (only animate once)
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  // Observe all cards
+  cards.forEach(card => observer.observe(card));
+});
+</script>
+  <script>
+    document.documentElement.classList.remove('no-js');
+  
+    (function () {
+      const section = document.querySelector('.hero-parallax');
+      if (!section) return;
+      const media = section.querySelector('.hero-media');
+      const speed = 0.40;
+  
+      let ticking = false;
+  
+      function update() {
+        const rect = section.getBoundingClientRect();
+        const offset = rect.top * speed * -1;
+        media.style.setProperty('--parallax', offset.toFixed(2) + 'px');
+        ticking = false;
+      }
+  
+      function onScroll() {
+        if (!ticking) {
+          ticking = true;
+          requestAnimationFrame(update);
+        }
+      }
+  
+      // Initial paint + listeners
+      update();
+      window.addEventListener('scroll', onScroll, { passive: true });
+      window.addEventListener('resize', onScroll);
+    })();
+  </script>
+
+  
+  <script src="main.js" defer></script>
+</body>
+</html>

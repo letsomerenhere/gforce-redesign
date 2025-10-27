@@ -1,0 +1,1274 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About | GForce Technology Consulting</title>
+  <link rel="icon" type="image/png" href="img/logo/favicon.png" sizes="32x32">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="resources.css" />
+  <style>
+    /* ===== HERO SECTION ===== */
+    .hero {
+      position: relative;
+      min-height: 40vh;
+    }
+    
+    .hero-media {
+      position: absolute;
+      inset: 0;  
+      z-index: 0;
+      background-image: var(--hero-img);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 1; 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 8%;
+      color: #fff;
+      background: rgba(0,0,0,.5);
+      
+    }
+
+    .hero-eyebrow {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 600;
+      font-size: clamp(0.8rem, 2vw, 0.95rem);
+      letter-spacing: 0.08em;
+      text-transform: capitalize;
+      color: #fff;
+      opacity: 0.85;
+      margin-bottom: 0.5rem;
+    }
+    
+    .hero-overlay h1 {
+      text-transform: capitalize;
+      font-size: clamp(2rem, 8vw, 3rem);
+      margin: 0 0 0.75rem;
+      font-family: Arial, Helvetica, sans-serif;
+      opacity: .9;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+      line-height: 1.2;
+    }
+
+  .hero-content-split {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-left {
+  flex: 1;
+  max-width: 500px;
+}
+
+.hero-left h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.hero-left .button {
+  display: inline-block;
+  padding: 0.875rem 2rem;
+  background: #C0111F;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 500;
+  display: inline-flex;
+align-items: center;
+opacity: .8;
+  font-size: .9rem;
+  transition: background 0.3s ease;
+}
+
+.hero-left .button:hover {
+  background: #7A0C15;
+}
+
+.hero-left .button .arrow-icon {
+font-size: 20px;
+transition: transform 0.3s ease;
+}
+
+.hero-left .button:hover .arrow-icon {
+transform: rotate(90deg);
+}
+
+.hero-right {
+  flex: 1;
+  max-width: 500px;
+}
+
+.hero-box {
+  padding-left: 2rem;
+  /* text-align: end; */
+
+}
+
+.hero-box .lead {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: white;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+      .hero {
+        min-height: 35vh;
+      }
+
+    
+      .hero-overlay {
+        padding: 5%;
+        padding-bottom: 2rem;
+      }
+
+      .hero-box {
+        padding: 0;
+      }
+    
+      .hero-overlay h1 {
+        font-size: 2rem;
+      }
+      
+      .hero-overlay .lead {
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+      }
+    
+      .hero-eyebrow {
+        font-size: 0.7rem;
+        margin-bottom: 0.35rem;
+      }
+      .hero-overlay .button {
+        padding: 0.5rem 1rem;
+        font-size: .7rem;
+      }
+
+    }
+    
+    
+    /* ===== VERY SMALL MOBILE (max 480px) ===== */
+    @media (max-width: 480px) {
+      .hero {
+        min-height: 30vh;
+      }
+    
+      .hero-overlay {
+        padding: 0 1.25rem;
+        padding-bottom: 1.5rem;
+      }
+    
+      .hero-overlay h1 {
+        font-size: 1.5rem;
+      }
+      
+      .hero-overlay .lead {
+        font-size: .8rem;
+        line-height: 1.1rem;
+      }
+      .hero-overlay .button {
+        padding: 0.4rem .5rem;
+        font-size: .7rem;
+      }
+
+    }
+    
+    /* ===== VERY SMALL MOBILE (max 360px) ===== */
+    @media (max-width: 360px) {
+      .hero-overlay {
+        padding: 0 1rem;
+      }
+    }
+    
+
+.about-wrap .container,
+.res-section .container {
+  width: min(1250px, 100%);
+  margin-inline: auto; 
+  padding-inline: 1rem; 
+}
+
+@media (max-width: 768px) {
+  .about-wrap .container,
+  .res-section .container {
+    padding-inline: 1.25rem;
+    width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-wrap .container,
+  .res-section .container {
+    padding-inline: 1rem;
+    width: auto;
+
+  }
+}
+
+.res-section {
+  background-color: #fff;
+}
+
+
+.res-section {
+  padding-block: clamp(32px, 6vw, 64px);
+}
+.res-grid {
+  display: grid;
+  grid-template-columns:.9fr 1.3fr;
+  gap:3rem;
+}
+
+.res-label-wrap,
+.res-cards { min-width: 0; }
+
+.res-label {
+  hyphens: auto;
+}
+.res-label{
+position: sticky;
+top: 7rem;
+margin: 0;
+font-family: 'DM Sans',sans-serif;
+font-weight: 800;
+text-transform: none;
+letter-spacing: .01em;
+line-height: 1;
+font-size: clamp(2.5rem, 5vw, 3rem);
+color: #000;
+align-self: start;
+transition: color .25s ease;
+will-change: color;
+}
+
+.res-label.is-active{
+color: #C0111F;
+}
+
+.res-content p {
+  color: #000;
+  line-height: 1.8;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.res-content .lead {
+  color: #000;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+
+}
+@media (max-width: 991px) {
+  .res-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  
+  .res-label-wrap {
+    position: relative;
+  }
+  .about-wrap .container,
+  .res-section .container {
+    padding-inline: 2rem;
+    width: auto;
+  }
+  
+  .res-label {
+    position: static;
+    font-size: clamp(2rem, 7vw, 2.5rem);
+    margin-bottom: 1rem;
+  }
+  
+  .res-section {
+    padding-block: clamp(24px, 5vw, 48px);
+  }
+}
+
+/* Mobile breakpoint */
+@media (max-width: 767px) {
+  .resources-wrap .container,
+  .res-section .container {
+    padding-inline: 1.3rem;
+    width: auto;
+  }
+  
+  .res-grid {
+    gap: 1.5rem;
+  }
+  
+  .res-label {
+    font-size: 1.75rem;
+  }
+  
+  .res-cards {
+    gap: 1rem;
+  }
+  
+  .res-card-body {
+    padding: 0.875rem;
+  }
+  
+  .res-card--text p {
+    font-size: .9rem;
+  }
+  
+  .res-card-title {
+    font-size: 1.1rem;
+  }
+  
+  .res-content p {
+    font-size: 0.9rem;
+  }
+  
+  .eyebrow {
+    font-size: 0.7rem;
+  }
+
+}
+
+/* Small mobile breakpoint */
+@media (max-width: 480px) {
+  .res-label {
+    font-size: 1.7rem;
+  }
+  
+  .res-card-title {
+    font-size: 1.3rem;
+  }
+  
+  .res-content p {
+    font-size: 0.85rem;
+  }
+  
+}
+
+
+/* Leadership grid */
+.leaders-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 0;
+  list-style: none;
+}
+
+.leader-card {
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.leader-card img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  object-position: 50% var(--y, 50%);
+  transition: transform 0.4s ease;
+}
+
+.leader-meta {
+  padding: 0.9rem 1rem 1.1rem;
+}
+
+.leader-meta h3 {
+  margin: 0.2rem 0;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  color: #000;
+}
+
+.leader-meta p {
+  margin: 0 0 0.5rem;
+  color: #000;
+  font-size: 1rem;
+}
+
+.leader-meta a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid black;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.leader-meta a:hover {
+  border-color: #C0111F;
+  color: #C0111F;
+}
+
+.leader-meta i {
+  color: #000;
+  font-size: 18px;
+}
+
+@media (max-width: 991px) {
+  .leaders-grid {
+    gap: 1.5rem;
+  }
+  
+  .leader-meta h3 {
+    font-size: 1.15rem;
+  }
+  
+  .leader-meta p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile breakpoint */
+@media (max-width: 767px) {
+  .leaders-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .leader-card img {
+    aspect-ratio: 4/5;
+  }
+  
+  .leader-meta {
+    padding: 0.8rem 0.875rem 1rem;
+  }
+  
+  .leader-meta h3 {
+    font-size: 1.1rem;
+  }
+  
+  .leader-meta p {
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  .leader-meta a {
+    width: 34px;
+    height: 34px;
+  }
+  
+  .leader-meta i {
+    font-size: 16px;
+  }
+}
+
+/* Small mobile breakpoint */
+@media (max-width: 480px) {
+  .leaders-grid {
+    gap: 1.25rem;
+  }
+  
+  .leader-card img {
+    aspect-ratio: 1/1;
+  }
+  
+  .leader-meta h3 {
+    font-size: 1.05rem;
+  }
+  
+  .leader-meta p {
+    font-size: 0.875rem;
+  }
+  
+  .leader-meta a {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* Leader Actions (LinkedIn + Bio button) */
+.leader-actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.leader-meta a,
+.bio-trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid black;
+  transition: background 0.2s ease, border-color 0.2s ease;
+  cursor: pointer;
+}
+
+.bio-trigger {
+  background: transparent;
+  padding: 0;
+}
+
+.leader-meta a:hover,
+.bio-trigger:hover {
+  border-color: #C0111F;
+  color: #C0111F;
+}
+
+.leader-meta i,
+.bio-trigger i {
+  color: #000;
+  font-size: 18px;
+}
+
+/* Bio Modal */
+.bio-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.bio-modal.active {
+  display: flex;
+}
+
+.bio-modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+}
+
+.bio-modal-content {
+  position: relative;
+  background: white;
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  animation: modalSlideIn 0.3s ease;
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bio-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #000;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  z-index: 1;
+}
+
+.bio-modal-close:hover {
+  border-color: #C0111F;
+  color: #C0111F;
+}
+
+.bio-modal-close i {
+  font-size: 20px;
+}
+
+.bio-modal-body {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.bio-modal-image {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+}
+
+.bio-modal-text {
+  color: #000;
+}
+
+.bio-modal-text h3 {
+  margin: 0 0 0.5rem;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #000;
+}
+
+.bio-modal-title {
+  margin: 0 0 1.5rem;
+  color: #C0111F;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.bio-modal-description {
+  color: #000;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.bio-modal-description p {
+  margin: 0 0 1rem;
+}
+
+.bio-modal-description p:last-child {
+  margin-bottom: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 767px) {
+  .leader-actions {
+    gap: 0.4rem;
+  }
+  
+  .leader-meta a,
+  .bio-trigger {
+    width: 34px;
+    height: 34px;
+  }
+  
+  .leader-meta i,
+  .bio-trigger i {
+    font-size: 16px;
+  }
+  
+  .bio-modal-content {
+    max-height: 95vh;
+    border-radius: 12px;
+  }
+  
+  .bio-modal-body {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+  
+  .bio-modal-image {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  
+  .bio-modal-text h3 {
+    font-size: 1.5rem;
+  }
+  
+  .bio-modal-title {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .bio-modal-description {
+    font-size: 0.95rem;
+  }
+  
+  .bio-modal-close {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .bio-modal-close i {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bio-modal {
+    padding: 0.5rem;
+  }
+  
+  .bio-modal-body {
+    padding: 1.25rem;
+  }
+  
+  .bio-modal-text h3 {
+    font-size: 1.35rem;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+  <header class="site-header" role="banner">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html" aria-label="Go to home">
+        <img src="img/logo/logo-header.png" alt="GForce Logo" class="logo-light">
+        <img src="img/logo/logo-header-white.png" alt="GForce Logo White" class="logo-dark">
+      </a>
+  
+
+      <!-- Primary Nav -->
+      <nav class="nav" aria-label="Primary">
+        <ul class="menu-root">
+        
+          <li class="has-panel">
+            <a class="top-link" href="what-we-do.html">What We Do</a>
+            <div class="dropdown-panel">
+              <ul class="simple-list">
+                <li><a href="what-we-do.html#infor">Infor Lawson Upgrade</a></li>
+                <li><a href="what-we-do.html#cloudsuite">CloudSuite Implementation</a></li>
+                <li><a href="what-we-do.html#managed-cloudsuite">Managed Services CloudSuite</a></li>
+                <li><a href="what-we-do.html#managed-lawson">Managed Services <br>Infor Lawson</a></li>
+                <li><a href="what-we-do.html#health">Health Check &amp; Roadmap</a></li>
+                <li><a href="what-we-do.html#PMO">PMO Services</a></li>
+                <li><a href="what-we-do.html#change">Change Management &amp; Training</a></li>
+              </ul>
+            </div>
+          </li>
+  
+          <li class="has-panel">
+            <a class="top-link" href="industries.html">Industries</a>
+            <div class="dropdown-panel">
+              <ul class="simple-list">
+                <li><a href="industries.html#healthcare">Healthcare</a></li>
+                <li><a href="industries.html#public">Public Sector</a></li>
+                <li><a href="industries.html#utilities">Utilities</a></li>
+                <li><a href="industries.html#transportation">Transportation &amp; Logistics</a></li>
+                <li><a href="industries.html#professional">Professional Services</a></li>
+                <li><a href="industries.html#retail">Retail</a></li>
+              </ul>
+            </div>
+          </li>
+  
+          <li><a class="top-link" href="partnership.html">Infor Partnership</a></li>
+  
+          <li class="has-panel">
+            <a class="top-link" href="what-we-know.html">What We Know</a>
+            <div class="dropdown-panel">
+              <ul class="simple-list">
+                <li><a href="what-we-know.html#case-studies">Case Studies</a></li>
+                <li><a href="what-we-know.html#articles">Articles</a></li>
+                <li><a href="what-we-know.html#gforce-resources">GForce Resource</a></li>
+              </ul>
+            </div>
+          </li>
+  
+          <li class="has-panel">
+            <a class="top-link" href="who-we-are.html">Who We Are</a>
+            <div class="dropdown-panel">
+              <ul class="simple-list">
+                <li><a href="who-we-are.html#story">Our Story</a></li>
+                <li><a href="who-we-are.html#leadership">Leadership</a></li>
+                <li><a href="careers.html">Careers</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+  
+      <!-- CTA -->
+      <a href="contact.html" class="button">
+        Contact Us
+      </a>
+
+      <button class="hamburger" id="navToggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+  
+  <main id="about" class="about-wrap">
+
+    <section class="hero hero-parallax" style="height: 40vh;" id="hero">
+      <div class="hero-media" style="--hero-img: url('img/who-we-are/who-we-are.webp');"></div>
+      <div class="hero-overlay">
+        <div class="container">
+          <div class="hero-content-split">
+            <div class="hero-left">
+              <p class="hero-eyebrow">Who We Are</p>
+              <h1>People First, <br><span style="color: #C0111F">Always.</span></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Story -->
+    <section id="story" class="res-section" data-theme="light" data-label="Story" aria-labelledby="story-label">
+      <div class="res-grid container">
+        <div class="res-label-wrap">
+          <h2 id="story-label" class="res-label">The GForce Story</h2>
+        </div>
+    
+        <div class="res-content">
+          <p>
+            Greg Gotlin, founder of GForce, started his career journey when he served as a Controller at Hard Rock and lived the day-to-day challenges of finance teams. He gained firsthand insight into both the strengths and limitations of Infor Lawson. This experience stayed with him as he transitioned into consulting, helping others navigate the same systems and struggles he once knew so well. Greg is a veteran in this space, with over 30 years of experience, and is a champion user of Infor/Lawson.
+          </p>
+        
+          <p>
+            By 2015, Greg recognized a gap and found a better way to support organizations through financial transformation—one that wasn’t just about technology, but about people. He envisioned a team-centered, people-first approach that combined deep operational knowledge with consulting expertise. That vision became The GForce Way.
+          </p>
+        
+          <p>
+            GForce is a team of collaborative business consultants driven by a passion for transformation. We specialize in financial systems modernization, built around a foundation of dedicated onshore consultants who have walked in our clients’ shoes. Our team brings unmatched Infor Lawson expertise and has grown into leading CloudSuite FSM specialists. Today, we continue expanding into the WFM and HCM space—always guided by the same principles that sparked our founding.
+          </p>
+        
+          <p>At GForce, transformation is not just a service.</p>
+          <p>It’s a partnership. It’s a team effort.</p>
+          <p><strong><i>It’s the GForce Way.</i></strong></p>
+        </div>
+        </div>
+      </div>
+    </section>
+    
+  
+    <!-- :eadership -->
+    <section id="leadership" class="res-section" data-theme="light" data-label="Leadership" aria-labelledby="leadership-label">
+      <div class="res-grid container">
+        <div class="res-label-wrap">
+          <h2 id="leadership" class="res-label">Meet the Leadership Team</h2>
+        </div>
+    
+        <div class="res-content">
+          <ul class="leaders-grid">
+            <!-- Greg Gotlin -->
+            <li class="leader-card">
+              <img src="img/who-we-are/greg.webp" style="--y: 20%;" alt="Headshot of Ashley Charlton" loading="lazy">
+              <div class="leader-meta">
+                <h3>Greg Gotlin</h3>
+                <p>Founder & Managing Partner</p>
+                <a href="https://www.linkedin.com/in/greg-gotlin/" target="_blank" rel="noopener" aria-label="Ashley Charlton on LinkedIn">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <button class="bio-trigger" data-leader="greg" aria-label="Read Greg's bio">
+                  <i class="fa fa-info-circle"></i>
+                </button>
+              </div>
+            </li>
+
+            <!-- Melissa Gotlin -->
+            <li class="leader-card">
+              <img src="img/who-we-are/melissa.webp" style="--y: 5%;" alt="Headshot of Melissa Gotlin" loading="lazy">
+              <div class="leader-meta">
+                <h3>Melissa Gotlin</h3>
+                <p>Founder & Partner</p>
+                <a href="https://www.linkedin.com/in/melissa-gotlin-40940a33/" target="_blank" rel="noopener" aria-label="Melissa Gotlin on LinkedIn">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <button class="bio-trigger" data-leader="melissa" aria-label="Read Melissa's bio">
+                  <i class="fa fa-info-circle"></i>
+                </button>
+              </div>
+            </li>
+
+            <!-- Mandy Cavaliere -->
+            <li class="leader-card">
+              <img src="img/who-we-are/mandy.webp" alt="Headshot of Mandy Cavaliere" loading="lazy">
+              <div class="leader-meta">
+                <h3>Mandy Cavaliere</h3>
+                <p>Senior Partner, Solutions Lead</p>
+                <a href="https://www.linkedin.com/in/mandy-cavaliere-58601a6/" target="_blank" rel="noopener" aria-label="Mandy Cavaliere on LinkedIn">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <button class="bio-trigger" data-leader="mandy" aria-label="Read Mandy's bio">
+                  <i class="fa fa-info-circle"></i>
+                </button>
+              </div>
+            </li>
+
+            <!-- Ashley Charlton -->
+            <li class="leader-card">
+              <img src="img/who-we-are/ashley.webp" alt="Headshot of Ashley Charlton" loading="lazy">
+              <div class="leader-meta">
+                <h3>Ashley Charlton</h3>
+                <p>Managing Director</p>
+                <a href="https://www.linkedin.com/in/ashley-charlton-b60b747/" target="_blank" rel="noopener" aria-label="Ashley Charlton on LinkedIn">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <button class="bio-trigger" data-leader="ashley" aria-label="Read Ashley's bio">
+                  <i class="fa fa-info-circle"></i>
+                </button>
+              </div>
+            </li>
+          
+            <!-- Anita Freeman -->
+            <li class="leader-card">
+              <img src="img/who-we-are/anita.webp" style="--y: 60%;" alt="Headshot of Anita Freeman" loading="lazy">
+              <div class="leader-meta">
+                <h3>Anita Freeman</h3>
+                <p>Principal Solutions Consultant</p>
+                <a href="https://www.linkedin.com/in/anita-freeman-921246a/" target="_blank" rel="noopener" aria-label="Anita Freeman on LinkedIn">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <button class="bio-trigger" data-leader="anita" aria-label="Read Anita's bio">
+                  <i class="fa fa-info-circle"></i>
+                </button>
+              </div>
+            </li>
+          
+            <!-- Laura Cocat -->
+            <li class="leader-card">
+              <img src="img/who-we-are/laura.webp" alt="Headshot of Laura Cocat" loading="lazy">
+              <div class="leader-meta">
+                <h3>Laura Cocat</h3>
+                <p>Operations Manager</p>
+                <a href="https://www.linkedin.com/in/laura-cocat-10480622a/" target="_blank" rel="noopener" aria-label="Laura Cocat on LinkedIn">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <button class="bio-trigger" data-leader="laura" aria-label="Read Laura's bio">
+                  <i class="fa fa-info-circle"></i>
+                </button>
+              </div>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-top">
+    <!-- Logo -->
+    <a href="index.html" class="footer-logo">
+      <img src="img/logo/logo-footer.png" alt="GForce Logo" height="40">
+    </a>
+
+    <!-- Footer Navigation -->
+    <div class="footer-sections">
+      <!-- What We Do -->
+      <div class="footer-col">
+        <h4 class="footer-heading">What We Do</h4>
+        <ul>
+          <li><a href="what-we-do.html#infor">Upgrade Infor Lawson</a></li>
+          <li><a href="what-we-do.html#cloudsuite">Net New Implementation</a></li>
+          <li><a href="what-we-do.html#managed-services">Managed Services</a></li>
+        </ul>
+      </div>
+
+      <!-- More About Us -->
+      <div class="footer-col">
+        <h4 class="footer-heading">More About Us</h4>
+        <ul>
+          <li><a href="what-we-know.html#case-studies">Success Stories</a></li>
+          <li><a href="partnership.html">Infor Partnership</a></li>
+          <li><a href="who-we-are.html">About Us</a></li>
+          <li><a href="careers.html">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container footer-bottom">
+    <p><i class="fa fa-copyright"></i> 2025 GForce Technology Consulting. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+  <div class="bio-modal" id="bioModal" role="dialog" aria-modal="true" aria-labelledby="bioModalTitle">
+    <div class="bio-modal-overlay"></div>
+    <div class="bio-modal-content">
+      <button class="bio-modal-close" aria-label="Close bio">
+        <i class="fa fa-times"></i>
+      </button>
+      <div class="bio-modal-body">
+        <img src="" alt="" class="bio-modal-image">
+        <div class="bio-modal-text">
+          <h3 id="bioModalTitle"></h3>
+          <p class="bio-modal-title"></p>
+          <div class="bio-modal-description"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js" defer></script>
+  <script defer>
+    // Leader Bio Modal
+document.addEventListener('DOMContentLoaded', function() {
+  const bioModal = document.getElementById('bioModal');
+  const bioTriggers = document.querySelectorAll('.bio-trigger');
+  const closeBtn = bioModal?.querySelector('.bio-modal-close');
+  const overlay = bioModal?.querySelector('.bio-modal-overlay');
+  
+  // Bio data
+  const bios = {
+    greg: {
+      name: "Greg Gotlin",
+      title: "Founder & Managing Partner",
+      image: "img/who-we-are/greg.webp",
+      bio: `
+       <p>Greg Gotlin's journey started on the client side, as an Infor Lawson user and Controller at Hard Rock. That firsthand experience shaped how he leads today: with empathy for end users, deep respect for operational challenges, and a clear understanding of what clients need from their systems and their partners.</p>
+
+<p>With over 25 years in ERP, Greg has led large-scale transformations across healthcare, government, and education. His roots in Infor Lawson are foundational, but his focus is forward on unlocking the full potential of Infor CloudSuite. From finance and supply chain to WFM and HCM, Greg has helped organizations modernize with purpose and precision.</p>
+
+<p>He founded GForce to be different. No staffing models. No shortcuts. The GForce Way is team-based, collaborative, and results-driven - bringing together experts who work as one with the client to deliver lasting impact.</p>
+
+<p>Under Greg's leadership, GForce has become the partner organizations trust to move with speed, integrity, and clarity—because he's been in their shoes.</p>
+
+<p><strong>Core Strengths:</strong><br>
+ERP Strategy | Infor Lawson &amp; CloudSuite Expertise | Change Leadership | Team Building | Financial &amp; Supply Chain Operations | Healthcare Transformation | Full Lifecycle Implementation</p>
+      `
+    },
+    melissa: {
+      name: "Melissa Gotlin",
+      title: "Founder & Partner",
+      image: "img/who-we-are/melissa.webp",
+      bio: `
+        <p>Melissa Gotlin is the strategic force behind GForce's growth and positioning. As Founder and Partner, she leads the firm's direction across marketing, brand, and business strategy—ensuring GForce shows up with clarity, purpose, and impact in every interaction.</p>
+
+<p>With over 20 years of experience guiding organizations through growth and transformation, Melissa shapes how GForce tells its story and scales its reach. She drives sales enablement, sharpens go-to-market strategy, and ensures the firm stays aligned with client needs and market demand.</p>
+
+<p>Melissa is a catalyst for innovation and a champion of change. Her leadership strengthens GForce's ability to grow intentionally, serve boldly, and lead with purpose.</p>
+
+<p><strong>Core Strengths:</strong><br>
+Strategic Direction | Brand &amp; Marketing Leadership | Sales Enablement | Organizational Growth | Change Leadership | Market Positioning | Client-Centered Strategy</p>
+      `
+    },
+    mandy: {
+      name: "Mandy Cavaliere",
+      title: "Senior Partner & Solutions Lead",
+      image: "img/who-we-are/mandy.webp",
+      bio: `
+        <p>Mandy Cavaliere brings over 20 years of financial leadership—and the real-world perspective of a CPA and former Lawson user—to every project she leads. Before joining GForce, Mandy was in the trenches managing accounting operations, accounts payable, and financial systems. She knows what it takes to make ERP work where it matters: in the day-to-day.</p>
+
+<p>As Senior Partner and head of our Solutions team, Mandy leads with clarity and purpose. She's not just focused on getting clients to CloudSuite—she's committed to transforming how organizations operate. Her approach blends practical problem-solving with deep product knowledge to deliver systems that work for the people who use them.</p>
+
+<p>Mandy is hands-on, team-driven, and outcome-obsessed. She mentors our consultants, partners with client leadership, and ensures every solution is rooted in both system capability and real operational value.</p>
+
+<p><strong>Core Strengths:</strong><br>
+CPA | ERP Strategy | Infor FSM Expertise | Financial Operations | Team Leadership | Business Process Transformation | End-User Mindset | Healthcare &amp; Public Sector Consulting</p>`
+    },
+    ashley: {
+      name: "Ashley Charlton",
+      title: "Managing Director",
+      image: "img/who-we-are/ashley.webp",
+      bio: `
+        <p>Ashley Charlton may be new to enterprise technology, but she's no stranger to driving meaningful outcomes. A proven operations leader and subject matter expert, she brings focus, structure, and momentum to everything she touches.</p>
+
+<p>Ashley leads with precision—aligning execution with both immediate needs and long-term goals. She turns complexity into clarity and keeps delivery sharp, scalable, and consistent.</p>
+
+<p>At GForce, Ashley plays a key role in expanding capabilities, shaping new practices, and positioning the firm for sustainable growth. Her track record of building high-performing teams and repeatable solutions reflects her core strength: turning strategy into progress.</p>
+
+<p>Ashley's focus on people, process, and precision drives real impact—for our clients, and for GForce.</p>
+
+<p><strong>Core Strengths:</strong><br>
+Client Delivery | Operations Leadership | Outcome-Focused Strategy | Team Building | Process Discipline | Change Enablement | Future-State Planning</p>`
+    },
+    anita: {
+      name: "Anita Freeman",
+      title: "Principal Solutions Specialist",
+      image: "img/who-we-are/anita.webp",
+      bio: `
+        <p>Anita Freeman brings deep functional expertise and hands-on leadership to her role as Principal Solutions Consultant at GForce. She leads our Finance &amp; Supply Chain consulting team, where she's known for translating complex Infor CloudSuite Financials requirements into real operational outcomes.</p>
+
+<p>With over a decade of experience across healthcare, public sector, and enterprise implementations, Anita doesn't just manage projects—she elevates them. Her dual focus on quality execution and continuous improvement drives smarter solutions, streamlined processes, and measurable impact for our clients.</p>
+
+<p>Anita is a builder of teams, standards, and solutions. She mentors consultants, leads functional practice development, and partners closely with clients to ensure every engagement delivers lasting value. Whether leading multi-module implementations or optimizing finance operations, she brings clarity, consistency, and care to every step of the journey.</p>
+
+<p><strong>Core Strengths:</strong><br>
+Infor CloudSuite FSM | Finance &amp; Supply Chain Optimization | Project &amp; Practice Leadership | Process Improvement | ERP Implementation | Client Training &amp; Adoption | Healthcare &amp; Public Sector Experience</p>`
+    },
+    laura: {
+      name: "Laura Cocat",
+      title: "Operations Manager",
+      image: "img/who-we-are/laura.webp",
+      bio: `
+       <p>Laura Cocat is the operational backbone of GForce. As Operations Manager and Support Desk Administrator, she ensures every internal process runs with precision, keeping our team aligned, our clients supported, and our systems running smoothly.</p>
+
+<p>With a background in client onboarding, project coordination, and systems implementation, Laura streamlines workflows, solves problems, and helps the business scale without friction. She leads with empathy and structure, creating clarity and consistency across everything from help desk support to consultant coordination.</p>
+
+<p>At GForce, Laura manages the internal help desk, leads operations initiatives, and supports delivery teams with the tools, tracking, and structure they need to succeed. Her impact is felt everywhere.</p>
+
+<p><strong>Core Strengths:</strong><br>
+Operations Management | Support Desk Administration | Client Onboarding | Project Coordination | Internal Process Optimization | Consultant Enablement | Cross-Team Collaboration</p>`
+    }
+  };
+  
+  // Open modal
+  bioTriggers.forEach(trigger => {
+    trigger.addEventListener('click', function() {
+      const leaderId = this.getAttribute('data-leader');
+      const leaderData = bios[leaderId];
+      
+      if (leaderData && bioModal) {
+        // Populate modal
+        bioModal.querySelector('.bio-modal-image').src = leaderData.image;
+        bioModal.querySelector('.bio-modal-image').alt = leaderData.name;
+        bioModal.querySelector('#bioModalTitle').textContent = leaderData.name;
+        bioModal.querySelector('.bio-modal-title').textContent = leaderData.title;
+        bioModal.querySelector('.bio-modal-description').innerHTML = leaderData.bio;
+        
+        // Show modal
+        bioModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    });
+  });
+  
+  // Close modal
+  function closeBioModal() {
+    if (bioModal) {
+      bioModal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  }
+  
+  closeBtn?.addEventListener('click', closeBioModal);
+  overlay?.addEventListener('click', closeBioModal);
+  
+  // Close on Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && bioModal?.classList.contains('active')) {
+      closeBioModal();
+    }
+  });
+});
+  </script>
+  <script>
+    (() => {
+      const SECTIONS = document.querySelectorAll('.res-section');
+      if (!SECTIONS.length) return;
+    
+      const onChange = (entries) => {
+        entries.forEach(entry => {
+          const section = entry.target;
+          const label = section.querySelector('.res-label');
+          if (!label) return;
+    
+          if (entry.isIntersecting) {
+            // Clear all active states
+            document.querySelectorAll('.res-label.is-active')
+              .forEach(el => el.classList.remove('is-active'));
+            // Activate the current section label
+            label.classList.add('is-active');
+          }
+        });
+      };
+    
+    
+      const observer = new IntersectionObserver(onChange, {
+        root: null,
+        rootMargin: '-96px 0px -80% 0px', // hits when the section top nears the top
+        threshold: 0
+      });
+    
+      SECTIONS.forEach(sec => observer.observe(sec));
+    })();
+    
+    </script>
+
+<script defer>
+  // Scroll Up Fade In Animation
+(function() {
+  let elements = [];
+  let ticking = false;
+
+  function init() {
+    // Select all elements to animate (excluding modal)
+    const targets = document.querySelectorAll('.hero-left, .hero-right, .res-label, .res-content, .leader-card');
+    
+    targets.forEach(el => {
+      // Skip modal elements
+      if (el.closest('.bio-modal')) return;
+      
+      elements.push({ el: el });
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(40px)';
+      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    });
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    update();
+  }
+
+  function onScroll() {
+    if (!ticking) {
+      requestAnimationFrame(update);
+      ticking = true;
+    }
+  }
+
+  function update() {
+    const viewH = window.innerHeight;
+
+    elements.forEach(item => {
+      const rect = item.el.getBoundingClientRect();
+      
+      if (rect.top < viewH - 100 && rect.bottom > 0) {
+        item.el.style.opacity = '1';
+        item.el.style.transform = 'translateY(0)';
+      }
+    });
+
+    ticking = false;
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+
+<script>
+  document.documentElement.classList.remove('no-js');
+
+  (function () {
+    const section = document.querySelector('.hero-parallax');
+    if (!section) return;
+    const media = section.querySelector('.hero-media');
+    const speed = 0.40;
+
+    let ticking = false;
+
+    function update() {
+      const rect = section.getBoundingClientRect();
+      const offset = rect.top * speed * -1;
+      media.style.setProperty('--parallax', offset.toFixed(2) + 'px');
+      ticking = false;
+    }
+
+    function onScroll() {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(update);
+      }
+    }
+
+    // Initial paint + listeners
+    update();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+  })();
+</script>
+</body>
+</html>

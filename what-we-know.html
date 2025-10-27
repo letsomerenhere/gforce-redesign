@@ -1,0 +1,919 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resources | GForce Technology Consulting</title>
+  <link rel="icon" type="image/png" href="img/logo/favicon.png" sizes="32x32">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="resources.css" />
+<style>
+.hero {
+      position: relative;
+      min-height: 40vh;
+    }
+    
+    .hero-media {
+      position: absolute;
+      inset: 0;  
+      z-index: 0;
+      background-image: var(--hero-img);
+      background-size: cover;
+      background-position: center 40%;
+      background-repeat: no-repeat;
+    }
+    
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 1; 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 8%;
+      color: #fff;
+      background: rgba(0,0,0,.5);
+      
+    }
+
+    .hero-eyebrow {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 600;
+      font-size: clamp(0.8rem, 2vw, 0.95rem);
+      letter-spacing: 0.08em;
+      text-transform: capitalize;
+      color: #fff;
+      opacity: 0.85;
+      margin-bottom: 0.5rem;
+    }
+    
+    .hero-overlay h1 {
+      text-transform: capitalize;
+      font-size: clamp(2rem, 8vw, 3rem);
+      margin: 0 0 0.75rem;
+      font-family: Arial, Helvetica, sans-serif;
+      opacity: .9;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+      line-height: 1.2;
+    }
+.hero-overlay .button {
+  display: inline-block;
+  padding: 0.875rem 2rem;
+  background: #C0111F;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 500;
+  display: inline-flex;
+align-items: center;
+opacity: .8;
+  font-size: .9rem;
+  transition: background 0.3s ease;
+}
+
+.hero-overlay .button:hover {
+  background: #7A0C15;
+}
+
+.hero-overlay .button .arrow-icon {
+font-size: 20px;
+transition: transform 0.3s ease;
+}
+
+.hero-overlay .button:hover .arrow-icon {
+transform: rotate(90deg);
+}
+
+.site-header.header--dark {
+background: #0b0f16;
+color: #f4f6fb;
+border-color: rgba(255,255,255,.12);
+}
+
+@media (max-width: 768px) {
+      .hero {
+        min-height: 35vh;
+      }
+
+    
+      .hero-overlay {
+        padding: 5%;
+        padding-bottom: 2rem;
+      }
+
+      .hero-box {
+        padding: 0;
+      }
+    
+      .hero-overlay h1 {
+        font-size: 2rem;
+      }
+      
+      .hero-overlay .lead {
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+      }
+    
+      .hero-eyebrow {
+        font-size: 0.7rem;
+        margin-bottom: 0.35rem;
+      }
+      .hero-overlay .button {
+        padding: 0.5rem 1rem;
+        font-size: .7rem;
+      }
+
+    }
+    
+    
+    /* ===== VERY SMALL MOBILE (max 480px) ===== */
+    @media (max-width: 480px) {
+      .hero {
+        min-height: 30vh;
+      }
+    
+      .hero-overlay {
+        padding: 0 1.25rem;
+        padding-bottom: 1.5rem;
+      }
+    
+      .hero-overlay h1 {
+        font-size: 1.5rem;
+      }
+      
+      .hero-overlay .lead {
+        font-size: .8rem;
+        line-height: 1.1rem;
+      }
+      .hero-overlay .button {
+        padding: 0.4rem .5rem;
+        font-size: .7rem;
+      }
+
+    }
+    
+    /* ===== VERY SMALL MOBILE (max 360px) ===== */
+    @media (max-width: 360px) {
+      .hero-overlay {
+        padding: 0 1rem;
+      }
+    }
+    
+
+
+  </style>
+</head>
+
+<body>
+  <header class="site-header" role="banner">
+    <div class="nav-wrap">
+      <a class="brand" href="index.html" aria-label="Go to home">
+        <img src="img/logo/logo-header.png" alt="GForce Logo" class="logo-light">
+        <img src="img/logo/logo-header-white.png" alt="GForce Logo White" class="logo-dark">
+      </a>
+      <!-- Primary Nav -->
+      <nav class="nav" aria-label="Primary">
+        <ul class="menu-root">
+        
+          <li class="has-panel">
+            <a class="top-link" href="what-we-do.html">What We Do</a>
+            <div class="dropdown-panel">
+              <ul class="simple-list">
+                <li><a href="what-we-do.html#infor">Infor Lawson Upgrade</a></li>
+                <li><a href="what-we-do.html#cloudsuite">CloudSuite Implementation</a></li>
+                <li><a href="what-we-do.html#managed-cloudsuite">Managed Services CloudSuite</a></li>
+                <li><a href="what-we-do.html#managed-lawson">Managed Services <br>Infor Lawson</a></li>
+                <li><a href="what-we-do.html#health">Health Check &amp; Roadmap</a></li>
+                <li><a href="what-we-do.html#PMO">PMO Services</a></li>
+                <li><a href="what-we-do.html#change">Change Management &amp; Training</a></li>
+              </ul>
+            </div>
+          </li>
+  
+          <li class="has-panel">
+            <a class="top-link" href="industries.html">Industries</a>
+            <div class="dropdown-panel">
+              <ul class="simple-list">
+                <li><a href="industries.html#healthcare">Healthcare</a></li>
+                <li><a href="industries.html#public">Public Sector</a></li>
+                <li><a href="industries.html#utilities">Utilities</a></li>
+                <li><a href="industries.html#transportation">Transportation &amp; Logistics</a></li>
+                <li><a href="industries.html#professional">Professional Services</a></li>
+                <li><a href="industries.html#retail">Retail</a></li>
+              </ul>
+            </div>
+          </li>
+  
+          <li><a class="top-link" href="partnership.html">Infor Partnership</a></li>
+  
+          <li class="has-panel">
+            <a class="top-link" href="what-we-know.html">What We Know</a>
+            <div class="dropdown-panel">
+              <ul class="simple-list">
+                <li><a href="what-we-know.html#case-studies">Case Studies</a></li>
+                <li><a href="what-we-know.html#articles">Articles</a></li>
+                <li><a href="what-we-know.html#gforce-resources">GForce Resource</a></li>
+              </ul>
+            </div>
+          </li>
+  
+          <li class="has-panel">
+            <a class="top-link" href="who-we-are.html">Who We Are</a>
+            <div class="dropdown-panel">
+              <ul class="simple-list">
+                <li><a href="who-we-are.html#story">Our Story</a></li>
+                <li><a href="who-we-are.html#leadership">Leadership</a></li>
+                <li><a href="careers.html">Careers</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+  
+      <!-- CTA -->
+      <a href="contact.html" class="button">
+        Contact Us
+      </a>
+
+      <button class="hamburger" id="navToggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="resources" class="resources-wrap">
+
+    <section class="hero hero-parallax" style="height: 40vh;" id="hero">
+      <div class="hero-media" style="--hero-img: url('img/what-we-know/what-we-know.webp');"></div>
+      <div class="hero-overlay">
+          <div class="container">
+            <p class="hero-eyebrow">What We Know</p>
+            <h1>Real World Experience,<br>
+              <span style="color: #C0111F;">
+              Not Theoretical Advice.</span></h1>
+              <a href="contact.html" class="button">
+                Set Up A Consult<span class="material-symbols-outlined arrow-icon">arrow_forward</span>
+              </a>
+          </div>
+        </div>
+    </section>
+  
+    <!-- Content Sections -->
+
+
+    <section id="case-studies" class="res-section" data-theme="dark" data-label="Case Studies" aria-labelledby="case-studies-label">
+      <div class="res-grid container">
+        <div class="res-label-wrap">
+          <h2 id="case-studies-label" class="res-label">Case Studies</h2>
+        </div>
+  
+        <div class="res-cards">
+          <article class="res-card">
+            <a href="case-studies/national-travel-center.html" class="res-card-link">
+              <figure class="res-card-media">
+                <img src="img/what-we-know/case-1.webp" alt="Trucks Lined Up" loading="lazy">
+              </figure>
+              <div class="res-card-body">
+                <span class="eyebrow">Case Study</span>
+                <h3 class="res-card-title">
+                  Transforming a National Travel Center Operator with Infor CloudSuite FSM</h3>
+                <p class="res-card-desc">When one of the largest U.S. operators of truck stops and travel centers set out to
+                  modernize its systems, they turned to a trusted partner: GForce.</p>
+              </div>
+            </a>
+          </article>
+  
+          <article class="res-card">
+            <a href="case-studies/seacube.html" class="res-card-link">
+              <figure class="res-card-media">
+                <img src="img/what-we-know/case-2.webp" alt="Shipping containers with forklift" loading="lazy">
+              </figure>
+              <div class="res-card-body">
+                <span class="eyebrow">Case Study</span>
+                <h3 class="res-card-title">
+                  SeaCube Modernizes With Infor CloudSuite FSM</h3>
+                <p class="res-card-desc">SeaCube partnered with GForce because of our ability to combine technical expertise with
+                  business process knowledge and because of our reputation for building confidence through
+                  collaboration.</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="res-card">
+            <a href="case-studies/lakeview-center.html" class="res-card-link">
+              <figure class="res-card-media">
+                <img src="img/what-we-know/case-3.webp" alt="Doctor with Stethescope" loading="lazy">
+              </figure>
+              <div class="res-card-body">
+                <span class="eyebrow">Case Study</span>
+                <h3 class="res-card-title">Business Processes Streamlined and Successful Implementation Delivered</h3>
+                <p class="res-card-desc">GForce's methodology, which prioritizes planning and design at the onset of
+                  the project, allowed Lakeview Center to take advantage of base functionality with minimal modifications, while
+                  streamlining their core business processes.</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="res-card">
+            <a href="case-studies/seasons-hospice.html" class="res-card-link">
+              <figure class="res-card-media">
+                <img src="img/what-we-know/case-4.webp" alt="Elderly Couple looking at Sunset" loading="lazy">
+              </figure>
+              <div class="res-card-body">
+                <span class="eyebrow">Success Story</span>
+                <h3 class="res-card-title">ERP Implementation delivers strong ROI
+                  through effective methodology</h3>
+                <p class="res-card-desc">Seasons Hospice is a national provider of high quality hospice and palliative services to
+                  meet the needs of the people and communities they serve. </p>
+              </div>
+            </a>
+          </article>
+
+          <article class="res-card">
+            <a href="case-studies/wayne-healthcare.html" class="res-card-link">
+              <figure class="res-card-media">
+                <img src="img/what-we-know/case-5.webp" alt="Doctor with Stethescope" loading="lazy">
+              </figure>
+              <div class="res-card-body">
+                <span class="eyebrow">Success Story</span>
+                <h3 class="res-card-title">Wayne HealthCare Goes Live!</h3>
+                <p class="res-card-desc">GForce is excited to announce the successful completion of an Infor CloudSuite Financials and Supply Chain Management implementation for Wayne HealthCare. </p>
+              </div>
+            </a>
+          </article>
+
+          <article class="res-card">
+            <a href="case-studies/agbr.html" class="res-card-link">
+              <figure class="res-card-media">
+                <img src="img/what-we-know/case-6.webp" alt="Grocery Store" loading="lazy">
+              </figure>
+              <div class="res-card-body">
+                <span class="eyebrow">Success Story</span>
+                <h3 class="res-card-title">GForce Chosen as Implementation Partner by AGBR</h3>
+                <p class="res-card-desc">GForce Technology is pleased to announce its selection as implementation partner for Associated Grocers of Baton Rouge's (AGBR) upgrade to Infor® CloudSuite Financials & Supply Chain Management (FSM).</p>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+  
+    <section id="articles" class="res-section" data-theme="dark" data-label="Articles" aria-labelledby="articles-label">
+      <div class="res-grid container">
+        <div class="res-label-wrap">
+          <h2 id="articles-label" class="res-label">Articles</h2>
+        </div>
+  
+        <div class="res-cards">
+          <!-- Card -->
+          <article class="res-card">
+            <a href="articles/stop-hiring.html" class="res-card-link">
+              <figure class="res-card-media">
+                <img src="img/what-we-know/article-1.webp" alt="Robot with hands up" loading="lazy">
+              </figure>
+              <div class="res-card-body">
+                <span class="eyebrow">Article</span>
+                <h3 class="res-card-title">
+                  Stop Hiring for Yesterday's Infrastructure</h3>
+                <p class="res-card-desc">Hire for learning velocity and human–AI workflows, not legacy checklists.</p>
+              </div>
+            </a>
+          </article>
+  
+          <article class="res-card">
+            <a href="articles/cloudsuite-myths.html" class="res-card-link">
+              <figure class="res-card-media">
+                <img src="img/what-we-know/article-2.avif" alt="Abstract dashboard showing ERP analytics" loading="lazy">
+              </figure>
+              <div class="res-card-body">
+                <span class="eyebrow">Article</span>
+                <h3 class="res-card-title">
+                  Put the CloudSuite Myths to Bed</h3>
+                <p class="res-card-desc">Six misconceptions that slow upgrades—here’s what’s actually true.</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="res-card">
+            <a href="articles/navigating-erp.html" class="res-card-link">
+              <figure class="res-card-media">
+                <img src="img/what-we-know/article-3.webp" alt="Stripes with balls" loading="lazy">
+              </figure>
+              <div class="res-card-body">
+                <span class="eyebrow">Article</span>
+                <h3 class="res-card-title">
+                  Navigating the Future of ERP</h3>
+                <p class="res-card-desc">Trends reshaping ERP—and how to align roadmaps to them.</p>
+              </div>
+            </a>
+          </article>
+  
+          
+        </div>
+      </div>
+    </section>
+  
+    <!-- GForce Resources -->
+    <section id="gforce-resources" class="res-section" data-theme="dark" data-label="GForce Resource" aria-labelledby="gforce-resources-label">
+      <div class="res-grid container">
+        <div class="res-label-wrap">
+          <h2 id="gforce-resources-label" class="res-label">GForce Resource</h2>
+        </div>
+  
+        <div class="res-cards">
+          <article class="res-card">
+              <figure class="res-card-media">
+                <video poster="img/what-we-know/gforce-intro.png" preload="none" playsinline>
+                  <source src="videos/webapp-and-menu-consolidation.mp4" type="video/mp4">
+                </video>
+              </figure>
+              <div class="res-card-body">
+                <span class="eyebrow">GForce Resource: User Adoption Series</span>
+                <h3 class="res-card-title">Webapp + Menu Consolidation</h3>
+                <p class="res-card-desc">How to streamline access to features and improve usability.</p>
+              </div>
+          </article>
+  
+          <article class="res-card">
+              <figure class="res-card-media">
+                <video poster="img/what-we-know/gforce-intro.png" preload="none" playsinline>
+                  <source src="videos/ap.mp4" type="video/mp4">
+                </video>
+              </figure>
+              <div class="res-card-body">
+                <span class="eyebrow">GForce Resource: User Adoption Series</span>
+                <h3 class="res-card-title">Global Ledger Journals</h3>
+                <p class="res-card-desc">Posting journals in the new Global Ledger Web App after the web app and menu consolidation.</p>
+              </div>
+
+          </article>
+
+          <article class="res-card">
+              <figure class="res-card-media">
+                <video poster="img/what-we-know/gforce-intro.png" preload="none" playsinline>
+                  <source src="videos/design-gforce-resource.mp4" type="video/mp4">
+                </video>
+              </figure>
+              <div class="res-card-body">
+                <span class="eyebrow">GForce Resource</span>
+                <h3 class="res-card-title">Design Decisions</h3>
+                <p class="res-card-desc">Design Decisions in the lifecycle of a product.</p>
+              </div>
+          </article>
+
+          <article class="res-card">
+              <figure class="res-card-media">
+                <video poster="img/what-we-know/gforce-intro.png" preload="none" playsinline>
+                  <source src="videos/dilbert-cartoon.mp4" type="video/mp4">
+                </video>
+              </figure>
+              <div class="res-card-body">
+                <span class="eyebrow">GForce Resource</span>
+                <h3 class="res-card-title">Dilbert Cartoon</h3>
+                <p class="res-card-desc">Why is it important to spend time in the design phase?</p>
+              </div>
+          </article>
+
+          <article class="res-card">
+              <figure class="res-card-media">
+                <video poster="img/what-we-know/gforce-intro.png" preload="none" playsinline>
+                  <source src="videos/way-force.mp4" type="video/mp4">
+                </video>
+              </figure>
+              
+              <div class="res-card-body">
+                <span class="eyebrow">GForce Resource</span>
+                <h3 class="res-card-title">The GForce Way</h3>
+                <p class="res-card-desc">What is collaborative consulting?</p>
+              </div>
+          </article>
+
+          <article class="res-card">
+              <figure class="res-card-media">
+                <video poster="img/what-we-know/gforce-intro.png" preload="none" playsinline>
+                  <source src="videos/training-resource.mp4" type="video/mp4">
+                </video>
+              </figure>
+              
+              <div class="res-card-body">
+                <span class="eyebrow">GForce Resource</span>
+                <h3 class="res-card-title">Training</h3>
+                <p class="res-card-desc">The GForce training methodology.</p>
+              </div>
+          </article>
+
+          <article class="res-card">
+              <figure class="res-card-media">
+                <video poster="img/what-we-know/gforce-intro.png" preload="none" playsinline>
+                  <source src="videos/maximizing-erp.mp4" type="video/mp4">
+                </video>
+              </figure>
+              
+              <div class="res-card-body">
+                <span class="eyebrow">GForce Resource</span>
+                <h3 class="res-card-title">Maximizing Your ERP Investment</h3>
+                <p class="res-card-desc">How have customers maximized their investments?</p>
+              </div>
+          </article>
+
+          <article class="res-card">
+              <figure class="res-card-media">
+                <video poster="img/what-we-know/gforce-intro.png" preload="none" playsinline>
+                  <source src="videos/maximizing-erp.mp4" type="video/mp4">
+                </video>
+              </figure>
+              
+              <div class="res-card-body">
+                <span class="eyebrow">GForce Resource</span>
+                <h3 class="res-card-title">Close & Recon</h3>
+                <p class="res-card-desc">Why is it important to bring cash management, Recon, and Close together?</p>
+              </div>
+          </article>
+    
+          <div class="res-cards" id="ytGrid" aria-live="polite"></div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  
+
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-top">
+    <!-- Logo -->
+    <a href="index.html" class="footer-logo">
+      <img src="img/logo/logo-footer.png" alt="GForce Logo" height="40">
+    </a>
+
+    <!-- Footer Navigation -->
+    <div class="footer-sections">
+      <!-- What We Do -->
+      <div class="footer-col">
+        <h4 class="footer-heading">What We Do</h4>
+        <ul>
+          <li><a href="what-we-do.html#infor">Upgrade Infor Lawson</a></li>
+          <li><a href="what-we-do.html#cloudsuite">Net New Implementation</a></li>
+          <li><a href="what-we-do.html#managed-services">Managed Services</a></li>
+        </ul>
+      </div>
+
+      <!-- More About Us -->
+      <div class="footer-col">
+        <h4 class="footer-heading">More About Us</h4>
+        <ul>
+          <li><a href="what-we-know.html#case-studies">Success Stories</a></li>
+          <li><a href="partnership.html">Infor Partnership</a></li>
+          <li><a href="who-we-are.html">About Us</a></li>
+          <li><a href="careers.html">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container footer-bottom">
+    <p><i class="fa fa-copyright"></i> 2025 GForce Technology Consulting. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+  <script src="main.js" defer></script>
+    
+  <script>
+(() => {
+  const SECTIONS = document.querySelectorAll('.res-section');
+  if (!SECTIONS.length) return;
+
+  const onChange = (entries) => {
+    entries.forEach(entry => {
+      const section = entry.target;
+      const label = section.querySelector('.res-label');
+      if (!label) return;
+
+      if (entry.isIntersecting) {
+        // Clear all active states
+        document.querySelectorAll('.res-label.is-active')
+          .forEach(el => el.classList.remove('is-active'));
+        // Activate the current section label
+        label.classList.add('is-active');
+      }
+    });
+  };
+
+
+  const observer = new IntersectionObserver(onChange, {
+    root: null,
+    rootMargin: '-96px 0px -80% 0px',
+    threshold: 0
+  });
+
+  SECTIONS.forEach(sec => observer.observe(sec));
+})();
+</script>
+
+<script>
+  document.documentElement.classList.remove('no-js');
+
+  (function () {
+    const section = document.querySelector('.hero-parallax');
+    if (!section) return;
+    const media = section.querySelector('.hero-media');
+    const speed = 0.40;
+
+    let ticking = false;
+
+    function update() {
+      const rect = section.getBoundingClientRect();
+      const offset = rect.top * speed * -1;
+      media.style.setProperty('--parallax', offset.toFixed(2) + 'px');
+      ticking = false;
+    }
+
+    function onScroll() {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(update);
+      }
+    }
+
+    // Initial paint + listeners
+    update();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+  })();
+</script>
+
+<script>
+  (() => {
+    const videos = [
+      { url:'https://www.youtube.com/watch?v=FYzcA0EUoOo&t=1s', title:'5 Minute Bank Statement Reconciliation', desc:"Using Infor's Cash and Treasury Management Module" },
+      { url:'https://www.youtube.com/watch?v=NEKBlN7V7zM',       title:'Creating a Journal Entry', desc:'Using Infor CloudSuite Financials and Supply Management (FSM)' },
+      { url:'https://www.youtube.com/watch?v=pbyjWlIi45I',       title:'Lessons Learned Before, During and After a CloudSuite Implementation', desc:'Hard-won lessons across scoping, migration, testing, go-live, and hypercare.' },
+      { url:'https://www.youtube.com/watch?v=x7C3J_d-jBk',       title:'Build Your Core: Business Processes', desc:'Design a resilient core process model that survives upgrades and scales with growth.' },
+      { url:'https://www.youtube.com/watch?v=fA73Xm0kwE8',       title:'Lessening the anxiety of moving over to CloudSuite Financials', desc:'Practical steps to de-risk your move—planning, data readiness, and change management.' },
+      { url:'https://www.youtube.com/watch?v=8NMKHGpcuhY&t=1s',  title:'Electronic Payments', desc:'Set up ACH and other e-payments in FSM with approvals, security, and reconciliation tips.' }
+    ];
+
+    const getId = (url) => {
+      try {
+        const u = new URL(url, location.href);
+        const host = u.hostname.replace(/^www\./,'');
+        if (host === 'youtube.com' || host === 'm.youtube.com') {
+          if (u.pathname.startsWith('/watch'))  return u.searchParams.get('v');
+          if (u.pathname.startsWith('/embed/')) return u.pathname.split('/').pop();
+          if (u.pathname.startsWith('/shorts/'))return u.pathname.split('/').pop();
+        }
+        if (host === 'youtu.be') return u.pathname.slice(1);
+      } catch {}
+      return null;
+    };
+    const thumb = (id) => `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
+    const ytEmbedUrl = (id, autoplay=true) => {
+      const p = new URLSearchParams({ rel:'0', modestbranding:'1', playsinline:'1', cc_load_policy:'1' });
+      if (autoplay) { p.set('autoplay','1'); p.set('mute','1'); }
+      return `https://www.youtube-nocookie.com/embed/${id}?${p.toString()}`;
+    };
+  
+    // =========================
+    // 3) Build YouTube cards into #ytGrid (if present)
+    // =========================
+    const grid = document.getElementById('ytGrid');
+    if (grid) {
+      const items = videos.map(v => ({...v, id:getId(v.url)})).filter(v => v.id);
+      grid.innerHTML = items.map((v, i) => `
+        <article class="res-card reveal" data-yt="${v.id}" data-delay="${(i % 3) * 80}">
+          <figure class="res-card-media">
+            <a class="yt-thumb" href="${v.url}" aria-label="Play: ${v.title}">
+              <div class="thumb" style="width:100%;aspect-ratio:16/9;background-image:url('${thumb(v.id)}');background-size:cover;background-position:center;"></div>
+            </a>
+            <div class="media-ctrl">
+              <button class="max-btn" type="button" aria-label="Maximize">
+                <span class="material-symbols-outlined">fullscreen</span>
+              </button>
+            </div>
+          </figure>
+          <div class="res-card-body">
+            <span class="eyebrow">GForce Resource</span>
+            <h3 class="res-card-title">${v.title}</h3>
+            <p class="res-card-desc">${v.desc}</p>
+          </div>
+        </article>
+      `).join('');
+    }
+  
+    // =========================
+    // 4) Stagger reveal (optional nicety)
+    // =========================
+    (function () {
+      const cards = document.querySelectorAll('.reveal');
+      if (!cards.length) return;
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reduceMotion || !('IntersectionObserver' in window)) {
+        cards.forEach(el => el.classList.add('in'));
+        return;
+      }
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const el = entry.target;
+            const delay = Number(el.dataset.delay || 0);
+            el.style.setProperty('--stagger', `${delay}ms`);
+            el.classList.add('in');
+            io.unobserve(el);
+          }
+        });
+      }, { threshold: 0.15 });
+      cards.forEach(el => io.observe(el));
+    })();
+  
+    // =========================
+    // 5) Shared Modal (YT + MP4)
+    // =========================
+    const modal = document.createElement('div');
+    modal.className = 'yt-modal';
+    modal.innerHTML = `
+      <div class="yt-overlay-controls" aria-hidden="false">
+        <button class="yt-btn-icon" data-minimize aria-label="Minimize video">
+          <span class="material-symbols-outlined">close_fullscreen</span>
+        </button>
+        <button class="yt-btn-icon" data-expand aria-label="Expand video">
+          <span class="material-symbols-outlined">fullscreen</span>
+        </button>
+        <button class="yt-btn-icon" data-close aria-label="Close video">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      <div class="yt-player" role="dialog" aria-modal="true" aria-label="Video player">
+        <div class="player-shell"></div>
+      </div>
+    `;
+    document.body.appendChild(modal);
+    modal.querySelector('.yt-player').appendChild(modal.querySelector('.yt-overlay-controls'));
+
+  
+    const shell     = modal.querySelector('.player-shell');
+    const btnClose  = modal.querySelector('[data-close]');
+    const btnMin    = modal.querySelector('[data-minimize]');
+    const btnExpand = modal.querySelector('[data-expand]');
+  
+    // ---- Single-playback enforcement helpers ----
+    const mp4Inline = () => Array.from(document.querySelectorAll('.res-card .res-card-media video'));
+  
+    const stopModalPlayers = () => {
+      const players = shell.querySelectorAll('video, iframe');
+      players.forEach(el => {
+        if (el.tagName === 'VIDEO') {
+          try { el.pause(); } catch {}
+          el.removeAttribute('src');
+          el.innerHTML = '';
+        }
+        if (el.tagName === 'IFRAME') {
+          el.src = 'about:blank';
+        }
+      });
+      shell.innerHTML = '';
+    };
+  
+    const pauseAllInline = () => mp4Inline().forEach(v => v.pause());
+  
+    const stopAllMedia = () => {
+      pauseAllInline();
+      stopModalPlayers();
+    };
+  
+    // ---- Modal open/close wrappers ----
+    const closeModal = () => {
+      stopModalPlayers();
+      modal.classList.remove('open', 'minimized');
+      document.body.classList.remove('no-scroll');
+    };
+  
+    const openWithYouTube = (id) => {
+      stopAllMedia();
+      const iframe = document.createElement('iframe');
+      iframe.className = 'yt-frame';
+      iframe.allow = 'autoplay; encrypted-media; picture-in-picture';
+      iframe.allowFullscreen = true;
+      iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+      iframe.src = ytEmbedUrl(id, true);
+      shell.appendChild(iframe);
+      modal.classList.add('open');
+      document.body.classList.add('no-scroll');
+    };
+  
+    const openWithMp4 = (src, poster='') => {
+      stopAllMedia();
+      const vid = document.createElement('video');
+      vid.className = 'yt-video';
+      vid.autoplay = true;
+      vid.playsInline = true;
+      // vid.controls = true;
+      if (poster) vid.poster = poster;
+      vid.src = src;
+      shell.appendChild(vid);
+      modal.classList.add('open');
+      document.body.classList.add('no-scroll');
+      vid.play().catch(()=>{});
+    };
+  
+    // ---- Modal chrome events ----
+    btnClose?.addEventListener('click', closeModal);
+    btnMin  ?.addEventListener('click', () => modal.classList.toggle('minimized'));
+    btnExpand?.addEventListener('click', () => modal.classList.remove('minimized'));
+    modal.addEventListener('click', (e) => {
+      if (!modal.classList.contains('minimized') && e.target === modal) closeModal();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
+    });
+  
+    
+    // =========================
+    // 6) YouTube card wiring
+    // =========================
+    if (grid) {
+      // Clicking the thumbnail opens modal
+      grid.addEventListener('click', (e) => {
+        const card = e.target.closest('.res-card');
+        const thumbLink = e.target.closest('.yt-thumb');
+        if (!card || !thumbLink) return;
+        if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button === 1) return;
+        e.preventDefault();
+        const id = card.dataset.yt;
+        if (id) openWithYouTube(id);
+      });
+      // Clicking the top-right "expand" button also opens modal
+      grid.addEventListener('click', (e) => {
+        const btn = e.target.closest('.max-btn');
+        if (!btn) return;
+        const card = e.target.closest('.res-card');
+        const id = card?.dataset?.yt;
+        if (id) openWithYouTube(id);
+      });
+    }
+  
+    // =========================
+    // 7) MP4: behave exactly like YouTube (no inline play)
+    // =========================
+    const mp4Videos = mp4Inline();
+  
+    mp4Videos.forEach(v => {
+      // Never show inline native controls
+      v.removeAttribute('controls');
+      v.setAttribute('playsinline','');
+      v.setAttribute('webkit-playsinline','');
+      v.pause();
+  
+      const media = v.closest('.res-card-media');
+      if (!media) return;
+  
+      // Add a top-right expand button (matches YT cards)
+      if (!media.querySelector('.media-ctrl')) {
+        const ctrl = document.createElement('div');
+        ctrl.className = 'media-ctrl';
+        ctrl.innerHTML = `
+          <button class="max-btn" type="button" aria-label="Maximize">
+            <span class="material-symbols-outlined">fullscreen</span>
+          </button>
+        `;
+        media.appendChild(ctrl);
+  
+        ctrl.querySelector('.max-btn').addEventListener('click', (e) => {
+          e.stopPropagation();
+          const s = v.querySelector('source');
+          const src = (s && s.src) || v.currentSrc || v.src;
+          const poster = v.getAttribute('poster') || '';
+          if (!src) return;
+          stopAllMedia();
+          openWithMp4(src, poster);
+        });
+      }
+  
+      // Clicking the video area opens modal (like YT card)
+      media.addEventListener('click', (e) => {
+        // ignore clicks on nested links/buttons if any
+        if (e.target.closest('a, button')) return;
+  
+        const s = v.querySelector('source');
+        const src = (s && s.src) || v.currentSrc || v.src;
+        const poster = v.getAttribute('poster') || '';
+        if (!src) return;
+  
+        stopAllMedia();
+        openWithMp4(src, poster);
+      }, { capture: true });
+    });
+  })();
+  </script>
+  
+  
+  
+</body>
+</html>
