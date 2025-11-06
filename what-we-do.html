@@ -45,7 +45,7 @@
       z-index: 0;
       background-image: var(--hero-img);
       background-size: cover;
-      background-position: center 40%;
+      background-position: center 20%;
       background-repeat: no-repeat;
     }
     
@@ -83,19 +83,20 @@
       text-shadow: 0 2px 10px rgba(0,0,0,0.4);
       line-height: 1.2;
     }
-.hero-overlay .button {
-  display: inline-block;
-  padding: 0.875rem 2rem;
+    .hero-overlay .button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem; /* Increased gap between text and icon */
+  padding: 0.8rem 1.5rem; /* Increased horizontal padding */
   background: #C0111F;
   color: #fff;
   text-decoration: none;
   border-radius: 999px;
   font-weight: 500;
-  display: inline-flex;
-align-items: center;
-opacity: .8;
+  opacity: .8;
   font-size: .9rem;
   transition: background 0.3s ease;
+  white-space: nowrap; /* Prevents text wrapping */
 }
 
 .hero-overlay .button:hover {
@@ -127,7 +128,7 @@ transform: rotate(90deg);
       }
     
       .hero-overlay h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
       }
       
       .hero-overlay .lead {
@@ -136,11 +137,11 @@ transform: rotate(90deg);
       }
     
       .hero-eyebrow {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         margin-bottom: 0.35rem;
       }
       .hero-overlay .button {
-        padding: 0.5rem 1rem;
+        padding: 0.5rem .3rem;
         font-size: .7rem;
       }
 
@@ -156,20 +157,18 @@ transform: rotate(90deg);
       .hero-overlay {
         padding: 0 1.25rem;
         padding-bottom: 1.5rem;
+
       }
     
       .hero-overlay h1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
       }
       
       .hero-overlay .lead {
         font-size: .8rem;
         line-height: 1.1rem;
       }
-      .hero-overlay .button {
-        padding: 0.4rem .5rem;
-        font-size: .7rem;
-      }
+
 
     }
     
@@ -292,11 +291,18 @@ transform: rotate(90deg);
     padding: 0.875rem;
   }
   
-  .res-card--text p {
-    font-size: .9rem;
-  }
   .res-card--text {
-    display: block;
+    display: flex;
+    gap: 0.75rem;
+    padding-right: 0;
+  }
+  .res-card--text .icon {
+    width: 60px;
+    height: 60px;
+  }
+  .res-card--text p {
+    font-size: 1rem;
+    flex: 1;
   }
   
   .res-card-title {
@@ -325,6 +331,10 @@ transform: rotate(90deg);
   
   .res-card-desc {
     font-size: 0.85rem;
+  }
+  .res-card--text p {
+    font-size: 0.9rem;
+
   }
   
 }
@@ -416,7 +426,7 @@ transform: rotate(90deg);
   <main id="what-we-do" class="what-we-do-wrap">
 
     <section class="hero hero-parallax" style="height: 40vh;" id="hero">
-      <div class="hero-media" style="--hero-img: url('img/what-we-do/what-we-do.webp');"></div>
+      <div class="hero-media" style="--hero-img: url('img/what-we-do/what-we-do.jpg');"></div>
       <div class="hero-overlay">
           <div class="container">
             <p class="hero-eyebrow">Smart People Solving Hard Problems.</p>
@@ -448,7 +458,7 @@ transform: rotate(90deg);
     
   
     <!-- CloudSuite -->
-    <section id="cloudSuite" class="res-section" data-theme="dark" data-label="cloudsuite" aria-labelledby="cloudsuite-label">
+    <section id="cloudsuite" class="res-section" data-theme="dark" data-label="cloudsuite" aria-labelledby="cloudsuite-label">
       <div class="res-grid container">
         <div class="res-label-wrap">
           <h2 id="cloudsuite" class="res-label">CloudSuite Implementation</h2>
@@ -485,7 +495,7 @@ transform: rotate(90deg);
     <section id="managed-lawson" class="res-section" data-theme="dark" data-label="Managed Services – Infor Lawson" aria-labelledby="managed-lawson-label">
       <div class="res-grid container">
         <div class="res-label-wrap">
-          <h2 id="managed-lawson-label" class="res-label">Managed Services – Infor Lawson</h2>
+          <h2 id="managed-lawson-label" class="res-label">Managed Services – Infor&nbsp;Lawson</h2>
         </div>
   
         <div class="res-cards res-cards--text">
@@ -567,7 +577,7 @@ transform: rotate(90deg);
           <ul>
             <li><a href="what-we-do.html#infor">Upgrade Infor Lawson</a></li>
             <li><a href="what-we-do.html#cloudsuite">Net New Implementation</a></li>
-            <li><a href="what-we-do.html#managed-services">Managed Services</a></li>
+            <li><a href="what-we-do.html#managed-cloudsuite">Managed Services</a></li>
           </ul>
         </div>
   
@@ -585,6 +595,8 @@ transform: rotate(90deg);
     </div>
     
     <div class="container footer-bottom">
+      <a href="mailto:info@thegforce.com"><i style="font-size:15px;" class="fa">&#xf0e0;</i> info@thegforce.com</a>
+
       <p><i class="fa fa-copyright"></i> 2025 GForce Technology Consulting. All Rights Reserved.</p>
     </div>
   </footer>

@@ -5,6 +5,12 @@
 --muted:#9aa3af;
 } */
 
+h3, p {
+  text-wrap: balance;
+  widows: 2;
+  orphans: 2;
+}
+
 
 .resources-wrap .container,
 .res-section .container {
@@ -15,7 +21,7 @@
 
 .res-section {
     padding-block: clamp(32px, 6vw, 64px);
-    background-color: #0b0f16;
+    background-color: #000;
   }
 .res-grid {
     display: grid;
@@ -53,7 +59,7 @@ gap: clamp(1rem, 2.5vw, 1.5rem);
 }
 
 .res-card{
-background: #0b0f16;
+background: #000;
 overflow: clip;
 }
 

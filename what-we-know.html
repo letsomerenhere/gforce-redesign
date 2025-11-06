@@ -5,12 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Resources | GForce Technology Consulting</title>
   <link rel="icon" type="image/png" href="img/logo/favicon.png" sizes="32x32">
+  <link rel="preconnect" href="https://www.youtube-nocookie.com">
+  <link rel="preconnect" href="https://i.ytimg.com">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="resources.css" />
 <style>
+
+.lazy-thumb {
+  transition: opacity 0.3s ease;
+}
+
+.lazy-thumb .thumb-placeholder {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.lazy-thumb.loaded .thumb-placeholder {
+  display: none;
+}
 .hero {
       position: relative;
       min-height: 40vh;
@@ -60,19 +82,20 @@
       text-shadow: 0 2px 10px rgba(0,0,0,0.4);
       line-height: 1.2;
     }
-.hero-overlay .button {
-  display: inline-block;
-  padding: 0.875rem 2rem;
+    .hero-overlay .button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem; /* Increased gap between text and icon */
+  padding: 0.8rem 1.5rem; /* Increased horizontal padding */
   background: #C0111F;
   color: #fff;
   text-decoration: none;
   border-radius: 999px;
   font-weight: 500;
-  display: inline-flex;
-align-items: center;
-opacity: .8;
+  opacity: .8;
   font-size: .9rem;
   transition: background 0.3s ease;
+  white-space: nowrap; /* Prevents text wrapping */
 }
 
 .hero-overlay .button:hover {
@@ -89,7 +112,7 @@ transform: rotate(90deg);
 }
 
 .site-header.header--dark {
-background: #0b0f16;
+background: black;
 color: #f4f6fb;
 border-color: rgba(255,255,255,.12);
 }
@@ -110,7 +133,7 @@ border-color: rgba(255,255,255,.12);
       }
     
       .hero-overlay h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
       }
       
       .hero-overlay .lead {
@@ -119,11 +142,11 @@ border-color: rgba(255,255,255,.12);
       }
     
       .hero-eyebrow {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         margin-bottom: 0.35rem;
       }
       .hero-overlay .button {
-        padding: 0.5rem 1rem;
+        padding: 0.5rem .3rem;
         font-size: .7rem;
       }
 
@@ -142,16 +165,12 @@ border-color: rgba(255,255,255,.12);
       }
     
       .hero-overlay h1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
       }
       
       .hero-overlay .lead {
         font-size: .8rem;
         line-height: 1.1rem;
-      }
-      .hero-overlay .button {
-        padding: 0.4rem .5rem;
-        font-size: .7rem;
       }
 
     }
@@ -299,8 +318,7 @@ border-color: rgba(255,255,255,.12);
                 <h3 class="res-card-title">
                   SeaCube Modernizes With Infor CloudSuite FSM</h3>
                 <p class="res-card-desc">SeaCube partnered with GForce because of our ability to combine technical expertise with
-                  business process knowledge and because of our reputation for building confidence through
-                  collaboration.</p>
+                  business process knowledge and because of our reputation for building confidence through collaboration.</p>
               </div>
             </a>
           </article>
@@ -427,36 +445,10 @@ border-color: rgba(255,255,255,.12);
         </div>
   
         <div class="res-cards">
-          <article class="res-card">
-              <figure class="res-card-media">
-                <video poster="img/what-we-know/gforce-intro.png" preload="none" playsinline>
-                  <source src="videos/webapp-and-menu-consolidation.mp4" type="video/mp4">
-                </video>
-              </figure>
-              <div class="res-card-body">
-                <span class="eyebrow">GForce Resource: User Adoption Series</span>
-                <h3 class="res-card-title">Webapp + Menu Consolidation</h3>
-                <p class="res-card-desc">How to streamline access to features and improve usability.</p>
-              </div>
-          </article>
-  
-          <article class="res-card">
-              <figure class="res-card-media">
-                <video poster="img/what-we-know/gforce-intro.png" preload="none" playsinline>
-                  <source src="videos/ap.mp4" type="video/mp4">
-                </video>
-              </figure>
-              <div class="res-card-body">
-                <span class="eyebrow">GForce Resource: User Adoption Series</span>
-                <h3 class="res-card-title">Global Ledger Journals</h3>
-                <p class="res-card-desc">Posting journals in the new Global Ledger Web App after the web app and menu consolidation.</p>
-              </div>
-
-          </article>
 
           <article class="res-card">
               <figure class="res-card-media">
-                <video poster="img/what-we-know/gforce-intro.png" preload="none" playsinline>
+                <video preload="metadata" playsinline webkit-playsinline poster="img/what-we-know/gforce-intro.png"> 
                   <source src="videos/design-gforce-resource.mp4" type="video/mp4">
                 </video>
               </figure>
@@ -469,7 +461,7 @@ border-color: rgba(255,255,255,.12);
 
           <article class="res-card">
               <figure class="res-card-media">
-                <video poster="img/what-we-know/gforce-intro.png" preload="none" playsinline>
+                <video preload="metadata" playsinline webkit-playsinline poster="img/what-we-know/gforce-intro.png"> 
                   <source src="videos/dilbert-cartoon.mp4" type="video/mp4">
                 </video>
               </figure>
@@ -482,7 +474,7 @@ border-color: rgba(255,255,255,.12);
 
           <article class="res-card">
               <figure class="res-card-media">
-                <video poster="img/what-we-know/gforce-intro.png" preload="none" playsinline>
+                <video preload="metadata" playsinline webkit-playsinline poster="img/what-we-know/gforce-intro.png"> 
                   <source src="videos/way-force.mp4" type="video/mp4">
                 </video>
               </figure>
@@ -496,7 +488,7 @@ border-color: rgba(255,255,255,.12);
 
           <article class="res-card">
               <figure class="res-card-media">
-                <video poster="img/what-we-know/gforce-intro.png" preload="none" playsinline>
+                <video preload="metadata" playsinline webkit-playsinline poster="img/what-we-know/gforce-intro.png"> 
                   <source src="videos/training-resource.mp4" type="video/mp4">
                 </video>
               </figure>
@@ -509,8 +501,35 @@ border-color: rgba(255,255,255,.12);
           </article>
 
           <article class="res-card">
+            <figure class="res-card-media">
+              <video preload="metadata" playsinline webkit-playsinline poster="img/what-we-know/gforce-intro.png"> 
+                <source src="videos/webapp-and-menu-consolidation.mp4" type="video/mp4">
+              </video>
+            </figure>
+            <div class="res-card-body">
+              <span class="eyebrow">GForce Resource: User Adoption Series</span>
+              <h3 class="res-card-title">Webapp + Menu Consolidation</h3>
+              <p class="res-card-desc">How to streamline access to features and improve usability.</p>
+            </div>
+        </article>
+
+        <article class="res-card">
+          <figure class="res-card-media">
+            <video preload="metadata" playsinline webkit-playsinline poster="img/what-we-know/gforce-intro.png"> 
+              <source src="videos/ap.mp4" type="video/mp4">
+            </video>
+          </figure>
+          <div class="res-card-body">
+            <span class="eyebrow">GForce Resource: User Adoption Series</span>
+            <h3 class="res-card-title">Global Ledger Journals</h3>
+            <p class="res-card-desc">Posting journals in the new Global Ledger Web App after the web app and menu consolidation.</p>
+          </div>
+
+      </article>
+
+          <article class="res-card">
               <figure class="res-card-media">
-                <video poster="img/what-we-know/gforce-intro.png" preload="none" playsinline>
+                <video preload="metadata" playsinline webkit-playsinline poster="img/what-we-know/gforce-intro.png"> 
                   <source src="videos/maximizing-erp.mp4" type="video/mp4">
                 </video>
               </figure>
@@ -524,7 +543,7 @@ border-color: rgba(255,255,255,.12);
 
           <article class="res-card">
               <figure class="res-card-media">
-                <video poster="img/what-we-know/gforce-intro.png" preload="none" playsinline>
+                <video preload="metadata" playsinline webkit-playsinline poster="img/what-we-know/gforce-intro.png"> 
                   <source src="videos/maximizing-erp.mp4" type="video/mp4">
                 </video>
               </figure>
@@ -561,7 +580,7 @@ border-color: rgba(255,255,255,.12);
         <ul>
           <li><a href="what-we-do.html#infor">Upgrade Infor Lawson</a></li>
           <li><a href="what-we-do.html#cloudsuite">Net New Implementation</a></li>
-          <li><a href="what-we-do.html#managed-services">Managed Services</a></li>
+          <li><a href="what-we-do.html#managed-cloudsuite">Managed Services</a></li>
         </ul>
       </div>
 
@@ -579,6 +598,8 @@ border-color: rgba(255,255,255,.12);
   </div>
   
   <div class="container footer-bottom">
+    <a href="mailto:info@thegforce.com"><i style="font-size:15px;" class="fa">&#xf0e0;</i> info@thegforce.com</a>
+
     <p><i class="fa fa-copyright"></i> 2025 GForce Technology Consulting. All Rights Reserved.</p>
   </div>
 </footer>
@@ -652,6 +673,7 @@ border-color: rgba(255,255,255,.12);
 
 <script>
   (() => {
+    // Video data array
     const videos = [
       { url:'https://www.youtube.com/watch?v=FYzcA0EUoOo&t=1s', title:'5 Minute Bank Statement Reconciliation', desc:"Using Infor's Cash and Treasury Management Module" },
       { url:'https://www.youtube.com/watch?v=NEKBlN7V7zM',       title:'Creating a Journal Entry', desc:'Using Infor CloudSuite Financials and Supply Management (FSM)' },
@@ -660,30 +682,34 @@ border-color: rgba(255,255,255,.12);
       { url:'https://www.youtube.com/watch?v=fA73Xm0kwE8',       title:'Lessening the anxiety of moving over to CloudSuite Financials', desc:'Practical steps to de-risk your move—planning, data readiness, and change management.' },
       { url:'https://www.youtube.com/watch?v=8NMKHGpcuhY&t=1s',  title:'Electronic Payments', desc:'Set up ACH and other e-payments in FSM with approvals, security, and reconciliation tips.' }
     ];
-
-    const getId = (url) => {
-      try {
-        const u = new URL(url, location.href);
-        const host = u.hostname.replace(/^www\./,'');
-        if (host === 'youtube.com' || host === 'm.youtube.com') {
-          if (u.pathname.startsWith('/watch'))  return u.searchParams.get('v');
-          if (u.pathname.startsWith('/embed/')) return u.pathname.split('/').pop();
-          if (u.pathname.startsWith('/shorts/'))return u.pathname.split('/').pop();
-        }
-        if (host === 'youtu.be') return u.pathname.slice(1);
-      } catch {}
+  
+    // Helper functions
+    const getId = (u) => {
+      if (u.includes('youtu.be/')) return u.split('youtu.be/')[1]?.split(/[?&]/)[0];
+      if (u.includes('youtube.com/watch')) return new URLSearchParams(u.split('?')[1]).get('v');
       return null;
     };
-    const thumb = (id) => `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
+  
+    // Use WebP thumbnails for better performance (50% smaller than JPG)
+    const thumb = (id) => `https://i.ytimg.com/vi_webp/${id}/hqdefault.webp`;
+    // Fallback to standard if WebP not supported
+    const thumbFallback = (id) => `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
+  
     const ytEmbedUrl = (id, autoplay=true) => {
-      const p = new URLSearchParams({ rel:'0', modestbranding:'1', playsinline:'1', cc_load_policy:'1' });
-      if (autoplay) { p.set('autoplay','1'); p.set('mute','1'); }
+      const p = new URLSearchParams({ 
+        rel:'0', 
+        modestbranding:'1', 
+        playsinline:'1', 
+        cc_load_policy:'1'
+      });
+      if (autoplay) { 
+        p.set('autoplay','1'); 
+        p.set('mute','1'); 
+      }
       return `https://www.youtube-nocookie.com/embed/${id}?${p.toString()}`;
     };
   
-    // =========================
-    // 3) Build YouTube cards into #ytGrid (if present)
-    // =========================
+    // Build YouTube cards with lazy loading
     const grid = document.getElementById('ytGrid');
     if (grid) {
       const items = videos.map(v => ({...v, id:getId(v.url)})).filter(v => v.id);
@@ -691,7 +717,13 @@ border-color: rgba(255,255,255,.12);
         <article class="res-card reveal" data-yt="${v.id}" data-delay="${(i % 3) * 80}">
           <figure class="res-card-media">
             <a class="yt-thumb" href="${v.url}" aria-label="Play: ${v.title}">
-              <div class="thumb" style="width:100%;aspect-ratio:16/9;background-image:url('${thumb(v.id)}');background-size:cover;background-position:center;"></div>
+              <!-- Use data-src for lazy loading and WebP format -->
+              <div class="thumb lazy-thumb" 
+                   data-bg="${thumb(v.id)}" 
+                   data-bg-fallback="${thumbFallback(v.id)}"
+                   style="width:100%;aspect-ratio:16/9;background-color:#000;background-size:cover;background-position:center;">
+                <div class="thumb-placeholder" style="width:100%;height:100%;background:#1a1a1a;"></div>
+              </div>
             </a>
             <div class="media-ctrl">
               <button class="max-btn" type="button" aria-label="Maximize">
@@ -706,11 +738,57 @@ border-color: rgba(255,255,255,.12);
           </div>
         </article>
       `).join('');
+      
+      // Implement lazy loading for thumbnails
+      lazyLoadThumbnails();
     }
   
-    // =========================
-    // 4) Stagger reveal (optional nicety)
-    // =========================
+    // Lazy load thumbnails only when they come into view
+    function lazyLoadThumbnails() {
+      const thumbnails = document.querySelectorAll('.lazy-thumb');
+      
+      if ('IntersectionObserver' in window) {
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const thumb = entry.target;
+              const bgUrl = thumb.dataset.bg;
+              const fallbackUrl = thumb.dataset.bgFallback;
+              
+              // Try loading WebP first
+              const img = new Image();
+              img.onload = () => {
+                thumb.style.backgroundImage = `url('${bgUrl}')`;
+                thumb.querySelector('.thumb-placeholder')?.remove();
+                thumb.classList.add('loaded');
+              };
+              img.onerror = () => {
+                // Fallback to JPG if WebP fails
+                thumb.style.backgroundImage = `url('${fallbackUrl}')`;
+                thumb.querySelector('.thumb-placeholder')?.remove();
+                thumb.classList.add('loaded');
+              };
+              img.src = bgUrl;
+              
+              observer.unobserve(thumb);
+            }
+          });
+        }, {
+          rootMargin: '50px' // Start loading 50px before entering viewport
+        });
+        
+        thumbnails.forEach(thumb => imageObserver.observe(thumb));
+      } else {
+        // Fallback for older browsers - load immediately
+        thumbnails.forEach(thumb => {
+          const bgUrl = thumb.dataset.bgFallback;
+          thumb.style.backgroundImage = `url('${bgUrl}')`;
+          thumb.querySelector('.thumb-placeholder')?.remove();
+        });
+      }
+    }
+  
+    // Stagger reveal with improved performance
     (function () {
       const cards = document.querySelectorAll('.reveal');
       if (!cards.length) return;
@@ -733,9 +811,7 @@ border-color: rgba(255,255,255,.12);
       cards.forEach(el => io.observe(el));
     })();
   
-    // =========================
-    // 5) Shared Modal (YT + MP4)
-    // =========================
+    // Shared Modal (YT + MP4)
     const modal = document.createElement('div');
     modal.className = 'yt-modal';
     modal.innerHTML = `
@@ -763,7 +839,7 @@ border-color: rgba(255,255,255,.12);
     const btnMin    = modal.querySelector('[data-minimize]');
     const btnExpand = modal.querySelector('[data-expand]');
   
-    // ---- Single-playback enforcement helpers ----
+    // Single-playback enforcement helpers
     const mp4Inline = () => Array.from(document.querySelectorAll('.res-card .res-card-media video'));
   
     const stopModalPlayers = () => {
@@ -788,7 +864,7 @@ border-color: rgba(255,255,255,.12);
       stopModalPlayers();
     };
   
-    // ---- Modal open/close wrappers ----
+    // Modal open/close wrappers
     const closeModal = () => {
       stopModalPlayers();
       modal.classList.remove('open', 'minimized');
@@ -814,7 +890,7 @@ border-color: rgba(255,255,255,.12);
       vid.className = 'yt-video';
       vid.autoplay = true;
       vid.playsInline = true;
-      // vid.controls = true;
+      vid.preload = 'metadata'; // Only load metadata until play
       if (poster) vid.poster = poster;
       vid.src = src;
       shell.appendChild(vid);
@@ -823,7 +899,7 @@ border-color: rgba(255,255,255,.12);
       vid.play().catch(()=>{});
     };
   
-    // ---- Modal chrome events ----
+    // Modal chrome events
     btnClose?.addEventListener('click', closeModal);
     btnMin  ?.addEventListener('click', () => modal.classList.toggle('minimized'));
     btnExpand?.addEventListener('click', () => modal.classList.remove('minimized'));
@@ -834,12 +910,8 @@ border-color: rgba(255,255,255,.12);
       if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
     });
   
-    
-    // =========================
-    // 6) YouTube card wiring
-    // =========================
+    // YouTube card wiring
     if (grid) {
-      // Clicking the thumbnail opens modal
       grid.addEventListener('click', (e) => {
         const card = e.target.closest('.res-card');
         const thumbLink = e.target.closest('.yt-thumb');
@@ -849,7 +921,6 @@ border-color: rgba(255,255,255,.12);
         const id = card.dataset.yt;
         if (id) openWithYouTube(id);
       });
-      // Clicking the top-right "expand" button also opens modal
       grid.addEventListener('click', (e) => {
         const btn = e.target.closest('.max-btn');
         if (!btn) return;
@@ -859,13 +930,12 @@ border-color: rgba(255,255,255,.12);
       });
     }
   
-    // =========================
-    // 7) MP4: behave exactly like YouTube (no inline play)
-    // =========================
+    // MP4: Optimized with lazy loading
     const mp4Videos = mp4Inline();
   
     mp4Videos.forEach(v => {
-      // Never show inline native controls
+      // Set preload to metadata only (don't download entire video)
+      v.setAttribute('preload', 'metadata');
       v.removeAttribute('controls');
       v.setAttribute('playsinline','');
       v.setAttribute('webkit-playsinline','');
@@ -874,7 +944,6 @@ border-color: rgba(255,255,255,.12);
       const media = v.closest('.res-card-media');
       if (!media) return;
   
-      // Add a top-right expand button (matches YT cards)
       if (!media.querySelector('.media-ctrl')) {
         const ctrl = document.createElement('div');
         ctrl.className = 'media-ctrl';
@@ -896,9 +965,7 @@ border-color: rgba(255,255,255,.12);
         });
       }
   
-      // Clicking the video area opens modal (like YT card)
       media.addEventListener('click', (e) => {
-        // ignore clicks on nested links/buttons if any
         if (e.target.closest('a, button')) return;
   
         const s = v.querySelector('source');
@@ -911,7 +978,7 @@ border-color: rgba(255,255,255,.12);
       }, { capture: true });
     });
   })();
-  </script>
+</script>
   
   
   

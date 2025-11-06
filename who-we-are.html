@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="resources.css" />
   <style>
+    
     /* ===== HERO SECTION ===== */
     .hero {
       position: relative;
@@ -24,7 +25,7 @@
       z-index: 0;
       background-image: var(--hero-img);
       background-size: cover;
-      background-position: center;
+      background-position: center 35%;
       background-repeat: no-repeat;
     }
     
@@ -47,7 +48,7 @@
       font-weight: 600;
       font-size: clamp(0.8rem, 2vw, 0.95rem);
       letter-spacing: 0.08em;
-      text-transform: capitalize;
+      text-transform:capitalize;
       color: #fff;
       opacity: 0.85;
       margin-bottom: 0.5rem;
@@ -59,7 +60,7 @@
       margin: 0 0 0.75rem;
       font-family: Arial, Helvetica, sans-serif;
       opacity: .9;
-      text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+      text-shadow: 0 2px 10px rgba(0,0,0,0.7);
       line-height: 1.2;
     }
 
@@ -85,7 +86,7 @@
 
 .hero-left .button {
   display: inline-block;
-  padding: 0.875rem 2rem;
+  padding: 0.8rem 1rem;
   background: #C0111F;
   color: #fff;
   text-decoration: none;
@@ -145,7 +146,7 @@ transform: rotate(90deg);
       }
     
       .hero-overlay h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
       }
       
       .hero-overlay .lead {
@@ -154,12 +155,12 @@ transform: rotate(90deg);
       }
     
       .hero-eyebrow {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         margin-bottom: 0.35rem;
       }
       .hero-overlay .button {
-        padding: 0.5rem 1rem;
-        font-size: .7rem;
+        padding: 0.5rem .3rem;
+        font-size: .5rem;
       }
 
     }
@@ -177,7 +178,7 @@ transform: rotate(90deg);
       }
     
       .hero-overlay h1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
       }
       
       .hero-overlay .lead {
@@ -185,8 +186,8 @@ transform: rotate(90deg);
         line-height: 1.1rem;
       }
       .hero-overlay .button {
-        padding: 0.4rem .5rem;
-        font-size: .7rem;
+        padding: 0.2rem .3rem;
+        font-size: .4rem;
       }
 
     }
@@ -197,7 +198,7 @@ transform: rotate(90deg);
         padding: 0 1rem;
       }
     }
-    
+  
 
 .about-wrap .container,
 .res-section .container {
@@ -309,6 +310,7 @@ color: #C0111F;
   .res-section .container {
     padding-inline: 1.3rem;
     width: auto;
+    gap: revert;
   }
   
   .res-grid {
@@ -810,7 +812,7 @@ color: #C0111F;
           <div class="hero-content-split">
             <div class="hero-left">
               <p class="hero-eyebrow">Who We Are</p>
-              <h1>People First, <br><span style="color: #C0111F">Always.</span></h1>
+              <h1>People First, <span style="color: #C0111F">Always.</span></h1>
             </div>
           </div>
         </div>
@@ -846,7 +848,7 @@ color: #C0111F;
     </section>
     
   
-    <!-- :eadership -->
+    <!-- leadership -->
     <section id="leadership" class="res-section" data-theme="light" data-label="Leadership" aria-labelledby="leadership-label">
       <div class="res-grid container">
         <div class="res-label-wrap">
@@ -857,7 +859,7 @@ color: #C0111F;
           <ul class="leaders-grid">
             <!-- Greg Gotlin -->
             <li class="leader-card">
-              <img src="img/who-we-are/greg.webp" style="--y: 20%;" alt="Headshot of Ashley Charlton" loading="lazy">
+              <img src="img/who-we-are/greg.jpg" style="--y: 20%;" alt="Headshot of Ashley Charlton" loading="lazy">
               <div class="leader-meta">
                 <h3>Greg Gotlin</h3>
                 <p>Founder & Managing Partner</p>
@@ -872,7 +874,7 @@ color: #C0111F;
 
             <!-- Melissa Gotlin -->
             <li class="leader-card">
-              <img src="img/who-we-are/melissa.webp" style="--y: 5%;" alt="Headshot of Melissa Gotlin" loading="lazy">
+              <img src="img/who-we-are/melissa.jpg" style="--y: 5%; " alt="Headshot of Melissa Gotlin" loading="lazy">
               <div class="leader-meta">
                 <h3>Melissa Gotlin</h3>
                 <p>Founder & Partner</p>
@@ -887,7 +889,7 @@ color: #C0111F;
 
             <!-- Mandy Cavaliere -->
             <li class="leader-card">
-              <img src="img/who-we-are/mandy.webp" alt="Headshot of Mandy Cavaliere" loading="lazy">
+              <img src="img/who-we-are/mandy.jpg" style="object-position: 65% 10%;" alt="Headshot of Mandy Cavaliere" loading="lazy">
               <div class="leader-meta">
                 <h3>Mandy Cavaliere</h3>
                 <p>Senior Partner, Solutions Lead</p>
@@ -902,7 +904,7 @@ color: #C0111F;
 
             <!-- Ashley Charlton -->
             <li class="leader-card">
-              <img src="img/who-we-are/ashley.webp" alt="Headshot of Ashley Charlton" loading="lazy">
+              <img src="img/who-we-are/ashley.png" alt="Headshot of Ashley Charlton" loading="lazy">
               <div class="leader-meta">
                 <h3>Ashley Charlton</h3>
                 <p>Managing Director</p>
@@ -917,7 +919,7 @@ color: #C0111F;
           
             <!-- Anita Freeman -->
             <li class="leader-card">
-              <img src="img/who-we-are/anita.webp" style="--y: 60%;" alt="Headshot of Anita Freeman" loading="lazy">
+              <img src="img/who-we-are/anita.jpg" style="--y: 70%;" alt="Headshot of Anita Freeman" loading="lazy">
               <div class="leader-meta">
                 <h3>Anita Freeman</h3>
                 <p>Principal Solutions Consultant</p>
@@ -932,7 +934,7 @@ color: #C0111F;
           
             <!-- Laura Cocat -->
             <li class="leader-card">
-              <img src="img/who-we-are/laura.webp" alt="Headshot of Laura Cocat" loading="lazy">
+              <img src="img/who-we-are/laura.jpg" style="object-position: 50% 10%;"alt="Headshot of Laura Cocat" loading="lazy">
               <div class="leader-meta">
                 <h3>Laura Cocat</h3>
                 <p>Operations Manager</p>
@@ -969,7 +971,7 @@ color: #C0111F;
         <ul>
           <li><a href="what-we-do.html#infor">Upgrade Infor Lawson</a></li>
           <li><a href="what-we-do.html#cloudsuite">Net New Implementation</a></li>
-          <li><a href="what-we-do.html#managed-services">Managed Services</a></li>
+          <li><a href="what-we-do.html#managed-cloudsuite">Managed Services</a></li>
         </ul>
       </div>
 
@@ -987,6 +989,8 @@ color: #C0111F;
   </div>
   
   <div class="container footer-bottom">
+    <a href="mailto:info@thegforce.com"><i style="font-size:15px;" class="fa">&#xf0e0;</i> info@thegforce.com</a>
+
     <p><i class="fa fa-copyright"></i> 2025 GForce Technology Consulting. All Rights Reserved.</p>
   </div>
 </footer>
@@ -1012,263 +1016,150 @@ color: #C0111F;
   <script src="main.js" defer></script>
   <script defer>
     // Leader Bio Modal
-document.addEventListener('DOMContentLoaded', function() {
-  const bioModal = document.getElementById('bioModal');
-  const bioTriggers = document.querySelectorAll('.bio-trigger');
-  const closeBtn = bioModal?.querySelector('.bio-modal-close');
-  const overlay = bioModal?.querySelector('.bio-modal-overlay');
-  
-  // Bio data
-  const bios = {
-    greg: {
-      name: "Greg Gotlin",
-      title: "Founder & Managing Partner",
-      image: "img/who-we-are/greg.webp",
-      bio: `
-       <p>Greg Gotlin's journey started on the client side, as an Infor Lawson user and Controller at Hard Rock. That firsthand experience shaped how he leads today: with empathy for end users, deep respect for operational challenges, and a clear understanding of what clients need from their systems and their partners.</p>
-
-<p>With over 25 years in ERP, Greg has led large-scale transformations across healthcare, government, and education. His roots in Infor Lawson are foundational, but his focus is forward on unlocking the full potential of Infor CloudSuite. From finance and supply chain to WFM and HCM, Greg has helped organizations modernize with purpose and precision.</p>
-
-<p>He founded GForce to be different. No staffing models. No shortcuts. The GForce Way is team-based, collaborative, and results-driven - bringing together experts who work as one with the client to deliver lasting impact.</p>
-
-<p>Under Greg's leadership, GForce has become the partner organizations trust to move with speed, integrity, and clarity—because he's been in their shoes.</p>
-
-<p><strong>Core Strengths:</strong><br>
-ERP Strategy | Infor Lawson &amp; CloudSuite Expertise | Change Leadership | Team Building | Financial &amp; Supply Chain Operations | Healthcare Transformation | Full Lifecycle Implementation</p>
-      `
-    },
-    melissa: {
-      name: "Melissa Gotlin",
-      title: "Founder & Partner",
-      image: "img/who-we-are/melissa.webp",
-      bio: `
-        <p>Melissa Gotlin is the strategic force behind GForce's growth and positioning. As Founder and Partner, she leads the firm's direction across marketing, brand, and business strategy—ensuring GForce shows up with clarity, purpose, and impact in every interaction.</p>
-
-<p>With over 20 years of experience guiding organizations through growth and transformation, Melissa shapes how GForce tells its story and scales its reach. She drives sales enablement, sharpens go-to-market strategy, and ensures the firm stays aligned with client needs and market demand.</p>
-
-<p>Melissa is a catalyst for innovation and a champion of change. Her leadership strengthens GForce's ability to grow intentionally, serve boldly, and lead with purpose.</p>
-
-<p><strong>Core Strengths:</strong><br>
-Strategic Direction | Brand &amp; Marketing Leadership | Sales Enablement | Organizational Growth | Change Leadership | Market Positioning | Client-Centered Strategy</p>
-      `
-    },
-    mandy: {
-      name: "Mandy Cavaliere",
-      title: "Senior Partner & Solutions Lead",
-      image: "img/who-we-are/mandy.webp",
-      bio: `
-        <p>Mandy Cavaliere brings over 20 years of financial leadership—and the real-world perspective of a CPA and former Lawson user—to every project she leads. Before joining GForce, Mandy was in the trenches managing accounting operations, accounts payable, and financial systems. She knows what it takes to make ERP work where it matters: in the day-to-day.</p>
-
-<p>As Senior Partner and head of our Solutions team, Mandy leads with clarity and purpose. She's not just focused on getting clients to CloudSuite—she's committed to transforming how organizations operate. Her approach blends practical problem-solving with deep product knowledge to deliver systems that work for the people who use them.</p>
-
-<p>Mandy is hands-on, team-driven, and outcome-obsessed. She mentors our consultants, partners with client leadership, and ensures every solution is rooted in both system capability and real operational value.</p>
-
-<p><strong>Core Strengths:</strong><br>
-CPA | ERP Strategy | Infor FSM Expertise | Financial Operations | Team Leadership | Business Process Transformation | End-User Mindset | Healthcare &amp; Public Sector Consulting</p>`
-    },
-    ashley: {
-      name: "Ashley Charlton",
-      title: "Managing Director",
-      image: "img/who-we-are/ashley.webp",
-      bio: `
-        <p>Ashley Charlton may be new to enterprise technology, but she's no stranger to driving meaningful outcomes. A proven operations leader and subject matter expert, she brings focus, structure, and momentum to everything she touches.</p>
-
-<p>Ashley leads with precision—aligning execution with both immediate needs and long-term goals. She turns complexity into clarity and keeps delivery sharp, scalable, and consistent.</p>
-
-<p>At GForce, Ashley plays a key role in expanding capabilities, shaping new practices, and positioning the firm for sustainable growth. Her track record of building high-performing teams and repeatable solutions reflects her core strength: turning strategy into progress.</p>
-
-<p>Ashley's focus on people, process, and precision drives real impact—for our clients, and for GForce.</p>
-
-<p><strong>Core Strengths:</strong><br>
-Client Delivery | Operations Leadership | Outcome-Focused Strategy | Team Building | Process Discipline | Change Enablement | Future-State Planning</p>`
-    },
-    anita: {
-      name: "Anita Freeman",
-      title: "Principal Solutions Specialist",
-      image: "img/who-we-are/anita.webp",
-      bio: `
-        <p>Anita Freeman brings deep functional expertise and hands-on leadership to her role as Principal Solutions Consultant at GForce. She leads our Finance &amp; Supply Chain consulting team, where she's known for translating complex Infor CloudSuite Financials requirements into real operational outcomes.</p>
-
-<p>With over a decade of experience across healthcare, public sector, and enterprise implementations, Anita doesn't just manage projects—she elevates them. Her dual focus on quality execution and continuous improvement drives smarter solutions, streamlined processes, and measurable impact for our clients.</p>
-
-<p>Anita is a builder of teams, standards, and solutions. She mentors consultants, leads functional practice development, and partners closely with clients to ensure every engagement delivers lasting value. Whether leading multi-module implementations or optimizing finance operations, she brings clarity, consistency, and care to every step of the journey.</p>
-
-<p><strong>Core Strengths:</strong><br>
-Infor CloudSuite FSM | Finance &amp; Supply Chain Optimization | Project &amp; Practice Leadership | Process Improvement | ERP Implementation | Client Training &amp; Adoption | Healthcare &amp; Public Sector Experience</p>`
-    },
-    laura: {
-      name: "Laura Cocat",
-      title: "Operations Manager",
-      image: "img/who-we-are/laura.webp",
-      bio: `
-       <p>Laura Cocat is the operational backbone of GForce. As Operations Manager and Support Desk Administrator, she ensures every internal process runs with precision, keeping our team aligned, our clients supported, and our systems running smoothly.</p>
-
-<p>With a background in client onboarding, project coordination, and systems implementation, Laura streamlines workflows, solves problems, and helps the business scale without friction. She leads with empathy and structure, creating clarity and consistency across everything from help desk support to consultant coordination.</p>
-
-<p>At GForce, Laura manages the internal help desk, leads operations initiatives, and supports delivery teams with the tools, tracking, and structure they need to succeed. Her impact is felt everywhere.</p>
-
-<p><strong>Core Strengths:</strong><br>
-Operations Management | Support Desk Administration | Client Onboarding | Project Coordination | Internal Process Optimization | Consultant Enablement | Cross-Team Collaboration</p>`
-    }
-  };
-  
-  // Open modal
-  bioTriggers.forEach(trigger => {
-    trigger.addEventListener('click', function() {
-      const leaderId = this.getAttribute('data-leader');
-      const leaderData = bios[leaderId];
+    document.addEventListener('DOMContentLoaded', function() {
+      const bioModal = document.getElementById('bioModal');
+      const bioTriggers = document.querySelectorAll('.bio-trigger');
+      const closeBtn = bioModal?.querySelector('.bio-modal-close');
+      const overlay = bioModal?.querySelector('.bio-modal-overlay');
       
-      if (leaderData && bioModal) {
-        // Populate modal
-        bioModal.querySelector('.bio-modal-image').src = leaderData.image;
-        bioModal.querySelector('.bio-modal-image').alt = leaderData.name;
-        bioModal.querySelector('#bioModalTitle').textContent = leaderData.name;
-        bioModal.querySelector('.bio-modal-title').textContent = leaderData.title;
-        bioModal.querySelector('.bio-modal-description').innerHTML = leaderData.bio;
-        
-        // Show modal
-        bioModal.classList.add('active');
-        document.body.style.overflow = 'hidden';
-      }
-    });
-  });
-  
-  // Close modal
-  function closeBioModal() {
-    if (bioModal) {
-      bioModal.classList.remove('active');
-      document.body.style.overflow = '';
-    }
-  }
-  
-  closeBtn?.addEventListener('click', closeBioModal);
-  overlay?.addEventListener('click', closeBioModal);
-  
-  // Close on Escape key
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape' && bioModal?.classList.contains('active')) {
-      closeBioModal();
-    }
-  });
-});
-  </script>
-  <script>
-    (() => {
-      const SECTIONS = document.querySelectorAll('.res-section');
-      if (!SECTIONS.length) return;
+      // Bio data - Adjusted to prevent single-word lines
+      const bios = {
+        greg: {
+          name: "Greg Gotlin",
+          title: "Founder & Managing Partner",
+          image: "img/who-we-are/greg.jpg",
+          bio: `
+           <p>Greg Gotlin's journey started on the client side, as an Infor Lawson user and Controller at Hard Rock. That firsthand experience shaped how he leads today: with empathy for end users, deep respect for operational challenges, and a clear understanding of what clients need from their systems and&nbsp;partners.</p>
     
-      const onChange = (entries) => {
-        entries.forEach(entry => {
-          const section = entry.target;
-          const label = section.querySelector('.res-label');
-          if (!label) return;
+    <p>With over 25 years in ERP, Greg has led large-scale transformations across healthcare, government, and education. His roots in Infor Lawson are foundational, but his focus is forward on unlocking the full potential of Infor CloudSuite. From finance and supply chain to WFM and HCM, Greg has helped organizations modernize with purpose&nbsp;and&nbsp;precision.</p>
     
-          if (entry.isIntersecting) {
-            // Clear all active states
-            document.querySelectorAll('.res-label.is-active')
-              .forEach(el => el.classList.remove('is-active'));
-            // Activate the current section label
-            label.classList.add('is-active');
+    <p>He founded GForce to be different. No staffing models. No shortcuts. The GForce Way is team-based, collaborative, and results-driven - bringing together experts who work as one with the client to deliver lasting&nbsp;impact.</p>
+    
+    <p>Under Greg's leadership, GForce has become the partner organizations trust to move with speed, integrity, and clarity—because he's been in their&nbsp;shoes.</p>
+    
+    <p><strong>Core Strengths:</strong><br>
+    ERP Strategy | Infor Lawson &amp; CloudSuite Expertise | Change Leadership | Team Building | Financial &amp; Supply Chain Operations | Healthcare Transformation | Full Lifecycle&nbsp;Implementation</p>
+          `
+        },
+        melissa: {
+          name: "Melissa Gotlin",
+          title: "Founder & Partner",
+          image: "img/who-we-are/melissa.jpg",
+          imagePosition: "50% 10%",
+          bio: `
+            <p>Melissa Gotlin is the strategic force behind GForce's growth and positioning. As Founder and Partner, she leads the firm's direction across marketing, brand, and business strategy—ensuring GForce shows up with clarity, purpose, and impact in every&nbsp;interaction.</p>
+    
+    <p>With over 20 years of experience guiding organizations through growth and transformation, Melissa shapes how GForce tells its story and scales its reach. She drives sales enablement, sharpens go-to-market strategy, and ensures the firm stays aligned with client needs and market&nbsp;demand.</p>
+    
+    <p>Melissa is a catalyst for innovation and a champion of change. Her leadership strengthens GForce's ability to grow intentionally, serve boldly, and lead with&nbsp;purpose.</p>
+    
+    <p><strong>Core Strengths:</strong><br>
+    Strategic Direction | Brand &amp; Marketing Leadership | Sales Enablement | Organizational Growth | Change Leadership | Market Positioning | Client-Centered&nbsp;Strategy</p>
+          `
+        },
+        mandy: {
+          name: "Mandy Cavaliere",
+          title: "Senior Partner & Solutions Lead",
+          image: "img/who-we-are/mandy.jpg",
+          bio: `
+            <p>Mandy Cavaliere brings over 20 years of financial leadership—and the real-world perspective of a CPA and former Lawson user—to every project she leads. Before joining GForce, Mandy was in the trenches managing accounting operations, accounts payable, and financial systems. She knows what it takes to make ERP work where it matters: in&nbsp;the&nbsp;day-to-day.</p>
+    
+    <p>As Senior Partner and head of our Solutions team, Mandy leads with clarity and purpose. She's not just focused on getting clients to CloudSuite—she's committed to transforming how organizations operate. Her approach blends practical problem-solving with deep product knowledge to deliver systems that work for the people&nbsp;who&nbsp;use&nbsp;them.</p>
+    
+    <p>Mandy is hands-on, team-driven, and outcome-obsessed. She mentors our consultants, partners with client leadership, and ensures every solution is rooted in both system capability and real operational&nbsp;value.</p>
+    
+    <p><strong>Core Strengths:</strong><br>
+    CPA | ERP Strategy | Infor FSM Expertise | Financial Operations | Team Leadership | Business Process Transformation | End-User Mindset | <br>Healthcare &amp; Public Sector&nbsp;Consulting</p>`
+        },
+        ashley: {
+          name: "Ashley Charlton",
+          title: "Managing Director",
+          image: "img/who-we-are/ashley.png",
+          bio: `
+            <p>Ashley Charlton may be new to enterprise technology, but she's no stranger to driving meaningful outcomes. A proven operations leader and subject matter expert, she brings focus, structure, and momentum to everything she&nbsp;touches.</p>
+    
+    <p>Ashley leads with precision—aligning execution with both immediate needs and long-term goals. She turns complexity into clarity and keeps delivery sharp, scalable, and&nbsp;consistent.</p>
+    
+    <p>At GForce, Ashley plays a key role in expanding capabilities, shaping new practices, and positioning the firm for sustainable growth. Her track record of building high-performing teams and repeatable solutions reflects her core strength: turning strategy into&nbsp;progress.</p>
+    
+    <p>Ashley's focus on people, process, and precision drives real impact—for our clients, and for&nbsp;GForce.</p>
+    
+    <p><strong>Core Strengths:</strong><br>
+    Client Delivery | Operations Leadership | Outcome-Focused Strategy | Team Building | Process Discipline | Change Enablement | Future-State&nbsp;Planning</p>`
+        },
+        anita: {
+          name: "Anita Freeman",
+          title: "Principal Solutions Specialist",
+          image: "img/who-we-are/anita.jpg",
+          bio: `
+            <p>Anita Freeman brings deep functional expertise and hands-on leadership to her role as Principal Solutions Consultant at GForce. She leads our Finance &amp; Supply Chain consulting team, where she's known for translating complex Infor CloudSuite Financials requirements into real operational&nbsp;outcomes.</p>
+    
+    <p>With over a decade of experience across healthcare, public sector, and enterprise implementations, Anita doesn't just manage projects—she elevates them. Her dual focus on quality execution and continuous improvement drives smarter solutions, streamlined processes, and measurable impact for our&nbsp;clients.</p>
+    
+    <p>Anita is a builder of teams, standards, and solutions. She mentors consultants, leads functional practice development, and partners closely with clients to ensure every&nbsp;engagement delivers lasting value. Whether leading multi-module implementations or optimizing finance operations, she brings clarity, consistency, and care to every&nbsp;step of the journey.</p>
+    
+    <p><strong>Core Strengths:</strong><br>
+    Infor CloudSuite FSM | Finance &amp; Supply Chain Optimization | Project &amp; Practice Leadership | Process Improvement | ERP Implementation | Client Training &amp; Adoption | Healthcare &amp; Public Sector&nbsp;Experience</p>`
+        },
+        laura: {
+          name: "Laura Cocat",
+          title: "Operations Manager",
+          image: "img/who-we-are/laura.jpg",
+          bio: `
+           <p>Laura Cocat is the operational backbone of GForce. As Operations Manager and Support Desk Administrator, she ensures every internal process runs with precision, keeping our team aligned, our clients supported, and our systems running&nbsp;smoothly.</p>
+    
+    <p>With a background in client onboarding, project coordination, and systems implementation, Laura streamlines workflows, solves problems, and helps the business scale without friction. She leads with empathy and structure, creating clarity and consistency across everything from help desk support to consultant&nbsp;coordination.</p>
+    
+    <p>At GForce, Laura manages the internal help desk, leads operations initiatives, and supports delivery teams with the tools, tracking, and structure they need to succeed. Her impact is felt&nbsp;everywhere.</p>
+    
+    <p><strong>Core Strengths:</strong><br>
+    Operations Management | Support Desk Administration | Client Onboarding | Project Coordination | Internal Process Optimization | Consultant Enablement | <br>Cross-Team Collaboration</p>`
+        }
+      };
+      
+      // Open modal
+      bioTriggers.forEach(trigger => {
+        trigger.addEventListener('click', function() {
+          const leaderId = this.getAttribute('data-leader');
+          const leaderData = bios[leaderId];
+          
+          if (leaderData && bioModal) {
+            // Populate modal
+// Populate modal
+const modalImage = bioModal.querySelector('.bio-modal-image');
+modalImage.src = leaderData.image;
+modalImage.alt = leaderData.name;
+// Apply custom image position if specified
+modalImage.style.objectPosition = leaderData.imagePosition || '50% 50%';
+            bioModal.querySelector('#bioModalTitle').textContent = leaderData.name;
+            bioModal.querySelector('.bio-modal-title').textContent = leaderData.title;
+            bioModal.querySelector('.bio-modal-description').innerHTML = leaderData.bio;
+            
+            // Show modal
+            bioModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
           }
         });
-      };
-    
-    
-      const observer = new IntersectionObserver(onChange, {
-        root: null,
-        rootMargin: '-96px 0px -80% 0px', // hits when the section top nears the top
-        threshold: 0
       });
-    
-      SECTIONS.forEach(sec => observer.observe(sec));
-    })();
-    
+      
+      // Close modal
+      function closeBioModal() {
+        if (bioModal) {
+          bioModal.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+      }
+      
+      closeBtn?.addEventListener('click', closeBioModal);
+      overlay?.addEventListener('click', closeBioModal);
+      
+      // Close on Escape key
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && bioModal?.classList.contains('active')) {
+          closeBioModal();
+        }
+      });
+    });
     </script>
-
-<script defer>
-  // Scroll Up Fade In Animation
-(function() {
-  let elements = [];
-  let ticking = false;
-
-  function init() {
-    // Select all elements to animate (excluding modal)
-    const targets = document.querySelectorAll('.hero-left, .hero-right, .res-label, .res-content, .leader-card');
-    
-    targets.forEach(el => {
-      // Skip modal elements
-      if (el.closest('.bio-modal')) return;
-      
-      elements.push({ el: el });
-      el.style.opacity = '0';
-      el.style.transform = 'translateY(40px)';
-      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    });
-
-    window.addEventListener('scroll', onScroll, { passive: true });
-    update();
-  }
-
-  function onScroll() {
-    if (!ticking) {
-      requestAnimationFrame(update);
-      ticking = true;
-    }
-  }
-
-  function update() {
-    const viewH = window.innerHeight;
-
-    elements.forEach(item => {
-      const rect = item.el.getBoundingClientRect();
-      
-      if (rect.top < viewH - 100 && rect.bottom > 0) {
-        item.el.style.opacity = '1';
-        item.el.style.transform = 'translateY(0)';
-      }
-    });
-
-    ticking = false;
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
-    init();
-  }
-})();
-</script>
-
-<script>
-  document.documentElement.classList.remove('no-js');
-
-  (function () {
-    const section = document.querySelector('.hero-parallax');
-    if (!section) return;
-    const media = section.querySelector('.hero-media');
-    const speed = 0.40;
-
-    let ticking = false;
-
-    function update() {
-      const rect = section.getBoundingClientRect();
-      const offset = rect.top * speed * -1;
-      media.style.setProperty('--parallax', offset.toFixed(2) + 'px');
-      ticking = false;
-    }
-
-    function onScroll() {
-      if (!ticking) {
-        ticking = true;
-        requestAnimationFrame(update);
-      }
-    }
-
-    // Initial paint + listeners
-    update();
-    window.addEventListener('scroll', onScroll, { passive: true });
-    window.addEventListener('resize', onScroll);
-  })();
-</script>
 </body>
 </html>

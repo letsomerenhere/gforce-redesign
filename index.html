@@ -96,7 +96,8 @@
 <section class="home-hero">
   <div class="hero-carousel" id="heroCarousel">
     <div class="slide">
-      <img src="img/home/hero-1.webp" alt="Team collaborating">
+      <img style="object-position: center 20% !important;
+  object-fit: cover;" src="img/home/hero-1.webp" alt="Team collaborating">
       <div class="home-hero-overlay">
         <div class="container">
           <h1>Where <span style="color: #C0111F;">Collaboration</span><br>Becomes Standard.</h1>
@@ -179,7 +180,7 @@
     <div class="wwk-right">
       <div class="hc-grid">
         <!-- Card 1 -->
-        <article class="hc-card" tabindex="0" aria-labelledby="hc1-title">
+        <article class="hc-card" tabindex="0" aria-labelledby="hc1-title" data-link="what-we-do.html">
           <figure class="hc-media">
             <img src="img/home/epr-services.avif" alt="Modern workspace with team collaborating">
             <figcaption class="hc-credit">Image by Andreas Brücker</figcaption>
@@ -198,7 +199,7 @@
         </article>
 
         <!-- Card 2 -->
-        <article class="hc-card" tabindex="0" aria-labelledby="hc2-title">
+        <article class="hc-card" tabindex="0" aria-labelledby="hc2-title" data-link="industries.html">
           <figure class="hc-media">
             <img src="img/home/industries.avif" alt="City logistics scene">
             <figcaption class="hc-credit">Image by Jason Leung</figcaption>
@@ -220,7 +221,7 @@
         </article>
 
         <!-- Card 3 -->
-        <article class="hc-card" tabindex="0" aria-labelledby="hc3-title">
+        <article class="hc-card" tabindex="0" aria-labelledby="hc3-title" data-link="what-we-do.html#health">
           <figure class="hc-media">
             <img src="img/home/additional-services.webp" alt="Team planning with sticky notes">
           </figure>
@@ -255,13 +256,14 @@
       <figure class="split-media">
         <div class="img-viewport">
           <div class="img-slide active">
-            <img src="img/home/grocers.webp" alt="Associated Grocers of Baton Rouge">
-          </div>
-          <div class="img-slide">
             <img src="img/home/national-travel.webp" alt="National Travel Center">
           </div>
           <div class="img-slide">
             <img src="img/home/seacube.webp" alt="SeaCube Container">
+          </div>
+          <div class="img-slide">
+            <img src="img/home/grocers.webp" alt="Associated Grocers of Baton Rouge">
+
           </div>
         </div>
       </figure>
@@ -271,7 +273,7 @@
         <div class="text-viewport">
           <!-- Slide 1 -->
           <article class="text-slide">
-            <h3 class="text-title">National Travel Center Operator</h3>
+            <h3 class="text-title">National Travel Center&nbsp;Operator</h3>
             <p class="text-desc">One of the <strong>largest U.S. operators of truck stops and travel centers</strong> partnered with GForce to modernize after more than 30 years on Lawson. By upgrading to Infor CloudSuite FSM, reengineering business processes, cleansing decades of data, and training over 200 users, <strong>GForce delivered</strong> one of the largest <strong>Lawson-to-FSM migrations in the industry.</strong></p>
             <p class="text-desc">The Result: a <strong>financial close cut from 20 days to 8, real-time reporting, seamless integrations,</strong> and <strong>full SOX compliance</strong> aligned with <strong>IPO readiness.</strong></p></p>
             <a class="text-cta" href="case-studies/national-travel-center.html">
@@ -324,7 +326,7 @@
   <div class="container stats-lite__wrap">
 
     <header class="split-head">
-      <h2 class="split-title">Our Progress in Numbers.</h2>
+      <h2 class="split-title">Our Progress in&nbsp;Numbers.</h2>
       <p class="split-sub">Commitment to Our Clients.</p>
     </header>
 
@@ -347,7 +349,7 @@
       <!-- 14+ plain KPI -->
       <article class="stat-lite">
         <div class="kpi">
-          <span class="stat-lite__num">14+</span>
+          <span style="font-size: clamp(3.5rem, 6vw, 3.5rem)" class="stat-lite__num">14+</span>
         </div>
         <h3 class="stat-lite__title">Average Years of Infor Experience</h3>
       </article>
@@ -381,7 +383,7 @@
 <section class="voices-grid" aria-labelledby="voicesGridTitle" data-theme="light">
   <div class="container">
     <header class="split-head">
-      <h2 class="split-title">Insights That Drive Results.</h2>
+      <h2 class="split-title">Insights That Drive&nbsp;Results<span style="color:#C0111F">.</span></h2>
       <p class="split-sub" style="text-transform: uppercase;">Discover the power of experience.</p>
     </header>
 
@@ -468,7 +470,7 @@
 
 
 <!-- Footer -->
-<footer class="site-footer">
+<footer class="site-footer" style="background-color:#0b0f16">
   <div class="container footer-top">
     <!-- Logo -->
     <a href="index.html" class="footer-logo">
@@ -483,7 +485,7 @@
         <ul>
           <li><a href="what-we-do.html#infor">Upgrade Infor Lawson</a></li>
           <li><a href="what-we-do.html#cloudsuite">Net New Implementation</a></li>
-          <li><a href="what-we-do.html#managed-services">Managed Services</a></li>
+          <li><a href="what-we-do.html#managed-cloudsuite">Managed Services</a></li>
         </ul>
       </div>
 
@@ -501,9 +503,287 @@
   </div>
   
   <div class="container footer-bottom">
+    <a href="mailto:info@thegforce.com"><i style="font-size:15px;" class="fa">&#xf0e0;</i> info@thegforce.com</a>
+
     <p><i class="fa fa-copyright"></i> 2025 GForce Technology Consulting. All Rights Reserved.</p>
   </div>
 </footer>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const carousel = document.getElementById('heroCarousel');
+    const slides   = Array.from(carousel.querySelectorAll('.slide'));
+    const prevBtn  = document.getElementById('heroPrev');
+    const nextBtn  = document.getElementById('heroNext');
+    const dotsWrap = document.getElementById('heroDots');
+  
+    if (!slides.length) return;
+  
+    // === Config ===
+    const AUTOPLAY_MS = 7000;  // <-- set your desired delay here (15s)
+    const SPEED_MS    = 900;
+  
+    let index = 0;
+    let timer = null;           // guard: one interval only
+  
+    // Prep slides
+    slides.forEach((s, i) => {
+      s.style.transition = `transform ${SPEED_MS}ms ease, opacity ${SPEED_MS*0.7}ms ease`;
+      s.style.opacity    = i === 0 ? '1' : '0';
+      s.style.transform  = i === 0 ? 'translateX(0%)' : 'translateX(100%)';
+      s.classList.toggle('active', i === 0);
+      s.classList.remove('exit-left');
+    });
+  
+    // Dots
+    slides.forEach((_, i) => {
+      const dot = document.createElement('button');
+      dot.className = 'dot' + (i === 0 ? ' active' : '');
+      dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
+      dot.addEventListener('click', () => goTo(i));
+      dotsWrap.appendChild(dot);
+    });
+    const dots = dotsWrap.querySelectorAll('.dot');
+    const setDots = () => dots.forEach((d, i) => d.classList.toggle('active', i === index));
+  
+    function show(next, dir = 'next') {
+      if (next === index) return;
+      const currentSlide = slides[index];
+      const nextSlide    = slides[next];
+  
+      nextSlide.style.transition = 'none';
+      nextSlide.style.opacity    = '1';
+      nextSlide.style.transform  = dir === 'next' ? 'translateX(100%)' : 'translateX(-100%)';
+      nextSlide.classList.add('active');
+      nextSlide.offsetHeight; // reflow
+  
+      nextSlide.style.transition   = `transform ${SPEED_MS}ms ease, opacity ${SPEED_MS*0.7}ms ease`;
+      currentSlide.style.transition= `transform ${SPEED_MS}ms ease, opacity ${SPEED_MS*0.7}ms ease`;
+  
+      currentSlide.style.transform = dir === 'next' ? 'translateX(-100%)' : 'translateX(100%)';
+      currentSlide.style.opacity   = '0';
+      nextSlide.style.transform    = 'translateX(0%)';
+      nextSlide.style.opacity      = '1';
+  
+      currentSlide.addEventListener('transitionend', () => {
+        currentSlide.classList.remove('active');
+        currentSlide.style.transition = 'none';
+        currentSlide.style.transform  = dir === 'next' ? 'translateX(100%)' : 'translateX(-100%)';
+        currentSlide.style.opacity    = '0';
+      }, { once: true });
+  
+      index = next;
+      setDots();
+    }
+  
+    function next() {
+      show((index + 1) % slides.length, 'next');
+    }
+    function prev() {
+      show((index - 1 + slides.length) % slides.length, 'prev');
+    }
+    function goTo(i) {
+      const dir = i > index ? 'next' : 'prev';
+      show(i, dir);
+      restart();
+    }
+  
+    // Autoplay with guard
+    function start()  { if (!timer) timer = setInterval(next, AUTOPLAY_MS); }
+    function stop()   { if (timer) { clearInterval(timer); timer = null; } }
+    function restart(){ stop(); start(); }
+  
+    // Controls: pause while hovering controls only
+    if (nextBtn) {
+      nextBtn.addEventListener('click', () => { next(); restart(); });
+      nextBtn.addEventListener('pointerenter', stop);
+      nextBtn.addEventListener('pointerleave', start);
+    }
+    if (prevBtn) {
+      prevBtn.addEventListener('click', () => { prev(); restart(); });
+      prevBtn.addEventListener('pointerenter', stop);
+      prevBtn.addEventListener('pointerleave', start);
+    }
+    if (dotsWrap) {
+      dotsWrap.addEventListener('pointerenter', stop);
+      dotsWrap.addEventListener('pointerleave', start);
+    }
+  
+    // Pause when tab not visible (prevents timer drift)
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) stop(); else start();
+    });
+  
+    start();
+  });
+  </script>
+  
+<script>
+  (() => {
+    const cards = document.querySelectorAll('.hc-card');
+    
+    const observerOptions = {
+      threshold: .95, // Trigger when 50% of the card is visible
+      rootMargin: '0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const isMobile = window.innerWidth < 768;
+        
+        if (isMobile && entry.isIntersecting) {
+          // Flip the card when it comes into view on mobile
+          entry.target.classList.add('is-flipped');
+        } else if (!isMobile) {
+          // Remove flip on desktop
+          entry.target.classList.remove('is-flipped');
+        }
+      });
+    }, observerOptions);
+    
+    // Observe each card
+    cards.forEach(card => {
+      observer.observe(card);
+    });
+    
+    // Handle window resize
+    window.addEventListener('resize', () => {
+      const isMobile = window.innerWidth < 768;
+      
+      if (!isMobile) {
+        // Remove all flips on desktop
+        cards.forEach(card => card.classList.remove('is-flipped'));
+      }
+    });
+    
+    // Add click handler to navigate to pages
+    cards.forEach(card => {
+      card.addEventListener('click', function(e) {
+        const link = card.getAttribute('data-link');
+        if (link) {
+          window.location.href = link;
+        }
+      });
+      
+      // Make cards keyboard accessible
+      card.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          const link = card.getAttribute('data-link');
+          if (link) {
+            window.location.href = link;
+          }
+        }
+      });
+    });
+  })();
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const imgSlides = document.querySelectorAll('.img-slide');
+    const textSlides = document.querySelectorAll('.text-slide');
+    const prevBtn = document.getElementById('splitPrev');
+    const nextBtn = document.getElementById('splitNext');
+    const dotsContainer = document.getElementById('splitDots');
+    const splitSection = document.getElementById('splitShow');
+  
+    let currentSlide = 0;
+    let autoplayInterval;
+  
+    // Adjust delay as needed (e.g., 15000 = 15 seconds)
+    const autoplayDelay = 15000;
+  
+    // Create dots
+    textSlides.forEach((_, index) => {
+      const dot = document.createElement('button');
+      dot.classList.add('split-dot');
+      dot.setAttribute('aria-label', `Go to story ${index + 1}`);
+      if (index === 0) dot.classList.add('active');
+      dot.addEventListener('click', () => goToSlide(index));
+      dotsContainer.appendChild(dot);
+    });
+  
+    const dots = dotsContainer.querySelectorAll('.split-dot');
+  
+    function updateSlides() {
+      imgSlides.forEach((slide, index) => {
+        slide.classList.toggle('active', index === currentSlide);
+      });
+  
+      textSlides.forEach((slide, index) => {
+        slide.classList.toggle('active', index === currentSlide);
+      });
+  
+      dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentSlide);
+      });
+    }
+  
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % textSlides.length;
+      updateSlides();
+    }
+  
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + textSlides.length) % textSlides.length;
+      updateSlides();
+    }
+  
+    function goToSlide(index) {
+      currentSlide = index;
+      updateSlides();
+      resetAutoplay();
+    }
+  
+    function startAutoplay() {
+      autoplayInterval = setInterval(nextSlide, autoplayDelay);
+    }
+  
+    function stopAutoplay() {
+      clearInterval(autoplayInterval);
+    }
+  
+    function resetAutoplay() {
+      stopAutoplay();
+      startAutoplay();
+    }
+  
+    // Button clicks
+    nextBtn.addEventListener('click', () => {
+      nextSlide();
+      resetAutoplay();
+    });
+  
+    prevBtn.addEventListener('click', () => {
+      prevSlide();
+      resetAutoplay();
+    });
+  
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') {
+        prevSlide();
+        resetAutoplay();
+      } else if (e.key === 'ArrowRight') {
+        nextSlide();
+        resetAutoplay();
+      }
+    });
+  
+    // Pause autoplay when tab/window is not visible
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) {
+        stopAutoplay();
+      } else {
+        startAutoplay();
+      }
+    });
+  
+    // Initialize
+    updateSlides();
+    startAutoplay();
+  });
+  </script>
+  
 
 <script defer>
   // Scroll Animations for Homepage
@@ -599,141 +879,76 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
-    
-  <script>
-// Hero Carousel JavaScript with Slide Transition
-document.addEventListener('DOMContentLoaded', function() {
-  const carousel = document.getElementById('heroCarousel');
-  const slides = carousel.querySelectorAll('.slide');
-  const prevBtn = document.getElementById('heroPrev');
-  const nextBtn = document.getElementById('heroNext');
-  const dotsContainer = document.getElementById('heroDots');
+<script>
+  /**
+   * Make each .q-row loop seamlessly by:
+   * 1) Cloning its children until track width >= 2× grid viewport width
+   * 2) Setting CSS var --d (duration) from pixel width, so speed is stable
+   */
+  document.addEventListener('DOMContentLoaded', () => {
+    const grid = document.querySelector('.q-grid');
+    if (!grid) return;
   
-  let currentSlide = 0;
-  let autoplayInterval;
-  const autoplayDelay = 5000;
-
-  // Create dots
-  slides.forEach((_, index) => {
-    const dot = document.createElement('button');
-    dot.classList.add('dot');
-    dot.setAttribute('aria-label', `Go to slide ${index + 1}`);
-    if (index === 0) dot.classList.add('active');
-    dot.addEventListener('click', () => goToSlide(index));
-    dotsContainer.appendChild(dot);
-  });
-
-  const dots = dotsContainer.querySelectorAll('.dot');
-
-  function updateSlides(direction = 'next') {
-    slides.forEach((slide, index) => {
-      slide.classList.remove('active', 'exit-left');
-      
-      if (index === currentSlide) {
-        slide.classList.add('active');
+    const SPEED_PX_PER_SEC = 120; // increase for “more quick”; try 160–220 if you want faster
+  
+    function prepRow(row) {
+      // 1) Ensure there is content to clone
+      const items = Array.from(row.children);
+      if (!items.length) return;
+  
+      // 2) Fill to ≥ 2× viewport width (plus one card to cover rounding)
+      const viewW = grid.clientWidth;
+      const minTarget = (viewW * 2) + items[0].getBoundingClientRect().width;
+  
+      // Clone in batches to avoid heavy reflow
+      let safety = 0;
+      while (row.scrollWidth < minTarget && safety < 50) {
+        for (const el of items) {
+          row.appendChild(el.cloneNode(true));
+        }
+        safety++;
       }
-    });
-
-    dots.forEach((dot, index) => {
-      dot.classList.remove('active');
-      if (index === currentSlide) {
-        dot.classList.add('active');
-      }
-    });
-  }
-
-  function nextSlide() {
-    const prevSlideIndex = currentSlide;
-    currentSlide = (currentSlide + 1) % slides.length;
-    slides[prevSlideIndex].classList.add('exit-left');
-    updateSlides('next');
-  }
-
-  function prevSlide() {
-    const prevSlideIndex = currentSlide;
-    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-    slides[prevSlideIndex].classList.add('exit-left');
-    updateSlides('prev');
-  }
-
-  function goToSlide(index) {
-    if (index === currentSlide) return;
-    const prevSlideIndex = currentSlide;
-    currentSlide = index;
-    slides[prevSlideIndex].classList.add('exit-left');
-    updateSlides();
-    resetAutoplay();
-  }
-
-  function startAutoplay() {
-    autoplayInterval = setInterval(nextSlide, autoplayDelay);
-  }
-
-  function stopAutoplay() {
-    clearInterval(autoplayInterval);
-  }
-
-  function resetAutoplay() {
-    stopAutoplay();
-    startAutoplay();
-  }
-
-  // Event listeners
-  nextBtn.addEventListener('click', () => {
-    nextSlide();
-    resetAutoplay();
-  });
-
-  prevBtn.addEventListener('click', () => {
-    prevSlide();
-    resetAutoplay();
-  });
-
-  // Pause autoplay on hover
-  carousel.addEventListener('mouseenter', stopAutoplay);
-  carousel.addEventListener('mouseleave', startAutoplay);
-
-  // Keyboard navigation
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowLeft') {
-      prevSlide();
-      resetAutoplay();
-    } else if (e.key === 'ArrowRight') {
-      nextSlide();
-      resetAutoplay();
+  
+      // 3) Duration based on full track width so both copies traverse once per loop
+      const durationSec = Math.max(8, row.scrollWidth / SPEED_PX_PER_SEC);
+      row.style.setProperty('--d', durationSec + 's');
     }
+  
+    const rows = grid.querySelectorAll('.q-row');
+    rows.forEach(prepRow);
+  
+    // Recompute on resize for responsiveness
+    let resizeTO;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTO);
+      resizeTO = setTimeout(() => {
+        rows.forEach(row => {
+          // Remove clones, keep only the first set (original count)
+          const originals = [];
+          for (let i = 0; i < row.children.length; i++) {
+            if (row.children[i].dataset.original === '1') originals.push(row.children[i]);
+          }
+          if (!originals.length) {
+            // mark originals on first run
+            for (let i = 0; i < row.children.length; i++) {
+              row.children[i].dataset.original = (i < row.children.length) ? '1' : '0';
+            }
+          } else {
+            row.innerHTML = '';
+            originals.forEach(el => row.appendChild(el));
+          }
+          prepRow(row);
+        });
+      }, 150);
+    });
+  
+    // Mark original nodes once so our resize cleanup works
+    rows.forEach(row => {
+      Array.from(row.children).forEach(el => el.dataset.original = '1');
+    });
   });
-
-  // // Touch/swipe support
-  // let touchStartX = 0;
-  // let touchEndX = 0;
-
-  // carousel.addEventListener('touchstart', (e) => {
-  //   touchStartX = e.changedTouches[0].screenX;
-  // });
-
-  // carousel.addEventListener('touchend', (e) => {
-  //   touchEndX = e.changedTouches[0].screenX;
-  //   handleSwipe();
-  // });
-
-  // function handleSwipe() {
-  //   if (touchEndX < touchStartX - 50) {
-  //     nextSlide();
-  //     resetAutoplay();
-  //   }
-  //   if (touchEndX > touchStartX + 50) {
-  //     prevSlide();
-  //     resetAutoplay();
-  //   }
-  // }
-
-  slides[0].classList.add('active');
-updateSlides();
-startAutoplay();
-});
-
-</script>
+  </script>
+  
 
 <script>
   (() => {
@@ -799,118 +1014,6 @@ startAutoplay();
   
   
 
-<script>
-// Split Slideshow JavaScript
-document.addEventListener('DOMContentLoaded', function() {
-  const imgSlides = document.querySelectorAll('.img-slide');
-  const textSlides = document.querySelectorAll('.text-slide');
-  const prevBtn = document.getElementById('splitPrev');
-  const nextBtn = document.getElementById('splitNext');
-  const dotsContainer = document.getElementById('splitDots');
-  
-  let currentSlide = 0;
-  let autoplayInterval;
-  const autoplayDelay = 8000; // 6 seconds
-
-  // Create dots
-  textSlides.forEach((_, index) => {
-    const dot = document.createElement('button');
-    dot.classList.add('split-dot');
-    dot.setAttribute('aria-label', `Go to story ${index + 1}`);
-    if (index === 0) dot.classList.add('active');
-    dot.addEventListener('click', () => goToSlide(index));
-    dotsContainer.appendChild(dot);
-  });
-
-  const dots = dotsContainer.querySelectorAll('.split-dot');
-
-  function updateSlides() {
-    // Update image slides
-    imgSlides.forEach((slide, index) => {
-      slide.classList.remove('active');
-      if (index === currentSlide) {
-        slide.classList.add('active');
-      }
-    });
-
-    // Update text slides
-    textSlides.forEach((slide, index) => {
-      slide.classList.remove('active');
-      if (index === currentSlide) {
-        slide.classList.add('active');
-      }
-    });
-
-    // Update dots
-    dots.forEach((dot, index) => {
-      dot.classList.remove('active');
-      if (index === currentSlide) {
-        dot.classList.add('active');
-      }
-    });
-  }
-
-  function nextSlide() {
-    currentSlide = (currentSlide + 1) % textSlides.length;
-    updateSlides();
-  }
-
-  function prevSlide() {
-    currentSlide = (currentSlide - 1 + textSlides.length) % textSlides.length;
-    updateSlides();
-  }
-
-  function goToSlide(index) {
-    currentSlide = index;
-    updateSlides();
-    resetAutoplay();
-  }
-
-  function startAutoplay() {
-    autoplayInterval = setInterval(nextSlide, autoplayDelay);
-  }
-
-  function stopAutoplay() {
-    clearInterval(autoplayInterval);
-  }
-
-  function resetAutoplay() {
-    stopAutoplay();
-    startAutoplay();
-  }
-
-  // Event listeners
-  nextBtn.addEventListener('click', () => {
-    nextSlide();
-    resetAutoplay();
-  });
-
-  prevBtn.addEventListener('click', () => {
-    prevSlide();
-    resetAutoplay();
-  });
-
-  // Pause autoplay on hover
-  const splitSection = document.getElementById('splitShow');
-  splitSection.addEventListener('mouseenter', stopAutoplay);
-  splitSection.addEventListener('mouseleave', startAutoplay);
-
-  // Keyboard navigation
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowLeft') {
-      prevSlide();
-      resetAutoplay();
-    } else if (e.key === 'ArrowRight') {
-      nextSlide();
-      resetAutoplay();
-    }
-  });
-
-  // Initialize
-  updateSlides();
-  startAutoplay();
-});
-  </script>
 <script>
   (() => {
     const statsSection = document.querySelector('.stats-lite');
